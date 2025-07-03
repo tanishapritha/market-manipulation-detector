@@ -1,0 +1,902 @@
+[
+    {
+        "id": "1l7wetd",
+        "time": "2025-06-10T11:34:37",
+        "title": "Should you buy the dip? I analyzed all S&P 500 companies to find what happens if we only invest in companies undergoing drawdowns.",
+        "text": "To test, I picked all the companies in the S&P 500 list as of 2015. The backtest is simple\u2014 If a company drops by 50%, we invest $100 in that company and then hold.\n\nI immediately ran into an issue. Out of the 502 companies on the list, 262 companies experienced a drawdown of more than 50% over the last 10 years. If you end up investing in all of them, your average return will be comparable to the index since you are holding half the index.\u00a0*(Average return of 114% for the drawdown portfolio vs. 123% for the S&P 500).*\n\n**Where it gets interesting is when we increase the drawdown cutoffs.**\n\n# Drawdown cutoff \u2014 75%\n\n* Number of stocks: 91\n* Total amount of investment: $9,500\n* Drawdown portfolio final value (June\u201925): $23,903\u00a0**(151% return)**\n* Comparable S&P 500 index: $20,467\u00a0**(115% return)**\n* Alpha\u00a0\u2014 36%\n* Median return: 68.4%\n\n# Drawdown cutoff \u2014 90%\n\n* Number of stocks: 36\n* Total amount of investment: $3,600\n* Drawdown portfolio final value (June\u201925): $12,120\u00a0**(236% return)**\n* Comparable S&P 500 index: $6,705\u00a0**(86% return)**\n* Alpha \u2014 150%\n* Median return: 75%\n\nhttps://preview.redd.it/onw4wzll536f1.png?width=690&format=png&auto=webp&s=8fdcd1f752cdb88770556fa05cb84b040443342b\n\n*Backtest data & company list \u2014*\u00a0[***here***](https://docs.google.com/spreadsheets/d/1QeYOmr4oWu1_SX3hFk47nKzs7mE9oGQfY4dfWnmnxzY/edit?usp=sharing)\n\n# Best and worst performers\n\nAs you would expect, investing in companies that had significant drawdowns would be highly volatile. After all, a stock that went down 90% can again go down another 90%!\n\nBuy and hold seems to be the best strategy, as there would be many multi-baggers..\n\nhttps://preview.redd.it/5d1ei1o6536f1.png?width=640&format=png&auto=webp&s=e1ff2ad280ece973152ba2afcc494a223b13720d\n\n.. and a lot of zeros in your portfolio.\n\nhttps://preview.redd.it/g8qyb1u7536f1.png?width=640&format=png&auto=webp&s=8b14718ae78896365ba820b3cbb5a43fd4ba833d\n\n  \n**Notes** \n\n* S&P 500 as of 2015. Adjusted for survivorship bias \n* If a company rebounds to a new all-time high and then drops again, we will again invest.\n* Alpha is not risk-adjusted ",
+        "score": 621,
+        "num_comments": 179,
+        "author": "nobjos"
+    },
+    {
+        "id": "msblc3",
+        "time": "2021-04-16T20:20:13",
+        "title": "GME YOLO update \u2014 Apr 16 2021 \u2014 final update",
+        "text": "",
+        "score": 176297,
+        "num_comments": 17816,
+        "author": "DeepFuckingValue"
+    },
+    {
+        "id": "l78uct",
+        "time": "2021-01-28T21:06:23",
+        "title": "GME YOLO update \u2014 Jan 28 2021",
+        "text": "",
+        "score": 301704,
+        "num_comments": 22935,
+        "author": "DeepFuckingValue"
+    },
+    {
+        "id": "l846a1",
+        "time": "2021-01-29T21:04:45",
+        "title": "GME YOLO month-end update \u2014 Jan 2021",
+        "text": "",
+        "score": 265457,
+        "num_comments": 19842,
+        "author": "DeepFuckingValue"
+    },
+    {
+        "id": "lnqgz8",
+        "time": "2021-02-19T21:05:55",
+        "title": "GME YOLO update \u2014 Feb 19 2021",
+        "text": "",
+        "score": 225025,
+        "num_comments": 12845,
+        "author": "DeepFuckingValue"
+    },
+    {
+        "id": "lae6j0",
+        "time": "2021-02-01T21:07:36",
+        "title": "GME YOLO update \u2014 Feb 1 2021",
+        "text": "",
+        "score": 217836,
+        "num_comments": 18002,
+        "author": "DeepFuckingValue"
+    },
+    {
+        "id": "tr55d1",
+        "time": "2022-03-29T15:53:40",
+        "title": "GME reached $448,950 seconds before halt. I was watching this as it was happening. LFG",
+        "text": "",
+        "score": 29371,
+        "num_comments": 2077,
+        "author": "keenfeed"
+    },
+    {
+        "id": "tt8wrc",
+        "time": "2022-03-31T20:28:30",
+        "title": "GME Stock Split SEC Filing",
+        "text": "[https://www.sec.gov/ix?doc=/Archives/edgar/data/0001326380/000132638022000038/gme-20220331.htm](https://www.sec.gov/ix?doc=/Archives/edgar/data/0001326380/000132638022000038/gme-20220331.htm)\n\n[I don't want to brag but I definitely called this during the last run up.](https://www.reddit.com/r/wallstreetbets/comments/tqhwt9/what_are_your_moves_tomorrow_march_29_2022/i2h8t46/)",
+        "score": 22563,
+        "num_comments": 2581,
+        "author": "xltaylx"
+    },
+    {
+        "id": "lb6jld",
+        "time": "2021-02-02T21:11:48",
+        "title": "GME YOLO update \u2014 Feb 2 2021",
+        "text": "",
+        "score": 161989,
+        "num_comments": 17337,
+        "author": "DeepFuckingValue"
+    },
+    {
+        "id": "l6ekdz",
+        "time": "2021-01-27T21:15:35",
+        "title": "GME YOLO update \u2014 Jan 27 2021 --------------------------------------- guess i need 102 characters in title now",
+        "text": "",
+        "score": 219104,
+        "num_comments": 14595,
+        "author": "DeepFuckingValue"
+    },
+    {
+        "id": "11xxru4",
+        "time": "2023-03-21T22:50:18",
+        "title": "(GME) Gamestop earnings. Let's take a closer look...",
+        "text": "**Gamestop (GME) Earnings Summary:**\n\n* EPS of $0.16 beats ($0.13) estimate\n* Rev of $2.23B beats $2.18B estimate\n* Posted a quarterly profit for the first time in two years\n* Selling, general and administrative expenses came in at 20.4% of sales, compared to 23.9% of sales\n* Inventory was $682.9M at Close of 4Q, compared to $915M at Close of Prior Year\u2019s 4Q\n* Net Income was $48.2M, compared to a net loss of $147.5M for the prior year\u2019s 4Q\n* Cash, cash equivalents and marketable securities were $1.391B at Close of 4Q",
+        "score": 9384,
+        "num_comments": 1294,
+        "author": "MT_Media"
+    },
+    {
+        "id": "mbpclz",
+        "time": "2021-03-23T21:30:31",
+        "title": "GME YOLO update \u2014 Mar 23 2021",
+        "text": "",
+        "score": 130608,
+        "num_comments": 8046,
+        "author": "DeepFuckingValue"
+    },
+    {
+        "id": "m0q5bm",
+        "time": "2021-03-08T21:08:31",
+        "title": "GME YOLO update \u2014 Mar 8 2021",
+        "text": "",
+        "score": 172260,
+        "num_comments": 8050,
+        "author": "DeepFuckingValue"
+    },
+    {
+        "id": "l7iorh",
+        "time": "2021-01-29T04:05:42",
+        "title": "GME Overnight Pajama Party Megathread",
+        "text": "Yo, health check time:\n\n- Get proper sleep\n- Eat proper food\n- Stretch occasionally\n- \ud83d\udca6 HYDRATE \ud83d\udca6\n\n\nI'm sure we've all been glued to our screens all week, but please make sure you take care of yourselves.\n\nIf you promise to do a good job, we can take turns piloting the rockets \ud83d\ude80\ud83d\ude80\ud83d\ude80",
+        "score": 85519,
+        "num_comments": 76541,
+        "author": "wallstreetboyfriend"
+    },
+    {
+        "id": "tldlqk",
+        "time": "2022-03-23T20:44:28",
+        "title": "GME after the earnings dip",
+        "text": "",
+        "score": 74755,
+        "num_comments": 1342,
+        "author": "nams0"
+    },
+    {
+        "id": "lt7v4w",
+        "time": "2021-02-26T21:07:18",
+        "title": "GME YOLO month-end update \u2014 Feb 2021",
+        "text": "",
+        "score": 151021,
+        "num_comments": 7621,
+        "author": "DeepFuckingValue"
+    },
+    {
+        "id": "lbykxg",
+        "time": "2021-02-03T21:18:25",
+        "title": "GME YOLO update \u2014 Feb 3 2021 \u2013 heads up gonna back off the daily updates for now",
+        "text": "",
+        "score": 148245,
+        "num_comments": 9932,
+        "author": "DeepFuckingValue"
+    },
+    {
+        "id": "m1xhlc",
+        "time": "2021-03-10T13:30:11",
+        "title": "GME Megathread for March 10, 2021",
+        "text": "HOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLY",
+        "score": 48314,
+        "num_comments": 87458,
+        "author": "OPINION_IS_UNPOPULAR"
+    },
+    {
+        "id": "m237es",
+        "time": "2021-03-10T17:35:21",
+        "title": "GME Megathread Part 2 for March 10, 2021",
+        "text": "EMERGENCY SECOND GME MEGATHREAD\n\nHOLY MOLY\n\nEDIT: STOP REPORTING THIS AS SPAM r/ALL",
+        "score": 47760,
+        "num_comments": 65689,
+        "author": "OPINION_IS_UNPOPULAR"
+    },
+    {
+        "id": "lmagzp",
+        "time": "2021-02-18T01:37:20",
+        "title": "Today, Interactive Brokers CEO admits that without the buying restrictions, $GME would have gone up in to the thousands",
+        "text": "",
+        "score": 145335,
+        "num_comments": 7822,
+        "author": "indonesian_activist"
+    },
+    {
+        "id": "l5nphz",
+        "time": "2021-01-26T21:08:03",
+        "title": "GME YOLO update \u2014 Jan 26 2021",
+        "text": "",
+        "score": 140352,
+        "num_comments": 9284,
+        "author": "DeepFuckingValue"
+    },
+    {
+        "id": "l8c0u4",
+        "time": "2021-01-30T02:53:40",
+        "title": "Used some of my GME tendies to buy Nintendo Switches from Gamestop, then donated them to a Children's Hospital. Got featured on the local news and brought glory to WSB.",
+        "text": "",
+        "score": 215419,
+        "num_comments": 6979,
+        "author": "mpwrd"
+    },
+    {
+        "id": "mch84i",
+        "time": "2021-03-24T21:30:14",
+        "title": "GME YOLO update \u2014 Mar 24 2021",
+        "text": "",
+        "score": 102401,
+        "num_comments": 5688,
+        "author": "DeepFuckingValue"
+    },
+    {
+        "id": "tql3zs",
+        "time": "2022-03-28T22:29:45",
+        "title": "GME Yolo: 300k->1.35mil",
+        "text": "",
+        "score": 32436,
+        "num_comments": 1598,
+        "author": "Unaheari"
+    },
+    {
+        "id": "lsgv43",
+        "time": "2021-02-25T21:04:25",
+        "title": "Tried to quickly buy 50k worth of GME before close but fat fingered and ended up buying \u201cGMED\u201d",
+        "text": "",
+        "score": 98753,
+        "num_comments": 6697,
+        "author": "meiggs"
+    },
+    {
+        "id": "mdnjql",
+        "time": "2021-03-26T12:30:21",
+        "title": "GME Megathread for March 26, 2021",
+        "text": "",
+        "score": 35894,
+        "num_comments": 50156,
+        "author": "OPINION_IS_UNPOPULAR"
+    },
+    {
+        "id": "y2z9vb",
+        "time": "2022-10-13T13:50:43",
+        "title": "I think my parents hate me after buying GME at 115$",
+        "text": "",
+        "score": 29250,
+        "num_comments": 877,
+        "author": "Giamma4X"
+    },
+    {
+        "id": "m8g6c2",
+        "time": "2021-03-19T12:30:12",
+        "title": "GME Megathread for March 19, 2021",
+        "text": "HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE MOLY HOLY GUACAMOLE HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE",
+        "score": 35342,
+        "num_comments": 60749,
+        "author": "OPINION_IS_UNPOPULAR"
+    },
+    {
+        "id": "l8539h",
+        "time": "2021-01-29T21:40:43",
+        "title": "CNBC now running Ads promoting that Melvin Capital closed their short positions on $GME",
+        "text": "",
+        "score": 106393,
+        "num_comments": 7093,
+        "author": "jordanpeterson9"
+    },
+    {
+        "id": "mcx43r",
+        "time": "2021-03-25T12:30:24",
+        "title": "GME Megathread for March 25, 2021",
+        "text": "\"Holy moley, what a game[stop]\" [(Gould, 1892)](https://archive.org/details/bub_gb_oDgPAAAAQAAJ/page/n219/mode/2up)\n\nHOLY MOLY HOLY MOLY HOLY MOLY HOLY MOLY HOLY MOLY HOLY MOLY HOLY MOLY HOLY MOLY HOLY MOLY HOLY MOLY HOLY MOLY HOLY MOLY HOLY MOLY HOLY MOLY HOLY MOLY HOLY MOLY HOLY MOLY HOLY MOLY",
+        "score": 32749,
+        "num_comments": 66408,
+        "author": "OPINION_IS_UNPOPULAR"
+    },
+    {
+        "id": "lrmrsc",
+        "time": "2021-02-24T20:34:59",
+        "title": "GME up 37% \"I'm not sure I can take it again\"",
+        "text": "",
+        "score": 84194,
+        "num_comments": 6033,
+        "author": "arnhuld"
+    },
+    {
+        "id": "mhektw",
+        "time": "2021-03-31T20:10:33",
+        "title": "GME YOLO month-end update \u2014 Mar 2021",
+        "text": "",
+        "score": 104774,
+        "num_comments": 3984,
+        "author": "DeepFuckingValue"
+    },
+    {
+        "id": "la09rn",
+        "time": "2021-02-01T10:34:07",
+        "title": "Don\u2019t listen to them, this is them trying to take focus away from GME",
+        "text": "",
+        "score": 112729,
+        "num_comments": 5582,
+        "author": "hsjwbksx"
+    },
+    {
+        "id": "mbdncf",
+        "time": "2021-03-23T12:30:13",
+        "title": "GME Megathread for March 23, 2021",
+        "text": "We will be making a special earnings megathread for GME today at 2:30PM as well as an earnings call megathread tomorrow morning.\n\nGrab yo holy moly guacamole flavored popcorn.",
+        "score": 31368,
+        "num_comments": 36928,
+        "author": "OPINION_IS_UNPOPULAR"
+    },
+    {
+        "id": "l2x7he",
+        "time": "2021-01-22T21:14:08",
+        "title": "GME YOLO update \u2014 Jan 22 2021",
+        "text": "",
+        "score": 96750,
+        "num_comments": 6083,
+        "author": "DeepFuckingValue"
+    },
+    {
+        "id": "m0fpgd",
+        "time": "2021-03-08T13:30:21",
+        "title": "GME Megathread for March 08, 2021",
+        "text": "This thread will be automatically stickied weekdays at 8:30am, and unstickied at 9:15am.\n\nMegathreads are now posted automatically based on a few factors, including:\n\n* Mentions by comment count, weighted by comment novelty and score\n* Accounts of users mentioning, weighted by age, posting history, and previous mod actions\n* Stock volatility, volume, and market cap\n\nThis isn't an exhaustive list, but to prevent this from being gamed, we cannot share the exact weightings or specifics.\n\nThese megathreads exist to consolidate conversation about interesting topics and make things easily accessible and enjoyable for all. \n\n**Please do your part in making these threads decent. Don't troll. Don't spam. Don't spread divisiveness (calling others shills / bots).**",
+        "score": 31033,
+        "num_comments": 73705,
+        "author": "OPINION_IS_UNPOPULAR"
+    },
+    {
+        "id": "la6w8q",
+        "time": "2021-02-01T16:17:28",
+        "title": "Just bought $1MM worth of $GME. My profits from years of trading. Let\u2019s stick it to the HFs! \ud83e\udd8d strong together. \ud83d\udc8e \ud83d\ude4c",
+        "text": "",
+        "score": 117148,
+        "num_comments": 5033,
+        "author": "tannerwastaken"
+    },
+    {
+        "id": "ls63oa",
+        "time": "2021-02-25T13:02:39",
+        "title": "GME Megathread for Thursday February 25th, 2021",
+        "text": "[GME Megathread Part 2](https://old.reddit.com/r/wallstreetbets/comments/lsc5ji/gme_megathread_part_2_for_thursday_february_25th/?sort=new)",
+        "score": 32084,
+        "num_comments": 71984,
+        "author": "OPINION_IS_UNPOPULAR"
+    },
+    {
+        "id": "mc4hjd",
+        "time": "2021-03-24T12:30:11",
+        "title": "GME Megathread for March 24, 2021",
+        "text": "",
+        "score": 28703,
+        "num_comments": 56967,
+        "author": "OPINION_IS_UNPOPULAR"
+    },
+    {
+        "id": "lw4qgi",
+        "time": "2021-03-02T15:36:10",
+        "title": "Fuck it, Heres your daily GME Thread-Megathread 3/2/21",
+        "text": "just for you.",
+        "score": 33093,
+        "num_comments": 30300,
+        "author": "bawse1"
+    },
+    {
+        "id": "m16emz",
+        "time": "2021-03-09T13:30:12",
+        "title": "GME Megathread for March 09, 2021",
+        "text": "This thread will be automatically stickied weekdays at 8:30am, and unstickied at 9:15am.\n\nMegathreads are now posted automatically based on a few factors, including:\n\n* Mentions by comment count, weighted by comment novelty and score\n* Accounts of users mentioning, weighted by age, posting history, and previous mod actions\n* Stock volatility, volume, and market cap\n\nThis isn't an exhaustive list, but to prevent this from being gamed, we cannot share the exact weightings or specifics.\n\nThese megathreads exist to consolidate conversation about interesting topics and make things easily accessible and enjoyable for all. \n\n**Please do your part in making these threads decent. Don't troll. Don't spam. Don't spread divisiveness (calling others shills / bots).**",
+        "score": 29970,
+        "num_comments": 67769,
+        "author": "OPINION_IS_UNPOPULAR"
+    },
+    {
+        "id": "m5jn1y",
+        "time": "2021-03-15T12:30:18",
+        "title": "GME Megathread for March 15, 2021",
+        "text": "",
+        "score": 29420,
+        "num_comments": 57729,
+        "author": "OPINION_IS_UNPOPULAR"
+    },
+    {
+        "id": "l6cb1x",
+        "time": "2021-01-27T19:26:08",
+        "title": "The GME Thread, Part 3.14, for January 27, 2021",
+        "text": "Reddit's Engineering team has asked us to rotate threads more frequently because our load destroying their backend.\n\nKeep up the good work!",
+        "score": 36698,
+        "num_comments": 46860,
+        "author": "OPINION_IS_UNPOPULAR"
+    },
+    {
+        "id": "mqolln",
+        "time": "2021-04-14T11:30:13",
+        "title": "GME Megathread for April 14, 2021",
+        "text": "Good Morning Everyone!\n\nHOLY MOLY! HOLY MOLY! HOLY MOLY! HOLY MOLY! HOLY MOLY! HOLY MOLY! HOLY MOLY! HOLY MOLY! HOLY MOLY! HOLY MOLY! HOLY MOLY! HOLY MOLY! HOLY MOLY! HOLY MOLY! HOLY MOLY! HOLY MOLY! HOLY MOLY! HOLY MOLY!",
+        "score": 26495,
+        "num_comments": 35197,
+        "author": "OPINION_IS_UNPOPULAR"
+    },
+    {
+        "id": "mgewny",
+        "time": "2021-03-30T12:30:14",
+        "title": "GME Megathread for March 30, 2021",
+        "text": "HOLY MOLY!",
+        "score": 28200,
+        "num_comments": 33439,
+        "author": "OPINION_IS_UNPOPULAR"
+    },
+    {
+        "id": "mame8e",
+        "time": "2021-03-22T12:30:11",
+        "title": "GME Megathread for March 22, 2021",
+        "text": "",
+        "score": 29237,
+        "num_comments": 31322,
+        "author": "OPINION_IS_UNPOPULAR"
+    },
+    {
+        "id": "m3hkjf",
+        "time": "2021-03-12T13:30:14",
+        "title": "GME Megathread for March 12, 2021",
+        "text": "> **User Reports**\n\n> (a bunch of normal reports)\n\n> 1: Tell the admins to bring back the porn. Don't remove functionality to sanitize the site, asshats.\n\n???",
+        "score": 29009,
+        "num_comments": 54737,
+        "author": "OPINION_IS_UNPOPULAR"
+    },
+    {
+        "id": "l97ykd",
+        "time": "2021-01-31T08:10:30",
+        "title": "The real reason Wall Street is terrified of the GME situation",
+        "text": "I have been following GME since mid-September and over that time I have banked myself a %1300 return in the process. However, the whole time I was a little puzzled with how severe the reactions from Wall Street have been, especially this week. \"The company had more than 100% of its stock sold short! That's never happened before!\", you say. I know, I know, but that's [not actually not a new thing](https://www.forbes.com/2006/08/25/naked-shorts-global-links-cx_lm_0825naked.html?sh=f59ff078400b). A short squeeze, even one of this magnitude, should have squoze by now with GME up more than 10x in the span of weeks. Something is just not right. **I think there is something much, much bigger going on here. Something big enough to blow up the entire financial system.**\n\nHere is my hypothesis: I think the hedge funds, clearing houses, and DTC executed a coordinated effort to put Game Stop out of business by conspiring to create a gargantuan number of counterfeit shares of GME, possibly 100-200% or more of the shares originally issued by Game Stop. In the process, they may have accidentally created a bomb that could blow up the entire system as we know it and we're seeing their efforts to cover this up unfold now. What is that bomb? **I believe retail investors may hold more than 100% of GME** (not just 100% of the float, more than 100% of the actual company). This would be definitive proof of illegal activity at the highest levels of the financial system.\n\nFor you to follow this argument, you need to go read the white paper [\"Counterfeiting Stock 2.0\"](http://counterfeitingstock.com/CS2.0/CounterfeitingStock.html) so you understand how the hedge funds can create fake stock out of thin air and disguise it so it looks like real shares. They use these fake shares in [short attacks to drive the price of a company down until they put them into bankruptcy](https://seekingalpha-com.cdn.ampproject.org/v/s/seekingalpha.com/amp/instablog/11442671-gerald-klein/3096735-anatomy-of-a-short-attack?amp_js_v=a6&amp_gsa=1&usqp=mq331AQHKAFQArABIA%3D%3D). This practice seems to be widespread among hedge funds that go short. There is even a term for it, \"strategic fails\u2013to\u2013deliver.\" Counterfeiting shares is extremely illegal (similar level to counterfeiting money) but it's very difficult to prove and even getting the court to approve subpoenas because of the way the financial industry has stacked the deck against investigations.\n\nThis completely explains why so many levels of the financial system seem to be actively trying to get in the way of retail investors purchasing more GME. It's not just about a short squeeze, it's about their firms' very existence and their own personal freedom. We have the opportunity to put all these people in jail by proving that we own more than 100% of shares in existence.\n\nThere are are **71 million shares** of GME that have ever been issued by the company. Institutions have reported to the SEC via [13F filings](https://fintel.io/so/us/gme) that they own more than **102,000,000 shares** (including the 13% of GME stock is owned by Ryan Cohen). Now, I don't know the delay/variance on these ownership numbers, but I think there is a pretty solid argument that close to 100% of GME is owned by these firms, if not more.\n\nMoreover, there are now more than 7 million people subscribed to r/wallstreetbets\\~\\~. I know lots of people here are sitting on a few hundred shares that they bought back when it was under $50. Some of us are even holding thousands. If the average number of shares owned by each subscriber is even close to 5-10, we have a very good shot at also owning a similarly enormous amount of GME.\\~\\~ **Even if the average was just 10 shares per legit subscriber, that puts the minimum retail position at about 30-50% of the entire company.**\n\nGME has been on the NYSE threshold list for almost a month. We don't have January data yet, but I just analyzed the data from the [SEC's fails\u2013to\u2013deliver list for December](https://www.sec.gov/data/foiadocsfailsdatahtm) (all 65,871 lines of it) and looked up the number of shares that were likely counterfeit. For comparison, I did the same for a couple random tickers. Most companies have close to no shares not show up. Of those that do, it's a relatively small number of shares. For example, two random companies: Lowes ($LOW, \\~$125B market cap) had 13,960 shares fail to be delivered at its highest point that month, Boston Beer Company ($SAM, $11.5B market cap) had 295 shares fail to be delivered.\n\nHow many shares of GME failed to deliver? **1,787,191.** As the white papers points out, the true number of counterfeit shares can be 20x this number. How bad do you think that number will be when we get the numbers for January? I'm willing to bet its many times that. Look at how that compares to other companies' stock:\n\n[Histogram showing number of shares that weren't delivered in December \\(x-axis\\) vs the number of companies that fall into that bin \\(y-axis\\). GME is an extreme outlier.](https://preview.redd.it/g723jvyhine61.png?width=445&format=png&auto=webp&s=39bad6c47b428d364de36e9888de35b79572d1da)\n\nI think this explains all the shenanigans going on the last few days. There is way too much counterfeit GME stock out there and DTC, the clearing houses, and the hedge funds are all in on it. That's why there has been such a coordinated effort to disrupt our ability to buy shares. **No real shares can be found** **and it's about to cause the system to fall apart.**\n\n*TLDR; We probably own way more of GME than we think and that is freaking out Wall Street because it could prove they've been up to some extremely illegal shit and the whole system could implode as a result.*\n\nDisclaimer: I'm just a starving engineering PhD student and I don't work in finance. I have no inside knowledge of how the financial system works and I may be wrong on some of this. This is not financial advice and you shouldn't trade based on it. I am book-smart but I still eat crayons like the rest of you. Obligatory rocket: **\ud83d\ude80**\n\n&#x200B;\n\nEDIT 0: Looks like I truly belong on this sub. On the first version of this post I didn't read the file description properly and summed a cumulative distribution. My numbers were wrong, but I have updated the plot and post with the correct numbers.\n\nEDIT 1: You should also note this is the distribution for NASDAQ tickers, not the entire NYSE. I doubt that the distribution trend is any different though.\n\nEDIT 2: Evidence that Fannie May and Freddie Mac were killed in 2008 via short attacks using counterfeit shares: [report](https://www.sec.gov/comments/s7-08-09/s70809-407a.pdf). Exactly what I think they were trying to do to GME.\n\nEDIT 3: A lot of people were hung up on the \"3 shares per wsb subscriber thing\". I know many accounts are bots, I was intentionally underestimating that number. I have adjusted to 10 shares per \"legit subscriber\" to reflect this without changing the total amount I think retail owns.\n\nEDIT 4: What I'm seeing on Twitter makes me think I'm being interpreted a little too hyperbolically when I say \"Something big enough to blow up the entire financial system.**\" We're not going to go back to mud huts, people.** This could just be really disruptive for a short amount of time and cause a number of firms to face liquidity problems, possibly bankrupting some of them. Life will go on and I'm confident regulators and government will step in and protect people if necessary. Hopefully they pay more attention to enforcing securities laws going forward to prevent this from happening again.\n\nEDIT 5: [Backup link for white paper.](https://web.archive.org/web/20210131014127/counterfeitingstock.com/CS2.0/CounterfeitingStock.html)\n\nEDIT 6: I am getting thousands of messages. I won't be able to respond to all of them. Here is an FAQ:\n\n1. *How do I learn investing?*I am not an authority on this, but my personal opinion is to first learn how to read a company's financial documents and value businesses and only then start thinking about putting your money into specific stocks. Read \"the intelligent investor\" by Benjamin Graham for this. Then learn how to think about picking stocks. I like Peter Lynch's books for this.\n2. *What is going to happen this week?*I have no idea and I wouldn't dare to guess.\n3. *Are you going to be killed?*I don't know where people are getting this idea. I have no special knowledge or insider contacts, and I am in no way, shape, or form an expert on the market or the system behind it. Please treat my tinfoil-hat conspiracy theories as just that. There is nothing to gain from harming me and I have no doubts about my safety. These are just personal opinions and I don't have any schemes to \"take down the shorts\" or anything like that. I do not advocate for you to buy, hold, or sell. I'm just postulating on how we might have found ourselves in this place.",
+        "score": 58215,
+        "num_comments": 7658,
+        "author": "johnnydaggers"
+    },
+    {
+        "id": "m67ywm",
+        "time": "2021-03-16T12:30:20",
+        "title": "GME Megathread for March 16, 2021",
+        "text": "^^^holy ^^^moly",
+        "score": 28439,
+        "num_comments": 50557,
+        "author": "OPINION_IS_UNPOPULAR"
+    },
+    {
+        "id": "lre2k6",
+        "time": "2021-02-24T14:24:58",
+        "title": "GME Megathread for Wednesday, February 24th, 2021",
+        "text": "Enjoy this thread overnight. New one comes at 9:15am on the 25th.",
+        "score": 30210,
+        "num_comments": 83725,
+        "author": "OPINION_IS_UNPOPULAR"
+    },
+    {
+        "id": "l4xje1",
+        "time": "2021-01-25T21:05:36",
+        "title": "GME YOLO update \u2014 Jan 25 2021",
+        "text": "",
+        "score": 87581,
+        "num_comments": 5317,
+        "author": "DeepFuckingValue"
+    },
+    {
+        "id": "mfoivk",
+        "time": "2021-03-29T12:30:16",
+        "title": "GME Megathread for March 29, 2021",
+        "text": "Welcome back! If you were in pain waiting for the weekend to end, I have bad news for you. Next weekend is a long one, with markets closed this Friday. \n\nAlso, be sure to [sign up for our paper trading competition](https://www.reddit.com/r/wallstreetbets/comments/mdz6oc/join_rwallstreetbets_third_annual_paper_trading), it's free and there's lots of prizes to be handed out!\n\n\ud83d\ude4f\ud83e\udd51",
+        "score": 28015,
+        "num_comments": 25361,
+        "author": "OPINION_IS_UNPOPULAR"
+    },
+    {
+        "id": "lb8lwf",
+        "time": "2021-02-02T22:34:12",
+        "title": "Why the fuck are we acting like we lost? We made GME go from 4 to 400 and it took combined trading platforms to silence and cheat to bring it to 90.",
+        "text": "Did everyone forget what happened in Thursday? That was a calculated effort to bring down our position. FUCK OFF BILLIONAIRS, well still take you fucking money; who do you think will fund our food stamps?\n\nWe didn\u2019t \u201close\u201d because we made a bad call, we \u201clost\u201d because we made the RIGHT call and this disturbed  some folks at the top. \n\nI was reading 2 articles in Wall Street journal and it made my blood boil- first article was saying \u201crandom penny stock went up 30% with no news or announcement\u201d- the people that are paid to predict and report and are the expert at stock market are saying this shit. The second article right after made me want to fuck the writers wife: \u201cGME and AMC, Reddit favorite stocks, plunged after apparent loss in interest from retail investors\u201d LOSS IN  INTEREST? MOTHERFUCKER WE CAN ONLY BUY 5 FUCKING SHARES EACH. \n\nWE LIKE THE STOCK. THOSE FUCKS JUST DON\u2019T LET US BUY IT. How is GameStop and AMC and BB not already suing robinhood? Is any stock expert really gonna act like had they not restricted in Thursday, it would have went down that much? \n\nWhat the fuck is this gaslighting? That last week didn\u2019t happen? Why are every news channel acting like they called GME or BB or AMC falling like it happened organically and not deliberately by everyone involved? \n\nIs GME worth 400$? FUCK NO. But since when was the stock market about actual worth? Stocks have become fiat currency in themself, doesn\u2019t matter than company quarterly earnings, or its news, if people buy it, it goes up. When you restrict that- it goes down. \n\nWe were up against billions of fund, trading platforms that we do not own or have a say in, our weapons, controlled by the enemy. Those fucks in TV acting like they actually called GME falling like this or acting like this is perfectly normal are trying to gaslight us about what happened in Thursday. \n\nFUCK THEM. We still got GME to go up and caused international fevor- we made the right call, we had the right stock, we had the right people, our enemies just had control of the only weapon we could use.",
+        "score": 77289,
+        "num_comments": 5344,
+        "author": "JoeWelburg"
+    },
+    {
+        "id": "m2q39b",
+        "time": "2021-03-11T13:30:19",
+        "title": "GME Megathread for March 11, 2021",
+        "text": "Since we're back to hitting comment limits, I'll be posting a GME megathread part two around noon.",
+        "score": 28408,
+        "num_comments": 39148,
+        "author": "OPINION_IS_UNPOPULAR"
+    },
+    {
+        "id": "lwtejk",
+        "time": "2021-03-03T13:04:26",
+        "title": "GME Megathread for March 3rd, 2021",
+        "text": "",
+        "score": 29336,
+        "num_comments": 38678,
+        "author": "OPINION_IS_UNPOPULAR"
+    },
+    {
+        "id": "m6zbhp",
+        "time": "2021-03-17T12:30:13",
+        "title": "GME Megathread for March 17, 2021",
+        "text": "",
+        "score": 26966,
+        "num_comments": 47120,
+        "author": "OPINION_IS_UNPOPULAR"
+    },
+    {
+        "id": "l7v9o8",
+        "time": "2021-01-29T15:26:04",
+        "title": "GME What About Second Breakfast Club Megathread",
+        "text": "",
+        "score": 31364,
+        "num_comments": 71434,
+        "author": "wallstreetboyfriend"
+    },
+    {
+        "id": "l7s631",
+        "time": "2021-01-29T13:11:27",
+        "title": "GME Breakfast Club Megathread",
+        "text": "",
+        "score": 30647,
+        "num_comments": 75958,
+        "author": "OPINION_IS_UNPOPULAR"
+    },
+    {
+        "id": "mpbvt1",
+        "time": "2021-04-12T11:30:12",
+        "title": "GME Megathread for April 12, 2021",
+        "text": "HOLY MOLY! \n\n[GameStop initiates search for new CEO](https://www.reuters.com/article/us-gamestop-ceo-exclusive-idUSKBN2BZ290)",
+        "score": 23831,
+        "num_comments": 32488,
+        "author": "OPINION_IS_UNPOPULAR"
+    },
+    {
+        "id": "m7pr7b",
+        "time": "2021-03-18T12:30:13",
+        "title": "GME Megathread for March 18, 2021",
+        "text": "",
+        "score": 26011,
+        "num_comments": 35115,
+        "author": "OPINION_IS_UNPOPULAR"
+    },
+    {
+        "id": "mh524f",
+        "time": "2021-03-31T12:30:18",
+        "title": "GME Megathread for March 31, 2021",
+        "text": "",
+        "score": 25593,
+        "num_comments": 23622,
+        "author": "OPINION_IS_UNPOPULAR"
+    },
+    {
+        "id": "l78fuh",
+        "time": "2021-01-28T20:52:00",
+        "title": "I just bought $5,000 in $GME. I would not have done this if the brokerages didn't try to manipulate the market.",
+        "text": "I've been following /r/wallstreetbets for years. Usually just for a laugh as I am a stodgy buy and hold guy and don't speculate often. When I saw the $GME shit happening a week ago I thought it was pure stupidity and was not planning on investing. In fact, I bought some $GME puts (which I've since sold since somehow they've gone up based on volatility) betting against the crowd here.\n\nHowever, what has started as a decentralized short squeeze has morphed into a class movement. I'm a big populist and think we need big changes in this country, especially a transfer of wealth and power from the elites to the people. When this morphed into a class movement I became obsessed. However, I still wasn't going to buy in because I shy away from speculating on ultra risky stuff like this. But when Robinhood and all the other major brokerages colluded to cause a massive sell off, that's when it became a matter of principle. I've watched all day as the stock has remained relatively stable on very little volume. People are holding despite wall street twisting your arm and trying to make you tap out by only allowing you to sell. It's a beautiful thing to see. I don't think of my purchase as an investment, but as putting my own skin in the game as a fuck you against a rigged system.",
+        "score": 75322,
+        "num_comments": 4806,
+        "author": "ONE_GUY_ONE_JAR"
+    },
+    {
+        "id": "mz69gk",
+        "time": "2021-04-26T19:49:15",
+        "title": "$GME squeeze incoming",
+        "text": "",
+        "score": 44764,
+        "num_comments": 4088,
+        "author": "dragon_dudee"
+    },
+    {
+        "id": "lsc5ji",
+        "time": "2021-02-25T17:40:31",
+        "title": "GME Megathread Part 2 for Thursday, February 25th, 2021",
+        "text": "",
+        "score": 26791,
+        "num_comments": 69762,
+        "author": "OPINION_IS_UNPOPULAR"
+    },
+    {
+        "id": "lddphx",
+        "time": "2021-02-05T18:29:19",
+        "title": "$GME & $AMC Line comparation, from the last 5 Days...",
+        "text": "",
+        "score": 71395,
+        "num_comments": 4670,
+        "author": "CRSTNMFC"
+    },
+    {
+        "id": "l8izo3",
+        "time": "2021-01-30T10:35:02",
+        "title": "Beware those who are shilling other stocks claiming they're the next GME! They're just trying to get your attention, and they're succeeding! \ud83d\udea8",
+        "text": "There is no next GME. As our beloved autist Michael Burry said, GME is a unique situation and a perfect storm. You won't find something like this again. They are just trying to move your attention away from GME and scatter us. From the discussion threads and the posts on the frontpage, it seems that they're succeeding.\n\n[Michael Burry tweet on GME](https://twitter.com/michaeljburry/status/1355186794640236561?s=19)\n\nJust look at the AMC thread up on the frontpage at the moment. Half the comments are from new accounts with just a handful of karma. AMC is not the next GME. The 'days to cover' on AMC is less than a day. After an initial uptick it will just fizzle out and you'll be left bagholding.\n\nIf you're still unsure, [here](https://www.nextmemestock.com/) you can find a highly advanced AI algorithm showing the next meme stock. (credits /u/adagiolifen)\n\nEdit: I think we even need to the mods to make a post and sticky it. The shilling is really becoming bad now\n\nBuy whatever the fuck you want and whatever you like. All I'm saying is it's not the next GME.",
+        "score": 58636,
+        "num_comments": 5657,
+        "author": "Shuffleshoe"
+    },
+    {
+        "id": "l6sttu",
+        "time": "2021-01-28T09:40:08",
+        "title": "Don\u2019t be scared by the drop in $BB $GME etc. Hedge Funds trade after hours to scare y\u2019all off... KEEP BUYING AND HOLDING \ud83d\ude80\ud83d\ude80",
+        "text": "",
+        "score": 86561,
+        "num_comments": 4333,
+        "author": "ShortVIXDaily"
+    },
+    {
+        "id": "l9runf",
+        "time": "2021-02-01T01:53:09",
+        "title": "The Silver Squeeze is a hedge-fund coordinated attack so they can keep fighting the $GME fight",
+        "text": "If you haven\u2019t been browsing WSB or doing your own research, you\u2019d probably think that the people on Twitter are correct in saying there is a silver squeeze happening and we should all get in on it. There are quite a few wsb-logo Twitter accounts pushing this. This is BS & the straight up the ANTITHESIS of who we are. \n\nBy buying silver/going long on silver, you would be directly putting money into the pockets of the EXACT HEDGE FUNDS ON THE OTHER SIDE OF $GME \ud83d\ude80 \ud83d\ude80 \ud83d\ude80 \ud83d\udc8e \ud83d\ude4c  The hedge funds are LONG silver NOT short silver.\n\nThe media, Wall Street, normies, and every other non-WSB autist are trying to push you to buy silver. This would be a tragic, irreversible decision that not only will most likely not make you any money because the squeeze is fake, it will put you on the sidelines from this righteous and glorious war we are in. \n\nIf you are looking for alternative investments to GME, I\u2019d recommend simply getting in on the $BANG GANG- Blackberry, AMC, Nokia, and GME. \n\nFor the feds and the media and all the dumb people reading this, I am the last thing from a financial advisor and am a complete, 100%, full retard autist. \n\nBANG GANG CHEEEEEEEHOOOOOOOOO\n\nEdit: I am not talking down on silver as an investment, I am not saying it's not a good hedge, I'm not saying anything bad about silver in any form. I'm simply pointing out that right now, this \"squeeze\" that all these people are referring to is definitely not a \"squeeze\" at all and is an artificial hedge-fund driven attempt to reduce the GME momentum and we should all be cognizant of the media manipulation and happening everywhere including right here. For all you that want to buy silver, great, buying the bullion directly in my humble autistic opinion is better than shares in a fund that supposedly buys it but don't trust some autist on the internet. BANG GANG\n\nEdit #2: Fellow autists, we have ascended to the #2 post on all of reddit. Our $GME gains this week and beyond will carry us to the gates of Valhalla. Look to your left, now look to your right, these are your brethren and sisterthren who will diamond hands with you until we all pass down these tendies to our children's children. Onward.",
+        "score": 73302,
+        "num_comments": 4654,
+        "author": "RizzutosNOTAWORD"
+    },
+    {
+        "id": "ms17e4",
+        "time": "2021-04-16T11:30:16",
+        "title": "GME Megathread for April 16, 2021",
+        "text": "One last...\n\n#***HOLY MOLY GUACAMOLE!***\n\nWith \u2665\ufe0f, the WSB mod team.\n\n(This post brought to you by Big \ud83e\udd51, in partnership with Micro \ud83c\udf46)",
+        "score": 23238,
+        "num_comments": 25816,
+        "author": "OPINION_IS_UNPOPULAR"
+    },
+    {
+        "id": "mrcp5k",
+        "time": "2021-04-15T11:30:15",
+        "title": "GME Megathread for April 15, 2021",
+        "text": "Good Melvening Everyone!",
+        "score": 22982,
+        "num_comments": 25194,
+        "author": "OPINION_IS_UNPOPULAR"
+    },
+    {
+        "id": "lathys",
+        "time": "2021-02-02T11:26:37",
+        "title": "To all GME holders: Shut up and listen",
+        "text": "This text was originally posted in r/[Mauerstrassenwetten](https://www.reddit.com/r/mauerstrassenwetten/comments/laaq9y/an_alle_zuh%C3%B6ren_und_schnauze_halten/) by u/knutolee. I thought his message was so powerful that I asked him for permission to translate, post (can share chat with Mod if required or check directly with him) and fuck his wife (ok didn\u2019t ask for permission) after and he agreed to ~~all~~ most of this wholeheartedly \u2013 like a true Autist. I am trying to catch the message \u2013 so don\u2019t expect a word by word translation as you can never catch the greatness of the text in it\u2019s entirety and I got to translate it in a way that even a US degenerate can follow it.\n\nAs usual no financial advice, I more or less just copied the text because I liked the text and I like the share. In general I have likely lost more than I won and the stock market is a mystery in itself to me. So make your own due dilligence and don\u2019t trust financial advice of others (the argument for that you can read to a certain extent below).\n\n**Autists, Degenerates, Idiocracy of the World \u2013 let me get this straight!**\n\nIn the coming days I don\u2019t wanna see all this whining and bitching on this sub and espescially in the daily GME threads anymore. On every fucking corner of this sub I smell doubt, you read messages the likes of \u201ethis is over\u201c, \u201ewe missed the squeeze\u201c, \u201eI am going to loose it all\u201c, \u201eentered at 320$ - I am doomed\u201c. What the fuck is wrong with you retards, did you fucking wanker your wifes boyfriend dick all night and lost your mind over the effort to do so? I think I got to get this accross the Buddy Stephens way to get you down to fucking earth and get your attitude right.\n\n**1) You come to a sub called** r/wallstreetbets **and yolo your hard earned money in $GME**\n\nYou realize what you are doing here - you true fuck - dont you? This is a community of full blown first class true tits up degenerates which take pleasure in posting losses accumulating into the millions every fucking month and you are putting your money into a BET \u2013 yes my dear it is written out in the name of this very fucking sub Wallstreet-B-E-T-S!!! \u2013 and follow DD posted by people with names like \u201eSHOW\\_ME\\_YOUR\\_ANAL\\_TITS\u201c? You realize this is not a fucking Disney ferry \u201eOne-Wish-comes-true\u201c show and we see all day long gain porn and loss porn is something which doesn\u2019t exist in this world? This is a band of true autists which occupied an absolute niche when it comes down to trading (and we even don\u2019t trade stocks normally!). This is the place where one wants to enjoy the sado-masochistic part of the retarded capitalistic system we are living in. Yes we have some (maybe a lot) DD diamonds in this sub which by the way are now impossible to find because you degenerate fucks spam the entire system to the moon but no sane long-term investor would consider to invest into any of these investments \u2013 this is about \u201eget rich or die trying!\u201c. This is not r/investing!\n\n**2) Yeah but I saw Reddit in the news and all that stuff about GME and it was going through the roof becasue there is going to be short squeeze and on top of it the hedge funds fucked up, hihihi**\n\nIf this entire thing was a safe bet why exactly would not the fucking entire world jump on this train? (and even you might get this image from all this \u201eSaudi Arabia calling, China calling, Africa calling posts \u2013 but please they invest into BABA, Aramco or I don\u2019t know what\u2019s the hot shit in Lagos stock exchange right now \u2013 could be though the next big thing \u2013 got to see if I can find a DD on this). So why is this not happening? Because it is a fucking BET \u2013 the stock market is a fucking Casino and the major difference between r/investing and us is that they are always just bet on black or red, while we always go for the magical zero. It is totally unclear whether all of us going to show up at Miami Beach with our Porsche Cayenne or Tesla Model S and hit on the girls (or boys) on the beach! The reasons are layed out to you every fucking day with yet another quality DD that most of us simply dont understand! And yes our chances to already sit on the fucking moon slurping our Pinha Coladas would be certainly higher if everything was going the way we believe the system should be working but even the last person who joined this sub by now should realize \u2013 you are potentially fucking with the system itself (by the way something this sub never intentionally wanted and you shouldn\u2019t do if you like the system).\n\n**3) Hey but when is the squeeze of the squoze going to happen? \ud83d\ude13**\n\nSo there is this story going through the media and from Florida to Colorado everybody remotely degenerate is yoloing money into GME. It\u2019s a fucking global movement now (or not \u2013 could be also the same 50.000 degenerates cheering up themselves the entire time which would much better fit this place) and according to the DD we just need to have \ud83d\ude4c\ud83d\udc8eand the shorts a bleeding their panties, their balls feel squozen (and not in a good way) and they are completely in defensive mode. What do you think what people who are responsible for Multi-billion $$$ HF are going to do? How do you think you become a person who is responsible for such an operation? Do you think these guys have served as altar boys or girls in church (no offense if so)? What is wrong with you? Seriously! Do you think if they get some headwind they are going to say: Oh boy \u2013 we got defeated and going to realize a multi-fucking-billion-to-the-moon loss? **OF COURSE FUCKING NOT!** **THEY WILL GET EVERY FUCKING BAZOOKA, TANK, ROCKET or INTER-STELLAR DEFENSE SYSTEM IN PLACE TO BRING THIS TO AN END!** Influence the market participants (speculation), Short-Laddar attacks (I to this very day haven\u2019t understand the concept or how this works \u2013 speculation), demotivational tactics (speculation) and to whomever picks it up \u2013 desinformation (well not quite speculation but it could also be that media is just retarded as fuck to get the most simple facts straight). So what would you do with a potential group of 5mn small-size investors \u2013 shall we do a collective effort to think about it? Ah fuck it! It is to fucking obvious \u2013 you would dry this out through time, divide their interests and drive away their attention. Because let\u2019s be fucking honest \u2013 most of you entered this thinking you would hold this wonderful stock for a couple of days (and to be honest in this respect the community how it existed 10 days ago was much more true to itself - no whining just sayin)! Gotcha! Who can tell me who fucked each other two weeks ago in People magazin or on Twitter? Nobody \u2013 I even don\u2019t remember shit about this very forum before GME (ok I remember u/variation-separate but that is another story). And all their tactics are completely understandable because there is a fucking huge amount of tendies to be made and they are not that different from us (my fear).\n\n**4) That does not give you the fucking right to whine and bitch all the time in the daily threads (and it is not happening already its going to be) and fucking ruin the party**\n\nDeal with it \u2013 we just got to wait how this thing plays out. That\u2019s it. If we are right \u2013 this will play out positively in one or another way (huge tendies or SEC investigating). Let them continue shorting the stock or whatever. If you believe you want to buy more stock \u2013 do your DD and do it. When this got picked up a long time ago by people they thought \u2013 hmmmm makes sense \u2013 I am going to get me one of these tickets to the moon. There was if at all a very little interest to squoze the balls of any HF and it was certainly not the main motivation of this sub. I said it above: Get rich or die tryin! Since last Thursday the whole thing became political and it looks like rules were changed in our disfavour and yeah we can not go back in time but we got to deal with it and the circumstances. \\[Left out this part as it promotes holding and buying which I don\u2019t want to in the sense that everybody needs to make his own fucking decision but I am going to fucking hold\\] but **WE NEED TO REGAIN OUR POSITIVE SPIRIT** which was an essential part of this sub and GME for most part in January (and of course in general before) \u2013 no matter how fucked up things looked (individually as there is not such a thing as collective alignment to buy options or stocks on this forum). We will see how the numbers are play out and who provided the adequate picture. In our reality GME is going to the moon and the \ud83d\ude80 is fueled. Period. We are just prevented from starting because of the windy conditions out there.\n\nSo please \u2013 no post without \ud83d\ude4c\ud83d\udc8e\ud83d\ude4c\ud83d\udc8e\ud83d\ude4c\ud83d\udc8e\ud83d\ude80\ud83d\ude80\ud83d\ude80 and if you want to fukn leave the party \u2013 leave \u2013 but let us continue this party, because we are going to the fkn moon. This is the way and I fkn love GME and if this means I need to hold onto this beauty for another 25 years I am going to do it.\n\nP.S.: One thing dear to my heart - in the past there has been huge donations made by this community to people living with autism. As we use their names every fkn day I would really like to see some of your degenerates not to forget about this cause because we owe them and as much as I like the billboards I\u2019d rather see every $$$ go into charities rather then telling the world about us  \u2013 I think everybody out there knows by now that we exist and that we have \ud83d\ude4c\ud83d\udc8e \n\nEdit: Nobody asked for it but 35@231,69 and thanks for the awards which should go to u/knutolee \\- so you can simply award his original post referenced. More importantly he expressed to me that he is very happy with the translation which is almost as important as the message itself.\n\nEdit 2: Please pay attention to AMA Marc Cuban - [https://www.reddit.com/r/wallstreetbets/comments/lawubt/hey\\_everyone\\_its\\_mark\\_cuban\\_jumping\\_on\\_to\\_do\\_an/](https://www.reddit.com/r/wallstreetbets/comments/lawubt/hey_everyone_its_mark_cuban_jumping_on_to_do_an/) \\- there is I think some quite enlighting answers in a very easy to understand language.\n\nEdit 3: Bought 5@103 \n\nEdit 4: Heading for dinner. Crazy times. Will check later and decide whether to buy more tickets or not. But maybe good advice for some others to make a break. Chillax :)\n\nEdit 5: Read that RH has opened up GME again. For whatever it's worth \ud83d\ude80\n\nEdit 6: Thanks again for all the Awards and stuff. I can only reload in the morning. Was fun and maybe I am going to translate more in the future - if mods would consider to give me a copy cat \ud83d\ude3a flair it would be the icing on the cake.\n\nEdit 7: Obligatory salute to the one and only DFV and his \ud83d\udc8e balls. This guy will go all the way to the \ud83d\ude80 with us.",
+        "score": 55590,
+        "num_comments": 5436,
+        "author": "SimplyPwned"
+    },
+    {
+        "id": "m1s4gv",
+        "time": "2021-03-10T07:30:00",
+        "title": "I made a promise to some friends that I would eat a green crayon if GME hit $250. Might as well show you apes as well.",
+        "text": "",
+        "score": 64459,
+        "num_comments": 3700,
+        "author": "jmanpc"
+    },
+    {
+        "id": "le235t",
+        "time": "2021-02-06T17:22:22",
+        "title": "GME Institutions Hold 177% of Float Why the Squeeze is not Squoze",
+        "text": "This is actual DD of just statistical, cold hard facts. My previous post got removed by the compromised mods of r/wallstreetbets\n  \n  \n[I have access to Bloomberg Terminal with up to date data as of February 5 on institutional holdings. Institutions currently hold 177% of the float!](https://i.redd.it/c44cmb67mtf61.png)  \n  \n  \n[How is this even possible to own more than 100% of the float?](https://www.investopedia.com/ask/answers/07/institutional_holdings.asp) Here's an example of one of the most likely causes of distorted institutional holdings percentages. Let's assume Company XYZ has 20 million shares outstanding and Institution A owns all 20 million. In a shorting transaction, institution B borrows five million of these shares from Institution A, then sells them to Institution C. If both A and C claim ownership of the shares shorted by B, the institutional ownership of Company XYZ could be reported as 25 million shares (20 + 5)\u2014or 125% (25 \u00f7 20). In this case, institutional holdings may be incorrectly reported as more than 100%.  \n  \n  \nIn cases where reported institutional ownership exceeds 100%, actual institutional ownership would need to already be very high. While somewhat imprecise, arriving at this conclusion helps investors to determine the degree of the potential impact that institutional purchases and sales could have on a company's stock overall.  \n   \n  \nI have plausible evidence that leads me to believe there are still shorts who have not covered, and there are also shorts who entered greedily at prices that could still trigger a short squeeze event as this knife has been falling. [~1 million shares of GME were borrowed this Friday at 10 am, and a short attack occured that dropped GME from $95 to $70 over the course of 15 minutes.](https://i.redd.it/97j13bxy4pf61.jpg)  \n  \n  \n[This is my source for live borrowed shares data that you can watch during market hours.](https://iborrowdesk.com/report/GME)  \n\nSo we still meet the first requirement for a short squeeze to even be possible, there ARE a lot of short positions taken in GME still. The ultimate question is will there be enough demand to drown the supply? Or are we going to let the wolf in sheep's clothing aka Citadel who we know is behind not only these short positions bailing them out and purchasing puts themselves (data from 9/30/20) , but behind many brokerages who ultimately manipulated the supply demand chain by removing buying...are we really going to just let this happen? What they did last Thursday was straight up criminal.   \n  \n  \nInstitutions move the markets more than retailers unfortunately, especially when order flows go directly through Citadel. [But it is very interesting the amount of OTM calls weeks out compared to puts. This is options expiring 3/12/21, and all the earlier expiration dates are also heavy in OTM calls.](https://i.imgur.com/mv0bo4Y.png) Max pain theory states it is in the market maker's best interest (those who write options aka theta gang) for price to gravitate towards max pain, as the strike price with the most open contracts including puts and calls would cause financial losses for the largest number of option holders at expiration.  \n  \n  \nWith this heavy volume abundant in OTM calls, a gamma squeeze can occur if we can get the market makers to hedge against their options. [Look what triggered the explosive movement as price blasted past the max pain strike last week, I believe this caused many bears to have to take a long position as a way to hedge against their losses.](https://i.imgur.com/NHZg0O6.png) And right now, we are very close and gravitating towards max pain strike. If there is a catalyst/company event that can cause demand to increase, I believe GME is not dead for all the aforementioned reasons above. Thank you for taking your time to read my DD, my original post on wsb was removed by the mods.\nMODS please don't delete! This is actual DD of just statistical, cold hard facts. My previous post got deleted, if this one does too, spread the word.  \n \n  \nEdit: This post was removed, then reinstated, and I am now banned unable to comment and post to this subreddit  \n  \nEdit 2: hi u/OPINION_IS_UNPOPULAR , I would comment and post but I am literally unable to on this subreddit\n  \nEdit 3: I'm unbanned!",
+        "score": 57790,
+        "num_comments": 4827,
+        "author": "onerivenpony"
+    },
+    {
+        "id": "mq0c0d",
+        "time": "2021-04-13T11:30:11",
+        "title": "GME Megathread for April 13, 2021",
+        "text": "Good Morning Everyone!",
+        "score": 22418,
+        "num_comments": 23982,
+        "author": "OPINION_IS_UNPOPULAR"
+    },
+    {
+        "id": "lxkint",
+        "time": "2021-03-04T13:30:21",
+        "title": "GME Megathread for March 04, 2021",
+        "text": "This thread will be automatically stickied weekdays at 8:30am, and unstickied at 9:00am.\n\nMegathreads are now posted automatically based on a few factors, including:\n\n* Mentions by comment count, weighted by comment novelty and score\n* Accounts of users mentioning, weighted by age, posting history, and previous mod actions\n* Stock volatility, volume, and market cap\n\nThis isn't an exhaustive list, but to prevent this from being gamed, we cannot share the exact weightings or specifics.\n\nThese megathreads exist to consolidate conversation about interesting topics and make things easily accessible and enjoyable for all. \n\n**Please do your part in making these threads decent. Don't troll. Don't spam. Don't spread divisiveness (calling others shills / bots).**",
+        "score": 24561,
+        "num_comments": 42295,
+        "author": "OPINION_IS_UNPOPULAR"
+    },
+    {
+        "id": "l8hsjd",
+        "time": "2021-01-30T09:03:15",
+        "title": "Billboard in Oklahoma City, OK! If someone can rent out a billboard for GME you can hold your shares!!! \ud83d\udc8e \ud83d\udd90!!!! (Left watermark for credit)",
+        "text": "",
+        "score": 132866,
+        "num_comments": 3214,
+        "author": "coookiesfoo"
+    },
+    {
+        "id": "ml9ho9",
+        "time": "2021-04-06T11:30:17",
+        "title": "GME Megathread for April 06, 2021",
+        "text": "",
+        "score": 23007,
+        "num_comments": 18734,
+        "author": "OPINION_IS_UNPOPULAR"
+    },
+    {
+        "id": "laujs5",
+        "time": "2021-02-02T12:36:50",
+        "title": "GME thread for 2/2/21",
+        "text": "This isn\u2019t going to be stickied since we have the Mark Cuban AMA coming up this morning (and we can only have two stickied threads at a time.)\n\nEnjoy.",
+        "score": 26058,
+        "num_comments": 69902,
+        "author": "MotorizedDoucheCanoe"
+    },
+    {
+        "id": "l82y7u",
+        "time": "2021-01-29T20:17:25",
+        "title": "How to Buy GME Above Broker Limits",
+        "text": "How to Buy GME etc [Loophole]\n\nRobinhood and other shitty brokerages are allowing us to buy 2, 5, or very low numbers of GME. However, they are allowing option contracts.\n\nHere\u2019s a trick that ~~will work.~~\n\n**Update Feb 1 [Loophole Closed](https://www.reddit.com/r/ClassActionRobinHood/comments/la6sll/rh_blocks_exercising_of_gme_call_options/?utm_source=adioking&utm_medium=your_mom&utm_name=golden_fuckboy) **\n\n1) Go to next nearest option expiration (Feb 5 as of today).\n2) Scroll all the way down the call list.\n3) Buy GME call option with the lowest +x.xx% (0% would be no premium at mark).\n4) Immediately exercise.\n\nI just exercised 2 contracts and now have 200 shares, blocking the shorts. You can repeat this process over and over if you are buying a lot.\n\nBest of luck out there! Let\u2019s get them!!!\n\nP.S. ~~If you can afford 100 shares but can\u2019t afford the risk, you can sell (heh...) some shares after you exercise and take risk off the table.~~\n\n_Update:_ A screenshot has made it to me that Robinhood is blocking same day exercise so you would need to carry into the next trading day to exercise.\n\n_This is NOT financial advice and is for informational purposes ONLY. You can lose 100% of anything you invest._\n\nEDIT:\n\n1) This works for pretty much any stock.\n\n2) There\u2019s a catch. You need enough money (please don\u2019t use margin) to cover 100 shares. The way exercising works is you pay for the 100 shares at the strike price.\n\nExample:\n\n- $GME is $300\n- The 2/5 $50c is $250 so it costs $25,000\n- Cost to exercise would be $50 x 100 ($5000).\n- Total cost: $30,000 (same as buying 100 shares)\n\nAfter exercising you could then sell shares at open market and de-risk if you like and hold the remainder.",
+        "score": 75146,
+        "num_comments": 3869,
+        "author": "adioking"
+    },
+    {
+        "id": "lavgj3",
+        "time": "2021-02-02T13:29:24",
+        "title": "My 102 year old grandmother bought GME in August 1995 and held through all this time.",
+        "text": "",
+        "score": 110123,
+        "num_comments": 3238,
+        "author": "Lansman"
+    },
+    {
+        "id": "mi9hdf",
+        "time": "2021-04-02T01:00:27",
+        "title": "GME YOLO update \u2014 Apr 1 2021",
+        "text": "",
+        "score": 87643,
+        "num_comments": 2686,
+        "author": "DeepFuckingValue"
+    },
+    {
+        "id": "lc5690",
+        "time": "2021-02-04T02:26:48",
+        "title": "RH eases restrictions again in AMC and GME",
+        "text": "",
+        "score": 66969,
+        "num_comments": 3935,
+        "author": "grassmunkie"
+    },
+    {
+        "id": "lybuq0",
+        "time": "2021-03-05T13:30:18",
+        "title": "GME Megathread for March 05, 2021",
+        "text": "This thread will be automatically stickied weekdays at 8:30am, and unstickied at 9:15am.\n\nMegathreads are now posted automatically based on a few factors, including:\n\n* Mentions by comment count, weighted by comment novelty and score\n* Accounts of users mentioning, weighted by age, posting history, and previous mod actions\n* Stock volatility, volume, and market cap\n\nThis isn't an exhaustive list, but to prevent this from being gamed, we cannot share the exact weightings or specifics.\n\nThese megathreads exist to consolidate conversation about interesting topics and make things easily accessible and enjoyable for all. \n\n**Please do your part in making these threads decent. Don't troll. Don't spam. Don't spread divisiveness (calling others shills / bots).**",
+        "score": 23057,
+        "num_comments": 43395,
+        "author": "OPINION_IS_UNPOPULAR"
+    },
+    {
+        "id": "l747eg",
+        "time": "2021-01-28T18:10:36",
+        "title": "Citadel reloaded their shorts before they told Robinhood to stop trading $GME",
+        "text": "",
+        "score": 84030,
+        "num_comments": 3561,
+        "author": "synaesthesisx"
+    },
+    {
+        "id": "lv7ahq",
+        "time": "2021-03-01T11:51:53",
+        "title": "GME daily thread March 1, 2021",
+        "text": "Will your 3/5 $45p pay off?  That\u2019s clearly what everyone is here to discuss, right?",
+        "score": 22822,
+        "num_comments": 49988,
+        "author": "MotorizedDoucheCanoe"
+    },
+    {
+        "id": "l65p3u",
+        "time": "2021-01-27T14:33:41",
+        "title": "The GME Thread, Part 2, for January 27, 2021",
+        "text": "wonder how many threads we'll hit today\n\n[WSB Stats](http://wsb.gold/public/dashboard/e65fcfcb-70a4-4d86-b7fb-888057c67881) / [Rules](https://www.reddit.com/r/wallstreetbets/about/rules)",
+        "score": 24600,
+        "num_comments": 86998,
+        "author": "OPINION_IS_UNPOPULAR"
+    },
+    {
+        "id": "mhu8tg",
+        "time": "2021-04-01T12:30:16",
+        "title": "GME Megathread for April 01, 2021",
+        "text": "#[Paper Trading Competition Winners Announced!](https://www.reddit.com/r/wallstreetbets/comments/mhyf1k/moderators_update_on_paper_trading_competition_3)",
+        "score": 21544,
+        "num_comments": 21554,
+        "author": "OPINION_IS_UNPOPULAR"
+    },
+    {
+        "id": "l7zgdk",
+        "time": "2021-01-29T18:06:14",
+        "title": "RH now limiting to 2 shares max of GME. This is the same shit as yesterday, just disguised.",
+        "text": "",
+        "score": 68627,
+        "num_comments": 3711,
+        "author": "Lakersland"
+    },
+    {
+        "id": "lbm3vr",
+        "time": "2021-02-03T12:03:58",
+        "title": "GME super awesome megathread weds 2/3",
+        "text": "Edit:  Stop DMing me to pump your shitcoin or penny stocks.  Seriously.",
+        "score": 24258,
+        "num_comments": 58461,
+        "author": "MotorizedDoucheCanoe"
+    },
+    {
+        "id": "mlzzpw",
+        "time": "2021-04-07T11:30:10",
+        "title": "GME Megathread for April 07, 2021",
+        "text": "",
+        "score": 21158,
+        "num_comments": 18982,
+        "author": "OPINION_IS_UNPOPULAR"
+    },
+    {
+        "id": "lb7rg4",
+        "time": "2021-02-02T21:57:16",
+        "title": "GME overnight Pajama party megathread 9000",
+        "text": "Still holding? Bought the dip? Keep GME discussion here.\n\nFeel free to post loss/gain porn here.",
+        "score": 25711,
+        "num_comments": 22733,
+        "author": "MotorizedDoucheCanoe"
+    },
+    {
+        "id": "lqj165",
+        "time": "2021-02-23T14:00:06",
+        "title": "GME Safe Space Megathread for February 23rd, 2021",
+        "text": "",
+        "score": 25205,
+        "num_comments": 15283,
+        "author": "OPINION_IS_UNPOPULAR"
+    },
+    {
+        "id": "mnf6e4",
+        "time": "2021-04-09T11:30:14",
+        "title": "GME Megathread for April 09, 2021",
+        "text": "",
+        "score": 20127,
+        "num_comments": 27530,
+        "author": "OPINION_IS_UNPOPULAR"
+    },
+    {
+        "id": "l4sg3u",
+        "time": "2021-01-25T17:18:21",
+        "title": "Can I get a flair for buying GME at the literal top ($155.29)?",
+        "text": "",
+        "score": 58099,
+        "num_comments": 4020,
+        "author": "DavyyJ"
+    },
+    {
+        "id": "mmpqrw",
+        "time": "2021-04-08T11:30:12",
+        "title": "GME Megathread for April 08, 2021",
+        "text": "Holy moly!\n\n[Ryan Cohen to Become Chairman of the Board Following Annual Meeting](https://investor.gamestop.com/news-releases/news-release-details/gamestop-announces-slate-director-candidates-2021-annual-meeting)",
+        "score": 19390,
+        "num_comments": 25402,
+        "author": "OPINION_IS_UNPOPULAR"
+    },
+    {
+        "id": "lsvmfs",
+        "time": "2021-02-26T11:14:42",
+        "title": "GME Megathread for Friday, February 26th, 2021",
+        "text": ">!Hope you guys crush it today \u2665\ufe0f!<",
+        "score": 20060,
+        "num_comments": 56662,
+        "author": "OPINION_IS_UNPOPULAR"
+    },
+    {
+        "id": "ll68pc",
+        "time": "2021-02-16T15:32:02",
+        "title": "The SEC Just posted the new numbers for Failure to Deliver. Guess What, GME is failing to deliver every day.",
+        "text": "Hey 'Tards,\n\nThe  New Failure to deliver data is JUST OUT from the SEC.  Here is a simple pivot table.   It's still failing to deliver EVERY DAY.  I'm sure people will analyze this better than me.   But I wanted to get this out to everyone ASAP.\n\nEdit: Failure to deliver is how many shares were not accounted for at the end of the day.  GME has been failing to deliver in some capacity for weeks now.  This data is posted by the SEC Freedom of  Information Act (FOIA).  It is only posted every two weeks, for the previous two weeks.  But this is the most recent data that everyone has been waiting on.\n\nFrom the SEC regarding this data\n\n>\"The   figure is not a daily amount of fails, but a combined figure that  includes both new fails on the reporting day as well as existing fails.    In other words, these numbers reflect aggregate fails as of a specific    point in time, and may have little or no relationship to yesterday's    aggregate fails.\"\n\n&#x200B;\n\nSEC FOIA Site: [https://www.sec.gov/data/foiadocsfailsdatahtm](https://www.sec.gov/data/foiadocsfailsdatahtm)\n\nData File: [https://www.sec.gov/files/data/fails-deliver-data/cnsfails202101b.zip](https://www.sec.gov/files/data/fails-deliver-data/cnsfails202101b.zip)\n\n&#x200B;\n\nGME had 2 million shares failed to deliver one day totaling 300 million $\n\nhttps://preview.redd.it/o2xfxx2gyuh61.png?width=581&format=png&auto=webp&s=67d839f263c89c56f782a52803b11c9e5f4c9c8b\n\nEDIT: Because so many people are bringing up XRT.  Which contains a lot of GME. Here is XRT.  Hmmm.  Notice anything interesting about Jan29th between these two??\n\nhttps://preview.redd.it/kmbry5xzgvh61.png?width=620&format=png&auto=webp&s=5ea1c495f4287932b0c6f9b172a04a03f58d147b\n\n&#x200B;\n\n&#x200B;\n\nThere is also AMC... AMC is still failing to deliver EVERY DAY.  This continues the trend for both of these stocks not being delivered every day.  AMC had 27 million... yes million shares failed to deliver.\n\n&#x200B;\n\nhttps://preview.redd.it/gqgboikxyuh61.png?width=619&format=png&auto=webp&s=2a12b0466767e0eba40dd93ba0a28cc322db1d32\n\n&#x200B;\n\nI'd like to ask everyone to do what they can.  I am not recommending buying any of these stocks.  But there is for sure, something still going on.  We need to try and get this data daily.  Contact your reps, etc.\n\n&#x200B;\n\nThere are links to information about Failed to deliver.[https://www.sec.gov/rules/final/34-50103.htm](https://www.sec.gov/rules/final/34-50103.htm)\n\nIs GME considered a Threshold Security? \u2705\n\n>In   order to be deemed a  threshold security, and thus subject to the   restrictions of Rule  203(b)(3), a security must exceed the specified   fail level for a period  of five consecutive settlement days.    Similarly, in order to be removed  from the list of threshold   securities, a security must not exceed the  specified level of fails for   a period of five consecutive settlement  days.\n\nDoes the Firm have to close out the positions? \u2705\n\n>As adopted, Rule 203(b)(3) requires any participant of a registered clearing agency (\"participant\")[80](https://www.sec.gov/rules/final/34-50103.htm#P210_72014) to take action on all failures to deliver that exist in such securities ten days after the normal settlement date, *i.e.*, 13 consecutive settlement days.[81](https://www.sec.gov/rules/final/34-50103.htm#P211_72496)Specifically,  the participant is required to close out the fail to   deliver position  by purchasing securities of like kind and quantity.Rule 203(b)(3) is intended to address potential abuses that may occur with large, extended fails to deliver.[89](https://www.sec.gov/rules/final/34-50103.htm#P221_79239)  We believe that the five-day requirement will facilitate the identification of securities with extended fails.\n\n&#x200B;\n\nEdit:  I wrote a quick post about this last report.  I'll copy some stuff here.  AS requested, here are some data snippets for \"normal\" stocks.  note the number of failed to deliver is way lower.\n\n[Alcoa](https://preview.redd.it/iv7pzbh92vh61.png?width=333&format=png&auto=webp&s=9b724af7998ca1bc1b4dd5db3299b45358eac540)\n\n&#x200B;\n\n[MSFT.  Some outstanding shares and a few spikes, but not hundreds of thousands or millions every day. ](https://preview.redd.it/0ricfjkd2vh61.png?width=246&format=png&auto=webp&s=22b6638b1ff5fee09e9434b5d151389624ed7aeb)\n\n&#x200B;\n\nEdit:  Adding some historical counts for GME below.  I'm too lazy to combine the data right now, pulling from an older post of mine.\n\n&#x200B;\n\nhttps://preview.redd.it/9o10fkj2wvh61.png?width=642&format=png&auto=webp&s=17134e3775fba124959db68eb25cda803504d63e\n\nhttps://preview.redd.it/c0i6ixztvvh61.png?width=605&format=png&auto=webp&s=02ab76207deea9f208f54532a75b28761858e106\n\n&#x200B;\n\n&#x200B;\n\nEdit:  I have a super super small position in GME, like 3 shares.  I have been on WSB since like 2014.  Trust me.  I am NOT a bag-holding whiner.  I take my losses like a fucking champ.  (MSFT 240C, USO, PRPL, SLV in 2020, etc) I am also NOT promoting any sort of holding, buying, or selling any of your positions.",
+        "score": 49442,
+        "num_comments": 3420,
+        "author": "deltamoney"
+    },
+    {
+        "id": "nvs3c6",
+        "time": "2021-06-09T10:00:19",
+        "title": "\ud83d\ude80 GME Q1 Earnings Megathread \ud83d\udc8e\ud83d\ude4c \ud83d\ude80",
+        "text": "Recent announcements:\n\n#[GameStop Releases First Quarter 2021 Financial Results](https://investor.gamestop.com/news-releases/news-release-details/gamestop-releases-first-quarter-2021-financial-results)\n\n[GameStop Announces Appointments of Chief Executive Officer and Chief Financial Officer](https://investor.gamestop.com/news-releases/news-release-details/gamestop-announces-appointments-chief-executive-officer-and)\n\n#[8-K](https://investor.gamestop.com/node/18941/html)\n\n#[8-K](https://investor.gamestop.com/node/18946/html)\n\n#[10-Q](https://investor.gamestop.com/node/18951/html)\n\n#[8-K](https://investor.gamestop.com/node/18956/html)\n\n---\n\n#HOW TO LISTEN IN ON THE GAMESTOP WEBCAST:\n\n#[WATCH ON GAMESTOP'S OFFICIAL YT CHANNEL](https://youtu.be/g2eBhTtxeu4)\n\n***or***\n\n#Visit https://investor.gamestop.com/home\n\n#Click \"Listen to Webcast\"\n\n#HIGHLY LIKELY TO FILL UP BEFORE 5PM",
+        "score": 16869,
+        "num_comments": 11854,
+        "author": "OPINION_IS_UNPOPULAR"
+    },
+    {
+        "id": "mkih9q",
+        "time": "2021-04-05T11:30:15",
+        "title": "GME Megathread for April 05, 2021",
+        "text": "Starting early today due to premarket volatility.\n\nGME press releases today:\n\n[GameStop Announces Preliminary Sales Results for the First Nine Weeks of Fiscal 2021 Reflecting an Approximately 11% Increase Compared to the Prior Year Period](https://investor.gamestop.com/news-releases/news-release-details/gamestop-announces-preliminary-sales-results-first-nine-weeks)\n\n[GameStop Announces At-The-Market Equity Offering Program](https://investor.gamestop.com/news-releases/news-release-details/gamestop-announces-market-equity-offering-program)\n\nObligatory: HOLY MOLY! HOLY MOLY! HOLY MOLY! HOLY MOLY! HOLY MOLY! HOLY MOLY! HOLY MOLY! HOLY MOLY! HOLY MOLY! HOLY MOLY!",
+        "score": 18587,
+        "num_comments": 22433,
+        "author": "OPINION_IS_UNPOPULAR"
+    },
+    {
+        "id": "lbyf09",
+        "time": "2021-02-03T21:11:49",
+        "title": "GME overnight thread / SEC intern meet-and-greet",
+        "text": "Enjoy.",
+        "score": 22373,
+        "num_comments": 22036,
+        "author": "MotorizedDoucheCanoe"
+    }
+]
