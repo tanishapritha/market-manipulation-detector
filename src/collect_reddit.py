@@ -2,13 +2,14 @@ import praw
 import json
 import os
 from datetime import datetime
+from dotenv import load_dotenv
 
-# ----------- SETUP PRAW (Reddit API) ------------
+load_dotenv()
 
 reddit = praw.Reddit(
-    client_id="wFn4u-HKw_1Jw3uIBsvsQg",
-    client_secret="JDRJXBfHMUEa9QriYGi0K1WueM2T5g",
-    user_agent="MarketManipDetector/0.1 by tprit"
+    client_id=os.getenv("REDDIT_CLIENT_ID"),
+    client_secret=os.getenv("REDDIT_CLIENT_SECRET"),
+    user_agent=os.getenv("REDDIT_USER_AGENT")
 )
 
 

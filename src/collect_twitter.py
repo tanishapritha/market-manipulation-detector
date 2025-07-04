@@ -1,50 +1,41 @@
-import os
-import certifi
-os.environ['SSL_CERT_FILE'] = certifi.where()
-
-
-import pandas as pd
-
+import requests
 import json
-from datetime import datetime
-import snscrape.modules.twitter as sntwitter
+import os
 
+# 🔐 Paste your actual Bearer Token here (keep it secret!)
+BEARER_TOKEN = "AAAAAAAAAAAAAAAAAAAAAHSj2wEAAAAAN1c1ptkPDxifGyrn4JH1MtJGVOs%3Do07hqlwAEPFYPUKy366CBvFGpheQUGMuIB1aNFdBfbroo89uRV"
 
+# 📌 Create headers for authentication
+def create_headers():
+    return {"Authorization": f"Bearer {BEARER_TOKEN}"}
 
-# ----------- SCRAPE TWEETS FUNCTION --------------
-def scrape_twitter(ticker="GME", since="2025-06-01", until="2025-07-01", max_tweets=100):
-    query = f"{ticker} since:{since} until:{until}"
-    tweets = []
+# 🔍 Search tweets via Twitter v2 API
+def search_tweets(query, max_results=100):
+    url = "https://api.twitter.com/2/tweets/search/recent"
+    params = {
+        "query": query,
+        "max_results": max_results,
+        "tweet.fields": "id,text,created_at,public_metrics,author_id"
+    }
 
-    for i, tweet in enumerate(sntwitter.TwitterSearchScraper(query).get_items()):
-        if i >= max_tweets:
-            break
+    response = requests.get(url, headers=create_headers(), params=params)
 
-        tweets.append({
-            "id": tweet.id,
-            "time": tweet.date.strftime('%Y-%m-%dT%H:%M:%S'),
-            "username": tweet.user.username,
-            "content": tweet.content,
-            "likeCount": tweet.likeCount,
-            "retweetCount": tweet.retweetCount
-        })
+    if response.status_code != 200:
+        raise Exception(f"Error {response.status_code}: {response.text}")
 
-    return tweets
+    return response.json().get("data", [])
 
-# ----------- SAVE AS JSON FUNCTION ----------------
-def save_as_json(data, ticker):
-    dir_path = "data/social"
-    os.makedirs(dir_path, exist_ok=True)
-    file_path = os.path.join(dir_path, f"twitter_{ticker}.json")
+# 💾 Save tweets to JSON
+def save_to_json(tweets, ticker):
+    os.makedirs("data/social", exist_ok=True)
+    filepath = f"data/social/twitter_{ticker}.json"
+    with open(filepath, "w", encoding="utf-8") as f:
+        json.dump(tweets, f, indent=4, ensure_ascii=False)
+    print(f"[+] Saved {len(tweets)} tweets to {filepath}")
 
-    with open(file_path, "w", encoding="utf-8") as f:
-        json.dump(data, f, indent=4, ensure_ascii=False)  # ✅ preserve emoji and UTF-8 chars
-
-    print(f"[+] Saved {len(data)} tweets to {file_path}")
-
-
-# ----------- RUN THIS SCRIPT ----------------------
+# 🚀 Run the script
 if __name__ == "__main__":
     ticker = "GME"
-    tweets = scrape_twitter(ticker=ticker, since="2025-06-01", until="2025-07-01", max_tweets=200)
-    save_as_json(tweets, ticker)
+    query = f"{ticker} lang:en -is:retweet"  # filter out retweets
+    tweets = search_tweets(query, max_results=100)
+    save_to_json(tweets, ticker)
