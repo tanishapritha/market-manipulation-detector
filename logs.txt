@@ -1,0 +1,51 @@
+Market Manipulation Detector – Progress & Task Tracker
+=======================================================
+Already Done
+--------------
+
+1. Project Setup
+   - Created virtual environment (venv) and installed dependencies
+   - Organized project folder structure: data/, src/, models/, notebooks/
+
+2. Data Collection
+   - collect_reddit.py: Scrapes Reddit posts using praw and saves to JSON
+   - collect_twitter.py: Collected tweets using Twitter API with bearer token
+   - Saved data under data/social/ for ticker GME
+
+3. Preprocessing
+   - preprocess_reddit.py and preprocess_twitter.py: Cleaned and added sentiment scores
+   - Output saved to data/processed/
+   - preprocess.py: Resampled hourly, aligned time, merged Reddit, Twitter, and market data
+   - Final dataset saved to data/final/GME_features.csv
+
+🛠️ What To Do Next
+------------------
+
+4. Exploratory Data Analysis (EDA)
+   - Create eda.py or eda.ipynb
+   - Plot time series: price vs sentiment
+   - Plot heatmaps for mention spikes
+   - Check feature correlations (sentiment, price return, etc.)
+
+5. Model Development
+   - Create train_model.py
+   - Use models like IsolationForest, OneClassSVM
+   - Train on features: sentiment, mentions, price return
+   - Save trained model to models/ directory using joblib
+
+6. Detection & Evaluation
+   - Create detect.py
+   - Load final features and model to score anomalies
+   - Compare with known manipulation events (e.g., GME 2021)
+   - Measure basic performance (manual or using labels)
+
+7. Visualization / Dashboard
+   - Create dashboard.py (Streamlit or Plotly)
+   - Visualize sentiment, mentions, price
+   - Highlight predicted anomalies
+
+8. Documentation & Packaging
+   - Add README.md with usage, description, and structure
+   - Finalize requirements.txt
+   - Optional: Add config.yaml for paths and constants
+

@@ -6,7 +6,7 @@ import joblib
 import os
 
 def train_anomaly_model(ticker="GME"):
-    df = pd.read_csv(f"data/final/{ticker}_features.csv", parse_dates=["time"])
+    df = pd.read_csv(f"../data/final/{ticker}_features.csv", parse_dates=["time"])
     features = ["price_return", "reddit_mentions", "reddit_sent", "twitter_mentions", "twitter_sent"]
 
     # Fill missing or extreme values

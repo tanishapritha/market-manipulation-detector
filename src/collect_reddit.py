@@ -1,52 +1,52 @@
-import praw
-import json
 import os
+import json
+import praw
 from datetime import datetime
-from dotenv import load_dotenv
 
-load_dotenv()
-
+# ----------- SETUP PRAW -----------
 reddit = praw.Reddit(
-    client_id=os.getenv("REDDIT_CLIENT_ID"),
-    client_secret=os.getenv("REDDIT_CLIENT_SECRET"),
-    user_agent=os.getenv("REDDIT_USER_AGENT")
+    client_id="wFn4u-HKw_1Jw3uIBsvsQg",
+    client_secret="JDRJXBfHMUEa9QriYGi0K1WueM2T5g",
+    user_agent="MarketManipDetector"
 )
 
+# ----------- COLLECT POSTS -----------
 
-# ----------- SCRAPE POSTS ------------------------
-def scrape_reddit(ticker="GME", limit=100):
-    posts = []
-    subreddit = reddit.subreddit("wallstreetbets")
+def collect_reddit(ticker="GME"):
+    subreddits = [
+        "wallstreetbets", "stocks", "investing",
+        "StockMarket", "options", "pennystocks"
+    ]
+    query = f"${ticker}"
+    all_posts = []
 
-    for post in subreddit.search(ticker, limit=limit):
-        posts.append({
-            "id": post.id,
-            "time": datetime.utcfromtimestamp(post.created_utc).isoformat(),
-            "title": post.title,
-            "text": post.selftext,
-            "score": post.score,
-            "num_comments": post.num_comments,
-            "author": str(post.author)
-        })
+    for sub in subreddits:
+        subreddit = reddit.subreddit(sub)
+        posts = subreddit.search(query, limit=200, sort="new")
 
-    return posts
+        for post in posts:
+            if not post.stickied and (post.selftext or post.title):
+                all_posts.append({
+                    "id": post.id,
+                    "time": datetime.utcfromtimestamp(post.created_utc).strftime('%Y-%m-%dT%H:%M:%S'),
+                    "author": str(post.author),
+                    "title": post.title,
+                    "text": post.selftext,
+                    "score": post.score,
+                    "num_comments": post.num_comments
+                })
 
-# ----------- SAVE AS JSON ------------------------
+    # Save to JSON
+    output_dir = "../data/social"
+    os.makedirs(output_dir, exist_ok=True)
+    file_path = os.path.join(output_dir, f"reddit_{ticker}.json")
 
-def save_as_json(data, ticker):
-    dir_path = "data/social"
-    os.makedirs(dir_path, exist_ok=True)  # Create dir if not exists
-    file_path = os.path.join(dir_path, f"reddit_{ticker}.json")
+    with open(file_path, "w", encoding="utf-8") as f:
+        json.dump(all_posts, f, indent=4)
 
-    with open(file_path, "w", encoding='utf-8') as f:
-        json.dump(data, f, indent=4)
-
-    print(f"[+] Saved {len(data)} posts to {file_path}")
+    print(f"[+] Collected {len(all_posts)} posts → {file_path}")
 
 
-# ----------- RUN THIS SCRIPT ---------------------
-
+# ----------- RUN -------------
 if __name__ == "__main__":
-    ticker = "GME"
-    data = scrape_reddit(ticker)
-    save_as_json(data, ticker)
+    collect_reddit(ticker="GME")

@@ -27,8 +27,8 @@ def search_tweets(query, max_results=100):
 
 # 💾 Save tweets to JSON
 def save_to_json(tweets, ticker):
-    os.makedirs("data/social", exist_ok=True)
-    filepath = f"data/social/twitter_{ticker}.json"
+    os.makedirs("../data/social", exist_ok=True)
+    filepath = f"../data/social/twitter_{ticker}.json"
     with open(filepath, "w", encoding="utf-8") as f:
         json.dump(tweets, f, indent=4, ensure_ascii=False)
     print(f"[+] Saved {len(tweets)} tweets to {filepath}")

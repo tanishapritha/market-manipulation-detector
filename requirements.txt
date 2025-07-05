@@ -9,3 +9,7 @@ streamlit
 joblib
 python-dotenv
 snscrape @ git+https://github.com/JustAnotherArchivist/snscrape.git
+notebook
+ipykernel
+jupyterlab
+seaborn

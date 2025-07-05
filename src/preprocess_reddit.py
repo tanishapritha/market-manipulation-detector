@@ -5,27 +5,27 @@ import pandas as pd
 from html import unescape
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 
-# -------- LOAD JSON --------
+# Load JSON
 def load_json(path):
     with open(path, "r", encoding="utf-8") as f:
         return json.load(f)
 
-# -------- CLEAN TEXT --------
+# Clean text
 def clean_text(text):
-    text = unescape(text)                             # Convert HTML entities
-    text = re.sub(r"http\S+", "", text)               # Remove URLs
-    text = re.sub(r"@\w+", "", text)                  # Remove mentions
-    text = re.sub(r"\$\w+", "", text)                 # Remove cashtags
-    text = re.sub(r"\s+", " ", text).strip()          # Normalize whitespace
+    text = unescape(text)
+    text = re.sub(r"http\S+", "", text)
+    text = re.sub(r"@\w+", "", text)
+    text = re.sub(r"\$\w+", "", text)
+    text = re.sub(r"\s+", " ", text).strip()
     return text
 
-# -------- SENTIMENT --------
+# Sentiment analyzer
 analyzer = SentimentIntensityAnalyzer()
 
 def analyze_sentiment(text):
     return analyzer.polarity_scores(text)
 
-# -------- MAIN FUNCTION --------
+# Main function
 def preprocess_reddit(filepath, save_to):
     raw_data = load_json(filepath)
     cleaned = []
@@ -38,31 +38,23 @@ def preprocess_reddit(filepath, save_to):
         sentiment = analyze_sentiment(text)
 
         cleaned.append({
-            "id": item.get("id", ""),
-            "time": item.get("time", ""),
-            "author": item.get("author", ""),
-            "title": raw_title,
+            "time": pd.to_datetime(item.get("time", ""), errors='coerce'),
             "content": text,
-            "original": combined_text,
-            "score": item.get("score", 0),
-            "num_comments": item.get("num_comments", 0),
-            "sentiment_neg": sentiment["neg"],
-            "sentiment_neu": sentiment["neu"],
-            "sentiment_pos": sentiment["pos"],
             "sentiment_compound": sentiment["compound"]
         })
 
-    # Save as CSV
+    # DataFrame creation
     df = pd.DataFrame(cleaned)
+    df.dropna(subset=["time"], inplace=True)
+    df["time"] = df["time"].dt.tz_localize(None)
+    df.sort_values("time", inplace=True)
+
     os.makedirs(os.path.dirname(save_to), exist_ok=True)
     df.to_csv(save_to, index=False)
     print(f"[+] Preprocessed {len(df)} Reddit posts → {save_to}")
 
-
-# -------- RUN ------------
 if __name__ == "__main__":
-    ticker = "GME"
     preprocess_reddit(
-        filepath=f"data/social/reddit_{ticker}.json",
-        save_to=f"data/processed/reddit_{ticker}.csv"
+        filepath="../data/social/reddit_GME.json",
+        save_to="../data/processed/reddit_GME.csv"
     )
