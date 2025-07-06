@@ -2,9 +2,14 @@ import requests
 import json
 import os
 import re
+from dotenv import load_dotenv
 
-# 🔐 Bearer Token
-BEARER_TOKEN = "AAAAAAAAAAAAAAAAAAAAAHSj2wEAAAAAN1c1ptkPDxifGyrn4JH1MtJGVOs%3Do07hqlwAEPFYPUKy366CBvFGpheQUGMuIB1aNFdBfbroo89uRV"
+# 🔐 Load environment variables
+load_dotenv()
+BEARER_TOKEN = os.getenv("TWITTER_BEARER_TOKEN")
+
+if not BEARER_TOKEN:
+    raise ValueError("Bearer token not found. Please set TWITTER_BEARER_TOKEN in your .env file.")
 
 # 📌 Headers for Twitter API
 def create_headers():
@@ -36,7 +41,6 @@ def is_relevant_tweet(text, ticker):
 
     tickers = re.findall(r'\$\w+', text)
 
-    # If too many tickers, keep only if keyword is contextually relevant
     if len(tickers) > 3:
         keywords = [ticker_lower, 'gamestop', 'short squeeze', 'r/gme', 'stock', 'volatility', 'earnings']
         if not any(keyword in text_lower for keyword in keywords):
@@ -58,7 +62,6 @@ if __name__ == "__main__":
     query = f"{ticker} lang:en -is:retweet"
     raw_tweets = search_tweets(query, max_results=100)
 
-    # Apply relevance filter
     filtered_tweets = [tweet for tweet in raw_tweets if is_relevant_tweet(tweet["text"], ticker)]
 
     save_to_json(filtered_tweets, ticker)
