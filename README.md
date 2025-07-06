@@ -51,6 +51,19 @@ Social media often influences stock prices. We collect posts and tweets about a 
 
 ---
 
+## 🖼️ Visual Insights
+
+### 📍 GME Anomalies  
+<img src="plots/GME_anomalies.png" alt="Anomalies" width="600"/>
+
+### 🔥 Feature Correlations (Heatmap)  
+<img src="plots/GME_heatmap.png" alt="Heatmap" width="600"/>
+
+### 📊 Volume Z-Score Trend  
+<img src="plots/GME_volume.png" alt="Volume" width="600"/>
+
+---
+
 ## Model Details
 
 - Model: Isolation Forest
