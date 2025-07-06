@@ -2,15 +2,10 @@ pandas
 numpy
 scikit-learn
 matplotlib
-yfinance
-praw
-vaderSentiment
 streamlit
 joblib
 python-dotenv
-snscrape @ git+https://github.com/JustAnotherArchivist/snscrape.git
-notebook
-ipykernel
-jupyterlab
+praw
+vaderSentiment
 seaborn
-dotenv
+snscrape @ git+https://github.com/JustAnotherArchivist/snscrape.git
