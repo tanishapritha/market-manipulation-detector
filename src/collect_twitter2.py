@@ -4,18 +4,18 @@ import os
 import re
 from dotenv import load_dotenv
 
-# 🔐 Load environment variables
+
 load_dotenv()
 BEARER_TOKEN = os.getenv("TWITTER_BEARER_TOKEN")
 
 if not BEARER_TOKEN:
     raise ValueError("Bearer token not found. Please set TWITTER_BEARER_TOKEN in your .env file.")
 
-# 📌 Headers for Twitter API
+# Twitter API headers
 def create_headers():
     return {"Authorization": f"Bearer {BEARER_TOKEN}"}
 
-# 🔍 Twitter API search
+# 🔍 Twitter search
 def search_tweets(query, max_results=100):
     url = "https://api.twitter.com/2/tweets/search/recent"
     params = {
@@ -31,7 +31,7 @@ def search_tweets(query, max_results=100):
 
     return response.json().get("data", [])
 
-# 🧠 Smart filter for relevance
+# Smart filter
 def is_relevant_tweet(text, ticker):
     text_lower = text.lower()
     ticker_lower = ticker.lower()
@@ -48,7 +48,7 @@ def is_relevant_tweet(text, ticker):
 
     return True
 
-# 💾 Save to social folder
+# Save to folder
 def save_to_json(tweets, ticker):
     os.makedirs("../data/social", exist_ok=True)
     filepath = f"../data/social/twitter_{ticker}.json"
@@ -56,7 +56,7 @@ def save_to_json(tweets, ticker):
         json.dump(tweets, f, indent=4, ensure_ascii=False)
     print(f"[+] Saved {len(tweets)} relevant tweets to {filepath}")
 
-# 🚀 Main
+
 if __name__ == "__main__":
     ticker = "GME"
     query = f"{ticker} lang:en -is:retweet"

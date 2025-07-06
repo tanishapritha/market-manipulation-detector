@@ -2,14 +2,13 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# --- CONFIG ---
 ticker = "GME"
 
-# --- LOAD DATA ---
+# Load data
 features_df = pd.read_csv("data/final/GME_features.csv", parse_dates=["time"])
 anomaly_df = pd.read_csv("data/final/GME_with_anomalies.csv", parse_dates=["time"])
 
-# --- TABS SETUP ---
+# Setup
 tabs = {
     "Dashboard": "📊 Executive Dashboard",
     "Raw Data": "📂 Raw Data",
@@ -19,11 +18,10 @@ tabs = {
     "Output Summary": "📤 Output Summary"
 }
 
-# --- SESSION STATE FOR ACTIVE TAB ---
 if "active_tab" not in st.session_state:
     st.session_state.active_tab = "Dashboard"
 
-# --- SIDEBAR STYLING ---
+# Sidebar styling
 st.markdown("""
 <style>
 section[data-testid="stSidebar"] {
@@ -57,7 +55,7 @@ h1, h2, h3 {
 </style>
 """, unsafe_allow_html=True)
 
-# --- SIDEBAR NAV ---
+# Sidebar
 st.sidebar.markdown(f"<h1 style='color:white;'>📊 Market Anomaly</h1>", unsafe_allow_html=True)
 for key, label in tabs.items():
     selected = "selected" if st.session_state.active_tab == key else ""
@@ -70,9 +68,8 @@ for key, label in tabs.items():
         </script>
     """, unsafe_allow_html=True)
 
-# ------------------ VIEWS ------------------
 
-# === EXECUTIVE DASHBOARD ===
+# Dashboard view
 if st.session_state.active_tab == "Dashboard":
     st.title(f"📊 Executive Dashboard – {ticker}")
 
@@ -108,19 +105,19 @@ if st.session_state.active_tab == "Dashboard":
     st.line_chart(anomaly_df.set_index("time")["Close"])
 
 
-# === RAW DATA VIEW ===
+# Raw Data view
 elif st.session_state.active_tab == "Raw Data":
     st.title(f"📂 Raw Market Data – {ticker}")
     st.dataframe(features_df[["time", "Close", "High", "Low", "Open", "Volume"]].head(50))
 
-# === PROCESSED FEATURES VIEW ===
+# Processed features view
 elif st.session_state.active_tab == "Processed Features":
     st.title("🧹 Processed Data Summary")
     st.dataframe(features_df.describe())
     st.markdown("**Price Return Distribution:**")
     st.bar_chart(features_df["price_return"])
 
-# === ANOMALY GRAPH ===
+# Anomaly graph view
 elif st.session_state.active_tab == "Anomaly Graph":
     st.title("📈 Anomaly Detection Output")
     fig, ax = plt.subplots(figsize=(12, 6))
@@ -136,15 +133,37 @@ elif st.session_state.active_tab == "Anomaly Graph":
     ax.legend()
     st.pyplot(fig)
 
-# === MODEL DETAILS ===
+# Model details view
 elif st.session_state.active_tab == "Model Details":
     st.title("🧠 Trained Model Insights")
     st.markdown("- **Model**: Isolation Forest")
     st.markdown(f"- Detected **{(anomaly_df['anomaly'] == -1).sum()}** anomalies out of **{len(anomaly_df)}** rows.")
     st.bar_chart(anomaly_df["anomaly"].value_counts())
 
-# === OUTPUT SUMMARY ===
+# Output summary view
 elif st.session_state.active_tab == "Output Summary":
     st.title("📤 Final Output: Anomaly CSV")
-    st.dataframe(anomaly_df.tail(20))
-    st.download_button("📥 Download CSV", anomaly_df.to_csv(index=False), file_name=f"{ticker}_anomalies.csv")
+
+    st.markdown(f"""
+    This is the final result of our model’s analysis on `{ticker}` market data.
+    
+    - The CSV below includes all hourly records with a column named **`anomaly`**.
+    - **Value `-1`** indicates a potential market anomaly or suspicious behavior.
+    - **Value `1`** means the behavior was normal.
+    
+    This output is useful for:
+    - Spotting possible pump-and-dump or spoofing patterns.
+    - Investigating abnormal price/volume movements.
+    - Building alert systems for market irregularities.
+    
+    You can download this CSV and further analyze it externally or feed it into another system.
+    """)
+
+    st.dataframe(anomaly_df.tail(20))  # Display last few rows for quick review
+
+    st.download_button(
+        "📥 Download Full CSV",
+        anomaly_df.to_csv(index=False),
+        file_name=f"{ticker}_anomalies.csv",
+        mime="text/csv"
+    )

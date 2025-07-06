@@ -17,7 +17,7 @@ def detect_anomalies(ticker="GME"):
     df.set_index("time", inplace=True)
     print(f"[+] Loaded {len(df)} rows from {data_path}")
 
-    # ❗ Use only the features the model was trained on
+  
     features = ['price_return', 'return_3h_mean', 'return_3h_std', 'volume_zscore']
 
     # Predict anomalies
