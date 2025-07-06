@@ -16,8 +16,6 @@ This project builds an end-to-end pipeline to detect potential stock market mani
 
 ---
 
-## Beginner-Friendly Explanation
-
 ### What is Market Manipulation?
 
 Imagine you're playing a game where the price of a toy depends on how many people want it. Now, someone spreads fake news saying the toy will be banned. Everyone panics and starts selling the toy, and its price drops. This is market manipulation — using tricks to make prices go up or down unfairly.
@@ -26,39 +24,9 @@ Imagine you're playing a game where the price of a toy depends on how many peopl
 
 If your friend brings the same lunch every day, but one day brings a giant pizza, you’d notice that as something strange or different — an anomaly. In this project, our model tries to spot those strange events in the stock market.
 
-### What is a Ticker?
-
-Every company has a short symbol used in trading. For example:
-- AAPL = Apple
-- GME = GameStop
-These are called "tickers".
-
 ### Why Use Reddit and Twitter?
 
 Social media often influences stock prices. We collect posts and tweets about a stock to detect sudden changes in public interest or hype, which might indicate manipulation.
-
----
-
-## Folder Structure
-
-market-manipulation-detector/
-├── data/
-│   ├── market/              # Hourly price data from Yahoo Finance
-│   ├── social/              # Tweets and Reddit posts in JSON
-│   └── final/               # Preprocessed CSVs with features
-├── models/
-│   └── isolation_forest.joblib
-├── notebooks/
-│   └── model.ipynb          # Jupyter Notebook for model training
-├── src/
-│   ├── collect_twitter.py
-│   ├── collect_reddit.py
-│   ├── preprocess.py
-│   └── detect.py
-├── app.py                   # Streamlit frontend app
-├── .env                     # Environment variables (do not share)
-├── requirements.txt
-└── README.md
 
 ---
 
@@ -108,3 +76,4 @@ git clone https://github.com/your-username/market-anomaly-detector.git
 cd market-anomaly-detector
 pip install -r requirements.txt
 streamlit run app.py
+```
