@@ -22,6 +22,18 @@ def preprocess_market_only(ticker="GME"):
     # Calculate price return (hourly % change in Close price)
     market["price_return"] = market["Close"].pct_change().fillna(0)
 
+    # Rolling average and std of returns (window = 3 hours)
+    market["return_3h_mean"] = market["price_return"].rolling(window=3).mean()
+    market["return_3h_std"] = market["price_return"].rolling(window=3).std()
+
+    # Volume Z-Score (window = 24 hours for stability)
+    market["volume_mean"] = market["Volume"].rolling(window=24).mean()
+    market["volume_std"] = market["Volume"].rolling(window=24).std()
+    market["volume_zscore"] = (market["Volume"] - market["volume_mean"]) / market["volume_std"]
+
+    # Drop intermediate columns
+    market.drop(columns=["volume_mean", "volume_std"], inplace=True)
+
     # Save to final CSV
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
     market.to_csv(output_path)

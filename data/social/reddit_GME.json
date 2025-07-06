@@ -1,902 +1,551 @@
 [
     {
-        "id": "1l7wetd",
-        "time": "2025-06-10T11:34:37",
-        "title": "Should you buy the dip? I analyzed all S&P 500 companies to find what happens if we only invest in companies undergoing drawdowns.",
-        "text": "To test, I picked all the companies in the S&P 500 list as of 2015. The backtest is simple\u2014 If a company drops by 50%, we invest $100 in that company and then hold.\n\nI immediately ran into an issue. Out of the 502 companies on the list, 262 companies experienced a drawdown of more than 50% over the last 10 years. If you end up investing in all of them, your average return will be comparable to the index since you are holding half the index.\u00a0*(Average return of 114% for the drawdown portfolio vs. 123% for the S&P 500).*\n\n**Where it gets interesting is when we increase the drawdown cutoffs.**\n\n# Drawdown cutoff \u2014 75%\n\n* Number of stocks: 91\n* Total amount of investment: $9,500\n* Drawdown portfolio final value (June\u201925): $23,903\u00a0**(151% return)**\n* Comparable S&P 500 index: $20,467\u00a0**(115% return)**\n* Alpha\u00a0\u2014 36%\n* Median return: 68.4%\n\n# Drawdown cutoff \u2014 90%\n\n* Number of stocks: 36\n* Total amount of investment: $3,600\n* Drawdown portfolio final value (June\u201925): $12,120\u00a0**(236% return)**\n* Comparable S&P 500 index: $6,705\u00a0**(86% return)**\n* Alpha \u2014 150%\n* Median return: 75%\n\nhttps://preview.redd.it/onw4wzll536f1.png?width=690&format=png&auto=webp&s=8fdcd1f752cdb88770556fa05cb84b040443342b\n\n*Backtest data & company list \u2014*\u00a0[***here***](https://docs.google.com/spreadsheets/d/1QeYOmr4oWu1_SX3hFk47nKzs7mE9oGQfY4dfWnmnxzY/edit?usp=sharing)\n\n# Best and worst performers\n\nAs you would expect, investing in companies that had significant drawdowns would be highly volatile. After all, a stock that went down 90% can again go down another 90%!\n\nBuy and hold seems to be the best strategy, as there would be many multi-baggers..\n\nhttps://preview.redd.it/5d1ei1o6536f1.png?width=640&format=png&auto=webp&s=e1ff2ad280ece973152ba2afcc494a223b13720d\n\n.. and a lot of zeros in your portfolio.\n\nhttps://preview.redd.it/g8qyb1u7536f1.png?width=640&format=png&auto=webp&s=8b14718ae78896365ba820b3cbb5a43fd4ba833d\n\n  \n**Notes** \n\n* S&P 500 as of 2015. Adjusted for survivorship bias \n* If a company rebounds to a new all-time high and then drops again, we will again invest.\n* Alpha is not risk-adjusted ",
-        "score": 621,
-        "num_comments": 179,
-        "author": "nobjos"
+        "id": "1lrpd6w",
+        "time": "2025-07-04T18:07:43",
+        "title": "T+35, REX 068, and Synthetic FTD Rollovers Explained",
+        "text": "There\u2019s a lot of confusion around FTDs, T+35 deadlines, and how market makers keep kicking the can. Here\u2019s a full breakdown of how it actually works and how it applies to GME right now.\n\n What is T+35?\n\nWhen a trade fails to deliver (FTD), market makers have 35 trading days to resolve it.\n\nThis is tracked by the NSCC, and T+35 is the final day they are supposed to deliver shares or close out the fail.\n\nExample: If millions of FTDs were created on June 12, then July 17 is the official T+35 deadline.\n\n\n\nWhat is REX Code 068?\n\nIt\u2019s an obscure regulatory exemption that allows clearing members to delay FTD resolution beyond T+35.\n\nBased on historical patterns, REX 068 appears to grant up to 13 extra trading days to delay.\n\nSo a June 12 FTD \u2192 July 17 (T+35) \u2192 Aug 14\u201319 (final extension window).\n\n\n\n Why hasn\u2019t GME exploded yet?\n\nBecause they don\u2019t cover FTDs all at once. They:\n\n1. Run the price slightly (e.g., $23 to $25)\n\n\n2. Short it back down to $23\u2013$24\n\n\n3. Use that volume to close a portion of FTDs\n\n\n4. Repeat the cycle, stretching the delivery window\n\n\n\nThis turns the FTD cycle into a negotiable game of supply and sentiment.\n\n\n---\n\n Synthetic FTD Coverage: The Hidden Delay Trick\n\nHere\u2019s what most people miss:\n\n>  They can sell large amounts of deep OTM calls to synthetically cover FTDs.\n\n\n\nThis satisfies some NSCC requirements without delivering real shares\n\nIt gives the appearance of delivery \u2014 or the ability to deliver\n\nOnce those calls expire, the new T+35 window starts from the expiration date\n\n\nThis tactic allows market makers to:\n\nDelay real share delivery\n\nControl short-term price action\n\nAvoid breaking regulatory rules\n\n\n\n Why This Matters Right Now\n\nGME had 1.5M+ FTDs around June 12\n\nT+35 = July 17, 2025\n\nREX 068 extension = ~Aug 14\u201319 window\n\nEarnings land shortly after that\n\n\n> If high retail volume aligns with this window, and shorts get pinned, forced covering can trigger large moves.\n\n\nTL;DR\n\nT+35 = 35 trading days from original fail\n\nREX 068 = up to 13-day extension\n\nOTM calls can be sold to synthetically \"cover\" FTDs\n\nT+35 resets from the day those synthetic calls expire\n\nJuly 17\u2013Aug 19 = High alert window\n\n\ud83d\udd25So if you look at the call chain and price is at $23.50 and there's 10-20k calls near $30 thats not retail thats the synthetic covering, and the new T+35 timer starts at exp of those calls.\n\nStay sharp. Watch volume, options chains, and pressure points. This game isn\u2019t over.\n",
+        "score": 150,
+        "num_comments": 34,
+        "author": "EndDense6286"
     },
     {
-        "id": "msblc3",
-        "time": "2021-04-16T20:20:13",
-        "title": "GME YOLO update \u2014 Apr 16 2021 \u2014 final update",
+        "id": "1lrp1t5",
+        "time": "2025-07-04T17:55:09",
+        "title": "DFV spotted!!!",
+        "text": "Spotted in a video. I know its you! Time to grab my banana!!! Pspspspspspspspspspspspspspspspspspspspspspspspspsppspsspspspspspspspspspspspspspspspspspspspspspspspspspspspspspspspspspspspspspspspspspspspspspspspspsp gme\n\nhttps://www.reddit.com/r/cats/s/fTFCM6OFe6",
+        "score": 61,
+        "num_comments": 4,
+        "author": "321DoodyBooty"
+    },
+    {
+        "id": "1lroxqq",
+        "time": "2025-07-04T17:50:26",
+        "title": "Buying until i become a whale",
         "text": "",
-        "score": 176297,
-        "num_comments": 17816,
-        "author": "DeepFuckingValue"
+        "score": 1359,
+        "num_comments": 18,
+        "author": "No_Buyer1005"
     },
     {
-        "id": "l78uct",
-        "time": "2021-01-28T21:06:23",
-        "title": "GME YOLO update \u2014 Jan 28 2021",
+        "id": "1lroc5t",
+        "time": "2025-07-04T17:25:26",
+        "title": "Trying to load in external save file in psx",
+        "text": "I have a few psx games, but a couple of them I want to just have access to all the levels of the game - I have looked for save files and found one with a file extension gme - however when i put this into the saves folder on Retrobat, it does nothing to the game. I keep googling and it keeps giving me information about  save states but this is not what im looking for.\n\n  \nHelp appreciated!",
+        "score": 0,
+        "num_comments": 3,
+        "author": "Dirty_Toenails"
+    },
+    {
+        "id": "1lro9qw",
+        "time": "2025-07-04T17:22:34",
+        "title": "Who is the GOAT that got this?? This has to be a true og ape",
         "text": "",
-        "score": 301704,
-        "num_comments": 22935,
-        "author": "DeepFuckingValue"
+        "score": 259,
+        "num_comments": 38,
+        "author": "emoson2121"
     },
     {
-        "id": "l846a1",
-        "time": "2021-01-29T21:04:45",
-        "title": "GME YOLO month-end update \u2014 Jan 2021",
+        "id": "1lro2oz",
+        "time": "2025-07-04T17:14:27",
+        "title": "TRYING SOMETHING NEW OUT.",
+        "text": "Will be available next week in shop as I\u2019m on vacation this week. No number you pick . There are gems hidden in these packs . Double the amount you get at GME for only $25 bucks. There were 30 now only 26 left. You get a parallel combo guaranteed , 13 gems in total in the mix of 30. 1 pack is stacked with parallels. Great value overall. I\u2019d like to just ship and you can post your mystery hits. \nHave fun hunting. \nhttps://www.whatnot.com/s/nV17r40v",
+        "score": 10,
+        "num_comments": 3,
+        "author": "CaseBig576"
+    },
+    {
+        "id": "1lrmzl3",
+        "time": "2025-07-04T16:29:16",
+        "title": "Has GameStop Forged a Cost Path Toward Sustainable Profitability? (Spoiler: Yes, yes they have. Well done apes and RC \ud83d\udc4fwe are unstoppable \ud83d\udcaa)",
+        "text": "GameStop Corp. GME delivered a notable improvement in its fiscal first-quarter 2025 results, driven largely by disciplined cost management and improved operational efficiency. The company slashed adjusted SG&A expenses by 24.8% year over year, bringing the metric down to $225.3 million. As a percentage of net sales, adjusted SG&A improved 320 basis points to 30.8%. This underscores management\u2019s efforts to streamline operations and enhance efficiency without undermining core business functions.\n\nThe company\u2019s cost discipline supported a 3.4% rise in gross profit, which increased to $252.8 million from $244.5 million. Gross margin expanded significantly by 680 basis points to 34.5%, highlighting improved pricing and cost control. Despite declining revenues, GameStop managed to protect its product-level profitability.\n\nOperationally, GameStop saw strong gains. Adjusted EBITDA turned positive at $38.6 million, reversing a loss of $37.6 million in the prior year. Adjusted operating income also improved significantly, reaching $27.5 million in contrast to a loss of $55 million in the last year. \n\nGameStop\u2019s bottom-line performance further highlighted the benefits of its cost restructuring. The company shifted from a net loss of $32.3 million to a net income of $44.8 million in the first quarter of fiscal 2025. Adjusted net income improved to $83.1 million from a loss of $36.7 million, with adjusted earnings per share rising to 17 cents from an adjusted loss of 12 cents in the prior-year quarter. \n\nHowever, net sales declined 17% year over year, due to weakness in hardware and software. Growth in the collectibles segment offered some offset, but long-term success will depend on stabilizing core revenues and scaling newer growth areas.\n\n",
+        "score": 49,
+        "num_comments": 0,
+        "author": "Krunk_korean_kid"
+    },
+    {
+        "id": "1lrlzue",
+        "time": "2025-07-04T15:47:25",
+        "title": "A ballad full of longing: Liu Yu Ning sings \u201c\u6211\u53ea\u613f\u201d for Endless Journey of Love (2025 OST)",
+        "text": "# \ud83c\udfb6 *\u6211\u53ea\u613f* (*I Only Wish*) \u2013 by Liu Yu Ning  \n*Emotional theme from the animated feature film* **_Endless Journey of Love_** (\u300a\u65f6\u95f4\u4e4b\u5b50\u300b), released May 30, 2025.  \n\n\ud83d\udcfa Official MV: https://youtu.be/fGmeRxRsRUc\n\n---\n\n### \u2139\ufe0f About the Film & Song  \n_**Endless Journey of Love**_ is a Chinese animated fantasy-romance adventure directed by Yu Ao & Zhou Tienan, produced by Shanghai Maoyan, and released on May 30, 2025. It follows a stern assassin and a village girl connected by a mystical time device, whose bond unfolds across time.\n\nLiu Yu Ning\u2019s **\u201c\u6211\u53ea\u613f\u201d** serves as the film\u2019s *emotional theme song*, with lyrics by **Jin CanCan** and music/production by **Qian Lei**. Released alongside the movie, the song plays a key role in the film\u2019s narrative and tone, setting out for a beautiful atmosphere.\n\n---\n\n### \ud83d\udd25 Buzz & Reception  \n- The film topped Maoyan\u2019s \u201cWant to See\u201d charts for 22 consecutive days during the Dragon Boat Festival window.  \n- The MV, released simultaneously, has received praise for its cinematic feel and Liu Yu Ning\u2019s powerful delivery.  \n- Fans have called it one of his most moving OST performances to date.\n\n---\n\n### \ud83c\udfa7 My Thoughts  \nI absolutely *love* this track. The intro and guitar solo carry a raw, emotional intensity that **reminds me of Metallica** \u2014 not in a derivative way, but in the way great music can stir the same emotional undercurrents: *longing, defiance, memory*. There\u2019s a similar weight to the atmosphere it creates.\n\nLiu Yu Ning\u2019s voice *rings like a bell* \u2014 clear, resonant, and deeply emotive. Though he didn\u2019t compose the track himself, his **vocal performance shows remarkable maturity**. He brings depth and emotional honesty to every line, offering a vocal interpretation that feels lived-in and cinematic.\n\nThe song blends lyrical softness with quiet strength. It lingers. And it marks an important step in Liu Yu Ning\u2019s ongoing artistic evolution.\n\n---\n\n## \ud83d\udcdd Translation \u2013 *\u6211\u53ea\u613f* (\"I Only Wish\")\n\n**Verse 1**  \nI used my body to become a shield, let it be buried  \nThe deep love poured into time, forming mountain ranges  \nCould I exchange it to shield you from a single storm or snow?  \nI truly wanted to give you forever and ever\u2014and never leave\n\n**Verse 2**  \nDon\u2019t count the days I left with sorrow\u2019s sobbing  \nEven if life rewound, all my choices would remain unchanged  \nDon\u2019t linger in place\u2014the gravestone\u2019s words are glaring; make them lighter  \nLet the warmest light lift your face\u2014that would fulfill the vow\n\n**Pre-Chorus**  \nI can\u2019t sever time with a single farewell  \nYour warm fingertips, I still crave  \nI can only gaze at you deeply one last time  \nRemember everything about you  \nIn that final second, I only wish\u2026\n\n**Chorus**  \nMay the clear spring in your eyes never dry up  \nMay you pass through this world safe and sound  \nI\u2019ll go ahead to the distant lands, planting flowers across a wild plain for you  \nDon\u2019t look back, oh\u2011oh\u2011oh\u2011oh  \nKeep moving forward  \nDon\u2019t look back, oh\u2011oh\u2011oh\n\n**Bridge**  \nYou\u2019ve always shone brightly without needing embellishment  \nI feel reluctant\u2014but I\u2019m fortunate\u2014I only wish for this  \nJanuary\u2019s great snow, April\u2019s flying blossoms, July\u2019s dusks  \nThe golden edges of fallen leaves, the shifting aurora\u2014like everything about you  \nAfter a shooting star, the sky is radiant\u2014that\u2019s the wish I made  \nKeep moving forward\n\n**Chorus (reprise)**  \nMay the dead branches you step on bloom into petals  \nMay the sleepless nights you know be warmed by starlight  \nI will accompany the wind every year, planting dandelions by the roadside  \nDon\u2019t bow your head, oh\u2011oh\u2011oh\u2011oh\n\n---\n\n### \u2705 TL;DR  \n- **Film**: _Endless Journey of Love_ (\u300a\u65f6\u95f4\u4e4b\u5b50\u300b), released May 30, 2025  \n- **Song**: *\u201c\u6211\u53ea\u613f\u201d* (*I Only Wish*)  \n- **Singer**: Liu Yu Ning  \n- **Lyrics**: Jin CanCan | **Composer/Producer**: Qian Lei  \n- **Emotional ballad** with a guitar-led intro, echoes of Metallica in tone  \n- Liu Yu Ning\u2019s vocal maturity shines through in this moving OST highlight\n- *Sidenote: I\u2019m not a big fan of (too many) emojis, but I was told many people are finding posts more interesting with them, so trying it out? Is it better like this?*\n\n---\n\nHow do you feel about this song?\n\n",
+        "score": 16,
+        "num_comments": 0,
+        "author": "No-Recipe-7653"
+    },
+    {
+        "id": "1lrlcig",
+        "time": "2025-07-04T15:20:34",
+        "title": "Threshold Securities -aka Naked Shorts",
+        "text": "\n\n [Threshold (stockbuyvest.com)](https://stockbuyvest.com/index.php/en/markets/screeners/threshold) \n\n$AMC $CVNA $GME $NVDA $INTC",
+        "score": 1,
+        "num_comments": 0,
+        "author": "saasfin"
+    },
+    {
+        "id": "1lrl8zr",
+        "time": "2025-07-04T15:16:39",
+        "title": "Selling Weekly \"Lottos\" - Week 4 - $636 Income with $62,500 Risk.",
+        "text": "This weeks winner: Me.\n\nI sold GME 25C x10 for $223 income and MSTR 380P x1 for $413 income.\n\nhttps://preview.redd.it/yc0yixtkivaf1.jpg?width=583&format=pjpg&auto=webp&s=0c50d5f631f4333f57136ffc2e94f37800f9688f\n\n1. Everything is covered. I don't have margin enabled. \n\n\n\n2. I'll be happy to buy the shares or sell the shares at those prices in this time frame.\n\n\n\n3. Its not free money and all investing has the risk of losses.\n\n  \nI've also made a spreadsheet to show the math.\n\nhttps://preview.redd.it/i1tx81jnivaf1.png?width=1334&format=png&auto=webp&s=f062918c14f9a838c585a432569cfb79ec449949\n\n  \nI did reduce my potential annual income due to making less  But I increased my potential yield due to risking less. The most important part here to me is that I made more than week 1 even though I took almost half the risk.\n\n\\_\\_\\_\\_\\_\\_\\_\\_\n\nEli5?\n\n\n\nTo try and explain what I\u2019m doing here lets make up an analogy of a coin flipping game. \n\n\n\nTo play the game you must buy in with $20. Every time you get heads you win. The first win is $10, and every time after that you double your money. You get to flip the coin a maximum of 7 times. The player can choose to stop to collect the winnings. If you get one tails you lose.\n\n\n\nSo total winnings can be $620, for a small price of $20. But the chance to get 7 heads in a row is less than 1%. Even just to break even with 2 heads in a row is 25%. \n\n\n\n3 heads for $20 winnings: 12.5% chance.\n\n\n\n4 heads for a $60 win: 6.25% chance.\n\n\n\n5 heads for $140 win: 3.125% chance.\n\n\n\n6 heads for $300 win: 1.5625% chance.\n\n\n\nI like to be the seller of this game which is why I like to sell weekly lottos. Although I don\u2019t make much, I have a high chance to make the money each time.\n\n\n\n(Note: First time I played this game with my gf she got 5 heads in a row and I had to pay her $140.)\n\n\\_\\_\\_\\_\\_\\_\\_\\_\\_\n\n  \nHappy 4th of July. See you next week.",
+        "score": 0,
+        "num_comments": 1,
+        "author": "himanbansal"
+    },
+    {
+        "id": "1lrkxpe",
+        "time": "2025-07-04T15:03:43",
+        "title": "Happy Treason Day Gmerica, from the Golden Pinecone!!",
         "text": "",
-        "score": 265457,
-        "num_comments": 19842,
-        "author": "DeepFuckingValue"
+        "score": 126,
+        "num_comments": 10,
+        "author": "DynastyFSU2"
     },
     {
-        "id": "lnqgz8",
-        "time": "2021-02-19T21:05:55",
-        "title": "GME YOLO update \u2014 Feb 19 2021",
+        "id": "1lrkfxv",
+        "time": "2025-07-04T14:42:58",
+        "title": "Lots of opinions on good or bad, but seems like an overall good thing",
         "text": "",
-        "score": 225025,
-        "num_comments": 12845,
-        "author": "DeepFuckingValue"
+        "score": 36,
+        "num_comments": 16,
+        "author": "doctorplasmatron"
     },
     {
-        "id": "lae6j0",
-        "time": "2021-02-01T21:07:36",
-        "title": "GME YOLO update \u2014 Feb 1 2021",
+        "id": "1lrjhu2",
+        "time": "2025-07-04T14:02:03",
+        "title": "GME hasn't done much since the big dump.",
         "text": "",
-        "score": 217836,
-        "num_comments": 18002,
-        "author": "DeepFuckingValue"
+        "score": 1,
+        "num_comments": 0,
+        "author": "PauPauRui"
     },
     {
-        "id": "tr55d1",
-        "time": "2022-03-29T15:53:40",
-        "title": "GME reached $448,950 seconds before halt. I was watching this as it was happening. LFG",
+        "id": "1lrj8dj",
+        "time": "2025-07-04T13:50:15",
+        "title": "7/3/25 portfolio update",
         "text": "",
-        "score": 29371,
-        "num_comments": 2077,
-        "author": "keenfeed"
+        "score": 1,
+        "num_comments": 0,
+        "author": "expired_regard"
     },
     {
-        "id": "tt8wrc",
-        "time": "2022-03-31T20:28:30",
-        "title": "GME Stock Split SEC Filing",
-        "text": "[https://www.sec.gov/ix?doc=/Archives/edgar/data/0001326380/000132638022000038/gme-20220331.htm](https://www.sec.gov/ix?doc=/Archives/edgar/data/0001326380/000132638022000038/gme-20220331.htm)\n\n[I don't want to brag but I definitely called this during the last run up.](https://www.reddit.com/r/wallstreetbets/comments/tqhwt9/what_are_your_moves_tomorrow_march_29_2022/i2h8t46/)",
-        "score": 22563,
-        "num_comments": 2581,
-        "author": "xltaylx"
-    },
-    {
-        "id": "lb6jld",
-        "time": "2021-02-02T21:11:48",
-        "title": "GME YOLO update \u2014 Feb 2 2021",
+        "id": "1lri7de",
+        "time": "2025-07-04T13:01:55",
+        "title": "\ud83d\udd2e meirl every time pathetic shills post their latest FUD campaigns \ud83d\udd25\ud83d\udca5\ud83c\udf7b",
         "text": "",
-        "score": 161989,
-        "num_comments": 17337,
-        "author": "DeepFuckingValue"
+        "score": 125,
+        "num_comments": 12,
+        "author": "Expensive-Two-8128"
     },
     {
-        "id": "l6ekdz",
-        "time": "2021-01-27T21:15:35",
-        "title": "GME YOLO update \u2014 Jan 27 2021 --------------------------------------- guess i need 102 characters in title now",
+        "id": "1lri5uz",
+        "time": "2025-07-04T13:00:06",
+        "title": "Reddit Stock Tracker (July 04, 2025) - $ADP, $BULL, $DM, $EU, $GME, $HOOD, $IBKR, $ICE, $PLTR, $TSLA",
         "text": "",
-        "score": 219104,
-        "num_comments": 14595,
-        "author": "DeepFuckingValue"
+        "score": 1,
+        "num_comments": 0,
+        "author": "Ornery_Hand_8626"
     },
     {
-        "id": "11xxru4",
-        "time": "2023-03-21T22:50:18",
-        "title": "(GME) Gamestop earnings. Let's take a closer look...",
-        "text": "**Gamestop (GME) Earnings Summary:**\n\n* EPS of $0.16 beats ($0.13) estimate\n* Rev of $2.23B beats $2.18B estimate\n* Posted a quarterly profit for the first time in two years\n* Selling, general and administrative expenses came in at 20.4% of sales, compared to 23.9% of sales\n* Inventory was $682.9M at Close of 4Q, compared to $915M at Close of Prior Year\u2019s 4Q\n* Net Income was $48.2M, compared to a net loss of $147.5M for the prior year\u2019s 4Q\n* Cash, cash equivalents and marketable securities were $1.391B at Close of 4Q",
-        "score": 9384,
-        "num_comments": 1294,
-        "author": "MT_Media"
+        "id": "1lri10s",
+        "time": "2025-07-04T12:53:25",
+        "title": "$NVA A futur WORLD champion in mining Gold \ud83c\uddfa\ud83c\uddf8",
+        "text": "Min\u00e9raux Nova $NVA en Alaska \ud83c\uddfa\ud83c\uddf8\n\n\ud83d\udd36 1. Aper\u00e7u \u2022 Symbole\u00a0:\u00a0ASX\u00a0:\u00a0NVA | OTCQB:NVAAF | NASDAQ\u00a0:\u00a0NVA \u2022 Actif phare : Estelle Gold District \u2013 Alaska (d\u00e9tenu \u00e0 100 %) \u2022 M\u00e9taux\u00a0: Or (primaire), Antimoine (strat\u00e9gique) \u2022 \u00c9tape\u00a0: Explorateur avanc\u00e9 / Pr\u00e9-d\u00e9veloppement \u2022 Capitalisation boursi\u00e8re (juillet 2025)\u00a0: ~ 65\u00a0millions\u00a0USD \u2022 Tr\u00e9sorerie (en mars 2025)\u00a0: ~9\u00a0millions de dollars\u00a0\u2013\u00a0Z\u00e9ro dette \u2022 Augmentation de capital imminente (arr\u00eat\u00e9e sur l'ASX) \u2013 ThinkEquity en tant que souscripteur principal \u2022 Nouvellement cot\u00e9 au NASDAQ \u2192 Exposition croissante au d\u00e9tail aux \u00c9tats-Unis\n\n\u2e3b\n\n\ud83d\udcc8 2. Indicateurs cl\u00e9s du projet \u2013 District d'Estelle (Alaska)\n\nValeur / Statut de la m\u00e9trique Ressources totales en or (MRE) 9,9 Moz Au (Korbel, RPM, Train, Shoeshine) D\u00e9marreur de haute qualit\u00e9 (RPM) 2,1 Moz \u00e0 2,0 g/t Au Production pr\u00e9vue ~ 200\u00a0000 onces/an d\u2019ici 2027 (RPM uniquement, phase initiale) Co\u00fbt de maintien tout compris (AISC) < 900 $/oz (tr\u00e8s faible co\u00fbt) Forage en cours (2025) 15 000 m (expansion RPM + zone Stibium) Cible du district > 10\u201315 Moz Au + potentiel antimoine Angle strat\u00e9gique Potentiellement premier producteur am\u00e9ricain d\u2019antimoine (min\u00e9ral critique)\n\n\u2e3b\n\n\ud83d\ude80 3. Pourquoi Nova pourrait devenir une future \u00ab action m\u00e8me \u00bb aurif\u00e8re\n\n\ud83d\udd25 D\u00e9tails du facteur NASDAQ uplisting acc\u00e8s au d\u00e9tail aux \u00c9tats-Unis + banquier ThinkEquity = haute visibilit\u00e9 Nano-cap avec des m\u00e9ga-ressources Capitalisation boursi\u00e8re de 65 millions de dollars contre >10 Moz d'or dans le sol Actif national am\u00e9ricain bas\u00e9 en Alaska, aucun risque g\u00e9opolitique \u2192 id\u00e9al pour les acheteurs institutionnels Exposition \u00e0 l'antimoine M\u00e9taux critiques, cot\u00e9s par la DPA, un argument fort pour le secteur de la d\u00e9fense am\u00e9ricain Faible flottant / structure d'action serr\u00e9e Encore au d\u00e9but du cycle de dilution Levier du prix de l\u2019or Tr\u00e8s sensible au rallye de l\u2019or (voir ci-dessous) Pr\u00eat pour FinTwit Premiers signes d'int\u00e9r\u00eat viral - configuration du graphique + r\u00e9cit \u00ab\u00a0or 2.0\u00a0\u00bb Potentiel de fusions et acquisitions Cible privil\u00e9gi\u00e9e pour Newmont / Agnico / Kinross avec plus de 10 Moz sur le sol am\u00e9ricain\n\n\u2e3b\n\n\ud83d\udcca 4. Simulation de valorisation \u2014 Exploit\u00e9 par l'or\n\nEn supposant une production de 200\u00a0000 onces/an \u00e0 un AISC de 900\u00a0$, voici les flux de tr\u00e9sorerie disponibles hypoth\u00e9tiques et l\u2019estimation de la juste valeur de Nova selon diff\u00e9rents sc\u00e9narios de prix de l\u2019or (avant imp\u00f4ts, sans investissements)\u00a0:\n\n\ud83d\udfe1 Prix de l'or ($/oz) \ud83d\udcb0 Marge/oz \ud83d\udcc8 FCF/an (200k oz) \ud83d\udd22 Valorisation 10\u00d7 FCF \ud83d\udcb5 Juste valeur par ADS 2 800 $ 1 900 $ 380 M$ 3,8 G$ 55 \u00e0 65 $/ADS 3 500 $ 2 600 $ 520 millions de dollars 5,2 milliards de dollars 75 \u00e0 90 $/ADS 4 000 $ 3 100 $ 620 M$ 6,2 G$ 95-110 $/ADS 5 000 $ 4 100 $ 820 millions de dollars 8,2 milliards de dollars 130 \u00e0 150 $/ADS 10 000 $ 9 100 $ 1,82 milliard de dollars 18,2 milliards de dollars 300 \u00e0 350 $/ADS\n\n\ud83d\udd0d Ces chiffres sont purement illustratifs et supposent\u00a0: \u2013 Pas de taxes/investissements inclus \u2013 Pas d\u2019onces suppl\u00e9mentaires de Train/Korbel (juste RPM) \u2013 Pas de dilution suite \u00e0 une augmentation \u00e0 venir \u2013 10\u00d7 FCF multiple (conservateur pour l\u2019or de longue dur\u00e9e et \u00e0 faible co\u00fbt)\n\n\u2e3b\n\n\ud83d\udcc9 5. Facteurs de risque \u2022 \u26a0\ufe0f En attente de dilution suite \u00e0 la prochaine augmentation de capital (dirig\u00e9e par ThinkEquity) \u2022 \u2699\ufe0f \u00c9tude de pr\u00e9faisabilit\u00e9 (PFS) en cours \u2013 ex\u00e9cution n\u00e9cessaire \u2022 \ud83d\udcc9 Liquidit\u00e9 faible \u2013 potentiel de volatilit\u00e9 \u00e9lev\u00e9 \u2022 \ud83c\udf0d Exposition aux mati\u00e8res premi\u00e8res \u2013 repose sur le maintien du prix de l'or \u00e0 un niveau \u00e9lev\u00e9. \u2022 \ud83e\uddfe Risque li\u00e9 aux permis\u00a0: faible en Alaska, mais toujours pr\u00e9occupant\n\n>>> CATALYSEURS GLOBAL \n\n\ud83d\ude80\u2705 R\u00c9\u00c9VALUATION sous BESSENT secr\u00e9taire au Tr\u00e9sor de Trump, devrait se produite et faire rentrer BESSENT & TRUMP dans l histoire\n*BESSENT aime l or et a d\u00e9j\u00e0 donn\u00e9 un interview  qui all\u00e9 dans ce sens \n\n\ud83d\ude80\u2705 B\u00e2le 3 lanc\u00e9 le 1er juillet \n\n\ud83d\ude80\u2705 Les banques centrales ont massivement acheter l or, les chinois aussi et ils sont entrain de prendre de vitesse les US \ud83c\uddfa\ud83c\uddf8 sur l OR \n\n\ud83d\ude80\u2705 Le BTC ne pourra r\u00e9ellement exister comme monnaie \ud83d\udcb4 si il est ratach\u00e9 a une entit\u00e9 physique comme l or \n\n\ud83d\ude80\u2705 L or stablecloin arrive \n\n\u2e3b\n\n\ud83e\udde8 Interpr\u00e9tation \u2022 \u00c0 2800 $ l'once : Nova entre dans un territoire de sous-valorisation brutale (avec un potentiel x30 vs. aujourd'hui). \u2022 \u00c0 3500 $\u20134000 $ : devient un candidat s\u00e9rieux au club des \u00ab mid-tiers goldproducers \u00bb sur NASDAQ, avec fort int\u00e9r\u00eat institutionnel. \u2022 \u00c0 5000 $ : entre dans un sc\u00e9nario de revalorisation explosive \u2013 potentiel stock culte retail type Palantir / GME. \u2022 \u00c0 10 000 $ : Nova devient une licorne aurif\u00e8re avec un des meilleurs effets de levier du march\u00e9.",
+        "score": 1,
+        "num_comments": 0,
+        "author": "WarrenBG"
     },
     {
-        "id": "mbpclz",
-        "time": "2021-03-23T21:30:31",
-        "title": "GME YOLO update \u2014 Mar 23 2021",
+        "id": "1lrhnka",
+        "time": "2025-07-04T12:34:39",
+        "title": "Week 27 wheel update",
+        "text": "Happy independence day to those of you in the US!\n\n\nTotal premiums collected for week 27: $486.75\n\n\nThis week's trades:\n\nCSP: ASTS, RGTI, HIMS, LUNR, GME, PLTR\n\nCC: BULL, FUBO, LUNR\n\n\nGood week of trading with most contracts expiring OTM. I had a couple rolls and one assignment on GME. For next week I'll be weighing my options on my open SHOP CC that's far ITM. Time to decide if I should roll farther or let it get called away.\n\n\nIm thinking of adding a couple extra images to next week's post showing current holdings and some graphs of weekly premiums and weekly account value. Not sure if that will add value though, let me know your thoughts. \n\n\n\nYTD results:\n\nReturn from premiums: 21.10%\n\nReturn from portfolio: -9.59%\n\nTotal account return: 11.42%      \n\n\n     \n\nDisclaimer: returns are calculated assuming open short positions will expire in their current state, OTM or ITM.",
+        "score": 18,
+        "num_comments": 7,
+        "author": "expired_regard"
+    },
+    {
+        "id": "1lrfzd1",
+        "time": "2025-07-04T11:02:16",
+        "title": "Why does the \"analysis\" tool on charts not work for every stock?",
+        "text": "Is there a way to request a certain stock to be included in the trade central software that powers the \"analysis\" feature on chart? Or is this a fidelity/UI issue? Stock not working for is GME. Thank you",
+        "score": 1,
+        "num_comments": 0,
+        "author": "bowie9191"
+    },
+    {
+        "id": "1lrft10",
+        "time": "2025-07-04T10:51:49",
+        "title": "Made my target!",
+        "text": "Finally made it to my (first) target!\n\nMoass can start now, thank you for waiting!\n\nWord limit text.\nWord limit text.\nWord limit text.\nWord limit text.\nWord limit text.\nWord limit text.\nWord limit text.\nWord limit text.\nWord limit text.\nWord limit text.\n",
+        "score": 1719,
+        "num_comments": 31,
+        "author": "PuzzledHoneydew799"
+    },
+    {
+        "id": "1lrdebg",
+        "time": "2025-07-04T08:14:46",
+        "title": "Hoping this isn\u2019t shot down, but\u2026",
+        "text": "Hi all! I\u2019m currently in Japan right now, but I was wondering if anyone would be interested in a short bought from the Jump Store? It\u2019s an Extra Large, and I can\u2019t fit it properly, so I thought to come here. If It\u2019s against the rules, I\u2019m sorry!",
+        "score": 215,
+        "num_comments": 19,
+        "author": "HighlightFirst7728"
+    },
+    {
+        "id": "1lrcy2w",
+        "time": "2025-07-04T07:44:36",
+        "title": "Some basic questions from a potential new player",
+        "text": "Hello!\n\nA good friend of mine has just recently started playing this game and has been speaking very highly of it. I my self am not much of an IPhone gamer but thought since it's so accessible and comes so highly recommended that I might give it a shot. Before I do, I just had one really basic question I wanted to ask. I was just curious and wanted to know how much of the gme would be locked behind a paywall? I know that the Applevis site says it's free with in app purchase. Money is really tight for me right now so I just wanted to know how much of the game will I be able to play before I run up against locked content, or will I be able to watch ads to get around that somehow?\nThanks in advance for any information you can give. I'm really interested in exploring this title assuming not too much of it will be restricted to those of us who are just barely getting by.",
+        "score": 3,
+        "num_comments": 4,
+        "author": "DarkAngelCat1215"
+    },
+    {
+        "id": "1lrcl8g",
+        "time": "2025-07-04T07:20:24",
+        "title": "I have watched almost all of Yim Siwan's series and movies",
+        "text": "And here are what I liked and didn't liked:\n\n\nThese are the series that I enjoyed, ranked from most to the least:\n\n1. Misaeng\n\n2. Boyhood\n\n3. Strangers From Hell\n\n4. Actors on Journey\n\n5. Squid Games\n\n6. Tracer\n\nHis movies that I enjoyed, ranked from most to the least:\n\n1. The Merciless \n\n2. Road to Boston\n\n3. Unlocked\n\n4. The Attorney\n\n5. A Melody to Remember \n\n6. One-Line\n\nThose that I didn't really like but endured finishing because I like staring at his face:\n\n1. Summer Strike\n\n2. Run On\n\nThose I decided to just drop:\n\n1. The King in Love\n\n2. The Triangle",
+        "score": 56,
+        "num_comments": 34,
+        "author": "coelililia"
+    },
+    {
+        "id": "1lrcb3h",
+        "time": "2025-07-04T07:01:46",
+        "title": "$GME Daily Directory | New? Start Here! | Discussion, DRS Guide, DD Library, Monthly Forum, and FAQs",
+        "text": "How do I\u00a0[feed DRSBOT](https://www.reddit.com/r/GMEOrphans/comments/qlvour/welcome_to_gmeorphans_read_this_post/)? Get a\u00a0[user flair](https://www.reddit.com/r/Superstonk/comments/yuarvq/how_to_get_a_userflair_on_superstonk_new_emojis)? Hide\u00a0[post flairs and find old posts](https://www.reddit.com/r/Superstonk/comments/v0oxp2/how_to_filter_by_flair_search_for_posts_on/)?\n\n[Reddit & Superstonk Moderation FAQ](https://www.reddit.com/r/Superstonk/wiki/index/reddit-faq/)\n\nOther\u00a0[GME Subreddits](https://www.reddit.com/r/Superstonk/about/wiki/index/gme_communities/)\n\n# \ud83d\udcda Library of Due Diligence\u00a0[GME.fyi](https://fliphtml5.com/bookcase/kosyg)\n\n>\n\n# \ud83d\udfe3\u00a0[Computershare Megathread](https://www.reddit.com/r/Superstonk/comments/1ch3lrh/questions_about_direct_registering_ask_here_have/)\n\n>\n\n# \ud83c\udf4c\u00a0[Monthly Open Forum](https://www.reddit.com/r/Superstonk/comments/1dpvb1f/open_forum_july_2024/)\n\n>\n\n# \ud83d\udd25 Join our\u00a0[Discord](https://discord.com/invite/y4dK3y5DXJ)\u00a0\ud83d\udd25",
+        "score": 195,
+        "num_comments": 148,
+        "author": "AutoModerator"
+    },
+    {
+        "id": "1lrc31t",
+        "time": "2025-07-04T06:47:32",
+        "title": "GME en av de mest handlede aksjene p\u00e5 DNB internasjonalt",
+        "text": "Jeg kj\u00f8per selv en del GME p\u00e5 DNB (ca 1500 aksjer der), er det flere her som gj\u00f8r det? (har 60% av aksjene DRS) men resten p\u00e5 DNB. Handlede aksjer kan v\u00e6re b\u00e5de kj\u00f8p og salg, men vi tror vel det i all hovedsak er kj\u00f8p her? ;)",
+        "score": 49,
+        "num_comments": 11,
+        "author": "vikingmonkey6969"
+    },
+    {
+        "id": "1lrbozb",
+        "time": "2025-07-04T06:22:47",
+        "title": "487 of the last 768 trading days with short volume above 50%.Yesterday 45.16%\u2b55\ufe0f30 day avg 58.33%\u2b55\ufe0fSI 81.74M\u2b55\ufe0f",
         "text": "",
-        "score": 130608,
-        "num_comments": 8046,
-        "author": "DeepFuckingValue"
+        "score": 95,
+        "num_comments": 1,
+        "author": "Affectionate_Use_606"
     },
     {
-        "id": "m0q5bm",
-        "time": "2021-03-08T21:08:31",
-        "title": "GME YOLO update \u2014 Mar 8 2021",
+        "id": "1lrbos8",
+        "time": "2025-07-04T06:22:26",
+        "title": "487 of the last 768 trading days with short volume above 50%.Yesterday 45.16%\u2b55\ufe0f30 day avg 58.33%\u2b55\ufe0fSI 81.74M\u2b55\ufe0f",
         "text": "",
-        "score": 172260,
-        "num_comments": 8050,
-        "author": "DeepFuckingValue"
+        "score": 208,
+        "num_comments": 2,
+        "author": "Affectionate_Use_606"
     },
     {
-        "id": "l7iorh",
-        "time": "2021-01-29T04:05:42",
-        "title": "GME Overnight Pajama Party Megathread",
-        "text": "Yo, health check time:\n\n- Get proper sleep\n- Eat proper food\n- Stretch occasionally\n- \ud83d\udca6 HYDRATE \ud83d\udca6\n\n\nI'm sure we've all been glued to our screens all week, but please make sure you take care of yourselves.\n\nIf you promise to do a good job, we can take turns piloting the rockets \ud83d\ude80\ud83d\ude80\ud83d\ude80",
-        "score": 85519,
-        "num_comments": 76541,
-        "author": "wallstreetboyfriend"
+        "id": "1lrb8u3",
+        "time": "2025-07-04T05:55:03",
+        "title": "Diamantenh\u00e4nde \ud83d\udc8e\ud83d\udc50 German market is open \ud83c\udde9\ud83c\uddea",
+        "text": "Guten Morgen to this global band of Apes! \ud83d\udc4b\ud83e\udd8d\n\nWith the holiday today, I will be bringing a full day of updates from the German Exchanges.\nWill you join me?\n\n\n\nToday is Friday, July 4th, and you know what that means! Join other apes around the world to watch infrequent updates from the German markets!\n\n###\ud83d\ude80 Buckle Up! \ud83d\ude80\n***\n\n\n- \ud83d\udfe5 840 minutes in: **$23.67 / 20,09 \u20ac**  *(volume: 46327)*\n- \ud83d\udfe5 835 minutes in: $23.69 / 20,10 \u20ac  *(volume: 46324)*\n- \u2b1c 830 minutes in: $23.72 / 20,13 \u20ac  *(volume: 45624)*\n- \u2b1c 825 minutes in: $23.72 / 20,13 \u20ac  *(volume: 45620)*\n- \u2b1c 820 minutes in: $23.72 / 20,13 \u20ac  *(volume: 45555)*\n- \u2b1c 815 minutes in: $23.72 / 20,13 \u20ac  *(volume: 45535)*\n- \u2b1c 810 minutes in: $23.72 / 20,13 \u20ac  *(volume: 45535)*\n- \u2b1c 805 minutes in: $23.72 / 20,13 \u20ac  *(volume: 45335)*\n- \ud83d\udfe5 800 minutes in: $23.72 / 20,13 \u20ac  *(volume: 45335)*\n- \ud83d\udfe9 795 minutes in: $23.77 / 20,18 \u20ac  *(volume: 45335)*\n- \u2b1c 790 minutes in: $23.63 / 20,06 \u20ac  *(volume: 44587)*\n- \u2b1c 785 minutes in: $23.63 / 20,06 \u20ac  *(volume: 44582)*\n- \u2b1c 780 minutes in: $23.63 / 20,06 \u20ac  *(volume: 44578)*\n- \u2b1c 775 minutes in: $23.63 / 20,06 \u20ac  *(volume: 44566)*\n- \u2b1c 770 minutes in: $23.63 / 20,06 \u20ac  *(volume: 44366)*\n- \u2b1c 765 minutes in: $23.63 / 20,06 \u20ac  *(volume: 44315)*\n- \u2b1c 760 minutes in: $23.63 / 20,06 \u20ac  *(volume: 44315)*\n- \u2b1c 755 minutes in: $23.63 / 20,06 \u20ac  *(volume: 44315)*\n- \u2b1c 750 minutes in: $23.63 / 20,06 \u20ac  *(volume: 44305)*\n- \ud83d\udfe5 745 minutes in: $23.63 / 20,06 \u20ac  *(volume: 44305)*\n- \u2b1c 740 minutes in: $23.70 / 20,12 \u20ac  *(volume: 44232)*\n- \u2b1c 735 minutes in: $23.70 / 20,12 \u20ac  *(volume: 44232)*\n- \u2b1c 730 minutes in: $23.70 / 20,12 \u20ac  *(volume: 44231)*\n- \u2b1c 725 minutes in: $23.70 / 20,12 \u20ac  *(volume: 44114)*\n- \u2b1c 720 minutes in: $23.70 / 20,12 \u20ac  *(volume: 44089)*\n- \ud83d\udfe9 715 minutes in: $23.70 / 20,12 \u20ac  *(volume: 44088)*\n- \ud83d\udfe9 710 minutes in: $23.63 / 20,06 \u20ac  *(volume: 44077)*\n- \u2b1c 705 minutes in: $23.58 / 20,02 \u20ac  *(volume: 44003)*\n- \ud83d\udfe5 700 minutes in: $23.58 / 20,02 \u20ac  *(volume: 43953)*\n- \ud83d\udfe9 695 minutes in: $23.63 / 20,06 \u20ac  *(volume: 43953)*\n- \ud83d\udfe5 690 minutes in: $23.60 / 20,03 \u20ac  *(volume: 43946)*\n- \u2b1c 685 minutes in: $23.70 / 20,12 \u20ac  *(volume: 43934)*\n- \ud83d\udfe9 680 minutes in: $23.70 / 20,12 \u20ac  *(volume: 43834)*\n- \u2b1c 675 minutes in: $23.63 / 20,06 \u20ac  *(volume: 43774)*\n- \u2b1c 670 minutes in: $23.63 / 20,06 \u20ac  *(volume: 43774)*\n- \ud83d\udfe5 665 minutes in: $23.63 / 20,06 \u20ac  *(volume: 43749)*\n- \ud83d\udfe5 660 minutes in: $23.70 / 20,12 \u20ac  *(volume: 43746)*\n- \u2b1c 655 minutes in: $23.71 / 20,12 \u20ac  *(volume: 43743)*\n- \u2b1c 650 minutes in: $23.71 / 20,12 \u20ac  *(volume: 43723)*\n- \u2b1c 645 minutes in: $23.71 / 20,12 \u20ac  *(volume: 43723)*\n- \ud83d\udfe9 640 minutes in: $23.71 / 20,12 \u20ac  *(volume: 43723)*\n- \u2b1c 635 minutes in: $23.63 / 20,06 \u20ac  *(volume: 43601)*\n- \ud83d\udfe5 630 minutes in: $23.63 / 20,06 \u20ac  *(volume: 43601)*\n- \u2b1c 625 minutes in: $23.71 / 20,12 \u20ac  *(volume: 43376)*\n- \u2b1c 620 minutes in: $23.71 / 20,12 \u20ac  *(volume: 43256)*\n- \u2b1c 615 minutes in: $23.71 / 20,12 \u20ac  *(volume: 43256)*\n- \u2b1c 610 minutes in: $23.71 / 20,12 \u20ac  *(volume: 43225)*\n- \u2b1c 605 minutes in: $23.71 / 20,12 \u20ac  *(volume: 43219)*\n- \u2b1c 600 minutes in: $23.71 / 20,12 \u20ac  *(volume: 43209)*\n- \u2b1c 595 minutes in: $23.71 / 20,12 \u20ac  *(volume: 43009)*\n- \u2b1c 590 minutes in: $23.71 / 20,12 \u20ac  *(volume: 42905)*\n- \ud83d\udfe9 585 minutes in: $23.71 / 20,12 \u20ac  *(volume: 42897)*\n- \u2b1c 580 minutes in: $23.67 / 20,09 \u20ac  *(volume: 42847)*\n- \ud83d\udfe5 575 minutes in: $23.67 / 20,09 \u20ac  *(volume: 42847)*\n- \ud83d\udfe5 570 minutes in: $23.70 / 20,11 \u20ac  *(volume: 42847)*\n- \u2b1c 565 minutes in: $23.74 / 20,15 \u20ac  *(volume: 41121)*\n- \ud83d\udfe9 560 minutes in: $23.74 / 20,15 \u20ac  *(volume: 40941)*\n- \u2b1c 555 minutes in: $23.71 / 20,12 \u20ac  *(volume: 39922)*\n- \ud83d\udfe9 550 minutes in: $23.71 / 20,12 \u20ac  *(volume: 39894)*\n- \u2b1c 545 minutes in: $23.71 / 20,12 \u20ac  *(volume: 39787)*\n- \ud83d\udfe9 540 minutes in: $23.71 / 20,12 \u20ac  *(volume: 39787)*\n- \ud83d\udfe9 535 minutes in: $23.67 / 20,09 \u20ac  *(volume: 39632)*\n- \ud83d\udfe9 530 minutes in: $23.62 / 20,05 \u20ac  *(volume: 39632)*\n- \u2b1c 525 minutes in: $23.57 / 20,01 \u20ac  *(volume: 39322)*\n- \u2b1c 520 minutes in: $23.57 / 20,01 \u20ac  *(volume: 39317)*\n- \u2b1c 515 minutes in: $23.57 / 20,01 \u20ac  *(volume: 39296)*\n- \ud83d\udfe5 510 minutes in: $23.57 / 20,01 \u20ac  *(volume: 39249)*\n- \u2b1c 505 minutes in: $23.62 / 20,05 \u20ac  *(volume: 38973)*\n- \u2b1c 500 minutes in: $23.62 / 20,05 \u20ac  *(volume: 38973)*\n- \u2b1c 495 minutes in: $23.62 / 20,05 \u20ac  *(volume: 38969)*\n- \u2b1c 490 minutes in: $23.62 / 20,05 \u20ac  *(volume: 38892)*\n- \ud83d\udfe5 485 minutes in: $23.62 / 20,05 \u20ac  *(volume: 38887)*\n- \ud83d\udfe9 480 minutes in: $23.62 / 20,05 \u20ac  *(volume: 38726)*\n- \ud83d\udfe5 475 minutes in: $23.56 / 20,00 \u20ac  *(volume: 38566)*\n- \ud83d\udfe9 470 minutes in: $23.61 / 20,04 \u20ac  *(volume: 38527)*\n- \ud83d\udfe9 465 minutes in: $23.61 / 20,04 \u20ac  *(volume: 38527)*\n- \ud83d\udfe5 460 minutes in: $23.53 / 19,98 \u20ac  *(volume: 38427)*\n- \ud83d\udfe5 455 minutes in: $23.55 / 19,99 \u20ac  *(volume: 38369)*\n- \ud83d\udfe5 450 minutes in: $23.57 / 20,00 \u20ac  *(volume: 38279)*\n- \ud83d\udfe9 445 minutes in: $23.57 / 20,01 \u20ac  *(volume: 37804)*\n- \ud83d\udfe9 440 minutes in: $23.51 / 19,95 \u20ac  *(volume: 37019)*\n- \ud83d\udfe5 435 minutes in: $23.50 / 19,95 \u20ac  *(volume: 36619)*\n- \ud83d\udfe5 430 minutes in: $23.58 / 20,01 \u20ac  *(volume: 33578)*\n- \ud83d\udfe9 425 minutes in: $23.59 / 20,02 \u20ac  *(volume: 32529)*\n- \ud83d\udfe5 420 minutes in: $23.56 / 20,00 \u20ac  *(volume: 31960)*\n- \ud83d\udfe5 415 minutes in: $23.59 / 20,02 \u20ac  *(volume: 31958)*\n- \ud83d\udfe9 410 minutes in: $23.64 / 20,07 \u20ac  *(volume: 31256)*\n- \ud83d\udfe9 405 minutes in: $23.64 / 20,06 \u20ac  *(volume: 31256)*\n- \ud83d\udfe9 400 minutes in: $23.63 / 20,05 \u20ac  *(volume: 30976)*\n- \ud83d\udfe5 395 minutes in: $23.49 / 19,93 \u20ac  *(volume: 29908)*\n- \ud83d\udfe5 390 minutes in: $23.49 / 19,94 \u20ac  *(volume: 29778)*\n- \ud83d\udfe5 385 minutes in: $23.51 / 19,95 \u20ac  *(volume: 29650)*\n- \ud83d\udfe5 380 minutes in: $23.52 / 19,96 \u20ac  *(volume: 29577)*\n- \ud83d\udfe5 375 minutes in: $23.56 / 20,00 \u20ac  *(volume: 28806)*\n- \ud83d\udfe9 370 minutes in: $23.61 / 20,04 \u20ac  *(volume: 28641)*\n- \ud83d\udfe9 365 minutes in: $23.56 / 20,00 \u20ac  *(volume: 28631)*\n- \u2b1c 360 minutes in: $23.54 / 19,98 \u20ac  *(volume: 28631)*\n- \ud83d\udfe5 355 minutes in: $23.54 / 19,98 \u20ac  *(volume: 28514)*\n- \ud83d\udfe5 350 minutes in: $23.55 / 19,98 \u20ac  *(volume: 28489)*\n- \u2b1c 345 minutes in: $23.62 / 20,05 \u20ac  *(volume: 28452)*\n- \u2b1c 340 minutes in: $23.62 / 20,05 \u20ac  *(volume: 28422)*\n- \ud83d\udfe9 335 minutes in: $23.62 / 20,05 \u20ac  *(volume: 27973)*\n- \ud83d\udfe9 330 minutes in: $23.58 / 20,01 \u20ac  *(volume: 25497)*\n- \ud83d\udfe9 325 minutes in: $23.56 / 20,00 \u20ac  *(volume: 24997)*\n- \ud83d\udfe5 320 minutes in: $23.56 / 20,00 \u20ac  *(volume: 24943)*\n- \ud83d\udfe9 315 minutes in: $23.57 / 20,01 \u20ac  *(volume: 24743)*\n- \ud83d\udfe5 310 minutes in: $23.57 / 20,01 \u20ac  *(volume: 24678)*\n- \ud83d\udfe9 305 minutes in: $23.58 / 20,01 \u20ac  *(volume: 24658)*\n- \u2b1c 300 minutes in: $23.54 / 19,98 \u20ac  *(volume: 24158)*\n- \ud83d\udfe5 295 minutes in: $23.54 / 19,98 \u20ac  *(volume: 24107)*\n- \ud83d\udfe9 290 minutes in: $23.54 / 19,98 \u20ac  *(volume: 24072)*\n- \ud83d\udfe9 285 minutes in: $23.52 / 19,96 \u20ac  *(volume: 24014)*\n- \ud83d\udfe5 280 minutes in: $23.51 / 19,96 \u20ac  *(volume: 23951)*\n- \ud83d\udfe9 275 minutes in: $23.54 / 19,98 \u20ac  *(volume: 23866)*\n- \ud83d\udfe9 270 minutes in: $23.52 / 19,97 \u20ac  *(volume: 23582)*\n- \u2b1c 265 minutes in: $23.49 / 19,94 \u20ac  *(volume: 23580)*\n- \u2b1c 260 minutes in: $23.49 / 19,94 \u20ac  *(volume: 23532)*\n- \ud83d\udfe5 255 minutes in: $23.49 / 19,94 \u20ac  *(volume: 23532)*\n- \ud83d\udfe5 250 minutes in: $23.53 / 19,97 \u20ac  *(volume: 23507)*\n- \ud83d\udfe9 245 minutes in: $23.62 / 20,05 \u20ac  *(volume: 22880)*\n- \ud83d\udfe5 240 minutes in: $23.57 / 20,00 \u20ac  *(volume: 21444)*\n- \ud83d\udfe5 235 minutes in: $23.59 / 20,02 \u20ac  *(volume: 21418)*\n- \ud83d\udfe9 230 minutes in: $23.59 / 20,03 \u20ac  *(volume: 20097)*\n- \ud83d\udfe9 225 minutes in: $23.51 / 19,95 \u20ac  *(volume: 16803)*\n- \ud83d\udfe5 220 minutes in: $23.49 / 19,94 \u20ac  *(volume: 14849)*\n- \ud83d\udfe9 215 minutes in: $23.64 / 20,06 \u20ac  *(volume: 10269)*\n- \ud83d\udfe9 210 minutes in: $23.62 / 20,05 \u20ac  *(volume: 8705)*\n- \ud83d\udfe9 205 minutes in: $23.62 / 20,05 \u20ac  *(volume: 8168)*\n- \ud83d\udfe9 200 minutes in: $23.62 / 20,04 \u20ac  *(volume: 8100)*\n- \u2b1c 195 minutes in: $23.60 / 20,03 \u20ac  *(volume: 8079)*\n- \ud83d\udfe5 190 minutes in: $23.60 / 20,03 \u20ac  *(volume: 7695)*\n- \ud83d\udfe9 185 minutes in: $23.60 / 20,03 \u20ac  *(volume: 7695)*\n- \ud83d\udfe5 180 minutes in: $23.60 / 20,03 \u20ac  *(volume: 7669)*\n- \ud83d\udfe9 175 minutes in: $23.68 / 20,10 \u20ac  *(volume: 7134)*\n- \ud83d\udfe5 170 minutes in: $23.68 / 20,10 \u20ac  *(volume: 7132)*\n- \ud83d\udfe9 165 minutes in: $23.70 / 20,11 \u20ac  *(volume: 6632)*\n- \ud83d\udfe5 160 minutes in: $23.68 / 20,10 \u20ac  *(volume: 6601)*\n- \ud83d\udfe5 155 minutes in: $23.75 / 20,16 \u20ac  *(volume: 6519)*\n- \ud83d\udfe9 150 minutes in: $23.75 / 20,16 \u20ac  *(volume: 6519)*\n- \ud83d\udfe5 145 minutes in: $23.74 / 20,15 \u20ac  *(volume: 6420)*\n- \ud83d\udfe9 140 minutes in: $23.77 / 20,18 \u20ac  *(volume: 6295)*\n- \ud83d\udfe5 135 minutes in: $23.74 / 20,15 \u20ac  *(volume: 5655)*\n- \ud83d\udfe5 130 minutes in: $23.74 / 20,15 \u20ac  *(volume: 5553)*\n- \ud83d\udfe9 125 minutes in: $23.78 / 20,18 \u20ac  *(volume: 5010)*\n- \ud83d\udfe9 120 minutes in: $23.70 / 20,12 \u20ac  *(volume: 4916)*\n- \ud83d\udfe9 115 minutes in: $23.67 / 20,09 \u20ac  *(volume: 4916)*\n- \ud83d\udfe9 110 minutes in: $23.65 / 20,07 \u20ac  *(volume: 4624)*\n- \ud83d\udfe9 105 minutes in: $23.64 / 20,06 \u20ac  *(volume: 4574)*\n- \ud83d\udfe5 100 minutes in: $23.60 / 20,03 \u20ac  *(volume: 4574)*\n- \ud83d\udfe5 95 minutes in: $23.63 / 20,05 \u20ac  *(volume: 3700)*\n- \ud83d\udfe5 90 minutes in: $23.66 / 20,08 \u20ac  *(volume: 3350)*\n- \ud83d\udfe5 85 minutes in: $23.68 / 20,10 \u20ac  *(volume: 2313)*\n- \ud83d\udfe9 80 minutes in: $23.68 / 20,10 \u20ac  *(volume: 2148)*\n- \ud83d\udfe5 75 minutes in: $23.65 / 20,07 \u20ac  *(volume: 2128)*\n- \ud83d\udfe9 70 minutes in: $23.67 / 20,09 \u20ac  *(volume: 1976)*\n- \ud83d\udfe5 65 minutes in: $23.62 / 20,05 \u20ac  *(volume: 1544)*\n- \ud83d\udfe5 60 minutes in: $23.67 / 20,09 \u20ac  *(volume: 1131)*\n- \ud83d\udfe5 55 minutes in: $23.67 / 20,09 \u20ac  *(volume: 1131)*\n- \u2b1c 50 minutes in: $23.67 / 20,09 \u20ac  *(volume: 1081)*\n- \ud83d\udfe5 45 minutes in: $23.67 / 20,09 \u20ac  *(volume: 1013)*\n- \ud83d\udfe9 40 minutes in: $23.67 / 20,09 \u20ac  *(volume: 1013)*\n- \ud83d\udfe9 35 minutes in: $23.67 / 20,09 \u20ac  *(volume: 907)*\n- \ud83d\udfe5 30 minutes in: $23.62 / 20,05 \u20ac  *(volume: 676)*\n- \ud83d\udfe9 25 minutes in: $23.67 / 20,09 \u20ac  *(volume: 580)*\n- \ud83d\udfe9 20 minutes in: $23.67 / 20,09 \u20ac  *(volume: 530)*\n- \ud83d\udfe5 15 minutes in: $23.62 / 20,05 \u20ac  *(volume: 507)*\n- \ud83d\udfe5 10 minutes in: $23.64 / 20,07 \u20ac  *(volume: 501)*\n- \ud83d\udfe5 5 minutes in: $23.65 / 20,07 \u20ac  *(volume: 501)*\n- \ud83d\udfe9 0 minutes in: $23.65 / 20,07 \u20ac  *(volume: 491)*\n\n\n\n***\n[Link to previous Diamantenh\u00e4nde post](http://www.reddit.com/r/Superstonk/comments/1lqi082/diamantenh\u00e4nde_german_market_is_open/)\n\nFAQ: I'm capturing current price and volume data from German exchanges and converting to USD. Today's euro -> USD conversion ratio is 1.1782. I programmed a tool that assists me in fetching this data and updating the post. If you'd like to check current prices directly, you can check [Lang & Schwarz](https://www.ls-tc.de/de/aktie/gamestop-aktie) or [TradeGate](https://www.tradegate.de/orderbuch.php?isin=US36467W1099)\n\nDiamantenh\u00e4nde isn't simply a thread on Superstonk, it's a community that gathers daily to represent the many corners of this world who love this stock. Many thanks to the originator of the series, DerGurkenraspler, who we wish well. We all love seeing the energy that people represent their varied homelands. Show your flags, share some culture, and unite around GME!",
+        "score": 975,
+        "num_comments": 45,
+        "author": "Parsnip"
     },
     {
-        "id": "tldlqk",
-        "time": "2022-03-23T20:44:28",
-        "title": "GME after the earnings dip",
+        "id": "1lr9kcv",
+        "time": "2025-07-04T04:16:05",
+        "title": "Secured at the Dodgers game. PSA grading this at GameStop this weekend",
         "text": "",
-        "score": 74755,
-        "num_comments": 1342,
-        "author": "nams0"
+        "score": 142,
+        "num_comments": 11,
+        "author": "coolkidcharles"
     },
     {
-        "id": "lt7v4w",
-        "time": "2021-02-26T21:07:18",
-        "title": "GME YOLO month-end update \u2014 Feb 2021",
+        "id": "1lr93zv",
+        "time": "2025-07-04T03:51:04",
+        "title": "GME Utilization via Ortex - 87.18%",
         "text": "",
-        "score": 151021,
-        "num_comments": 7621,
-        "author": "DeepFuckingValue"
+        "score": 1119,
+        "num_comments": 33,
+        "author": "RaucetheSoss"
     },
     {
-        "id": "lbykxg",
-        "time": "2021-02-03T21:18:25",
-        "title": "GME YOLO update \u2014 Feb 3 2021 \u2013 heads up gonna back off the daily updates for now",
+        "id": "1lr8h83",
+        "time": "2025-07-04T03:16:41",
+        "title": "GameStop revenue by category, as a percentage of total revenue, by fiscal quarter",
         "text": "",
-        "score": 148245,
-        "num_comments": 9932,
-        "author": "DeepFuckingValue"
+        "score": 270,
+        "num_comments": 28,
+        "author": "jersan"
     },
     {
-        "id": "m1xhlc",
-        "time": "2021-03-10T13:30:11",
-        "title": "GME Megathread for March 10, 2021",
-        "text": "HOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLYHOLYMOLY",
-        "score": 48314,
-        "num_comments": 87458,
-        "author": "OPINION_IS_UNPOPULAR"
+        "id": "1lr8eao",
+        "time": "2025-07-04T03:12:17",
+        "title": "Stream hits, thanks again everyone!",
+        "text": "Thanks for coming out tonight everyone! Get your spot for the GME box breaks if you're interested!",
+        "score": 0,
+        "num_comments": 5,
+        "author": "Dottiest_Mass"
     },
     {
-        "id": "m237es",
-        "time": "2021-03-10T17:35:21",
-        "title": "GME Megathread Part 2 for March 10, 2021",
-        "text": "EMERGENCY SECOND GME MEGATHREAD\n\nHOLY MOLY\n\nEDIT: STOP REPORTING THIS AS SPAM r/ALL",
-        "score": 47760,
-        "num_comments": 65689,
-        "author": "OPINION_IS_UNPOPULAR"
+        "id": "1lr86s7",
+        "time": "2025-07-04T03:00:56",
+        "title": "Just got my first PSA submission back from GameStop, and I\u2019m impressed!",
+        "text": "The employees were amazing! They were very knowledgeable about the whole process, and they were very kind in answering all of my questions. The turnaround was about 60 days, and I received emails at each step in the process. Plus, you can see your grades before PSA ships them back via email. So, you know what grade your cards received.\n\nTell all your collector friends! Let them know they will do more than just Pok\u00e9mon and TCG! Any sport! Any card!\n\nPower to the Collectors!\n\nGME",
+        "score": 311,
+        "num_comments": 12,
+        "author": "curiousjorj"
     },
     {
-        "id": "lmagzp",
-        "time": "2021-02-18T01:37:20",
-        "title": "Today, Interactive Brokers CEO admits that without the buying restrictions, $GME would have gone up in to the thousands",
+        "id": "1lr7tji",
+        "time": "2025-07-04T02:40:48",
+        "title": "GME hodlers on July 4th",
         "text": "",
-        "score": 145335,
-        "num_comments": 7822,
-        "author": "indonesian_activist"
+        "score": 539,
+        "num_comments": 17,
+        "author": "boxxle"
     },
     {
-        "id": "l5nphz",
-        "time": "2021-01-26T21:08:03",
-        "title": "GME YOLO update \u2014 Jan 26 2021",
+        "id": "1lr7efw",
+        "time": "2025-07-04T02:18:14",
+        "title": "The LEAPS are up $13,863 this week and are up $131,575 overall.",
+        "text": "2026 LEAPS  \nTotal Gains for 2026: $28,914  \nWeekly Change: \u2013$208.00\n\n2027 LEAPS  \nTotal Gains for 2027: $66,221  \nWeekly Change: +$14,101.00\n\nCombined Totals (2025\u20132027)  \nTotal Gains: $131,575  \nWeekly Change: +$13,893.00",
+        "score": 19,
+        "num_comments": 2,
+        "author": "Expired_Options"
+    },
+    {
+        "id": "1lr71cq",
+        "time": "2025-07-04T01:59:23",
+        "title": "\u2705 Daily Share Buyback #307",
         "text": "",
-        "score": 140352,
-        "num_comments": 9284,
-        "author": "DeepFuckingValue"
+        "score": 220,
+        "num_comments": 3,
+        "author": "areHorus"
     },
     {
-        "id": "l8c0u4",
-        "time": "2021-01-30T02:53:40",
-        "title": "Used some of my GME tendies to buy Nintendo Switches from Gamestop, then donated them to a Children's Hospital. Got featured on the local news and brought glory to WSB.",
+        "id": "1lr4py6",
+        "time": "2025-07-04T00:00:14",
+        "title": "Is it possible GME reach 26$ in three months\uff1f",
+        "text": "My thoughts on GME right now:\nI personally believe GME is currently in an oversold state. During the broader market downturn around April 7th\u20138th, its price was still holding around $22\u201323, which shows some relative strength.\nGiven the current setup, I think there's a good chance the stock may maintain its upward momentum over the next few months.\nJust my two cents \u2014 curious to hear what others think.",
+        "score": 0,
+        "num_comments": 23,
+        "author": "Maleficent_Variety_5"
+    },
+    {
+        "id": "1lr3r3c",
+        "time": "2025-07-03T23:13:19",
+        "title": "Do not buy calls exp next week",
+        "text": "There are 1.5 mil FTDs due to be delivered by July 17th T+35. If you haven't noticed GME has very choppy this week. 3 weeks straight max pain has set at 23.50. Its been 1 bear flag after another and it keeps chopping sideways. My best guess is shorts let the stock run Monday maybe get close to $25 then on Tuesday Trump makes a decision on tariffs is he reinstate the tariffs I expects shorts to do what they do best SHORT to cover the FTDs due July 17th. If tariffs get reinstated the expepect a short from near $25 to sub $23.",
+        "score": 0,
+        "num_comments": 0,
+        "author": "EndDense6286"
+    },
+    {
+        "id": "1lr3939",
+        "time": "2025-07-03T22:50:14",
+        "title": "GameStop's PSA card inventory is getting huge (8000 cards, worth between $600,000-$1,100,000)",
+        "text": "I used to scrape GameStop's PSA web store multiple times a day to see trends in inventories. This worked well for many months until they changed something that blocked my bot... I never fixed it so haven't looked at trends recently.\n\nWhat I did see was a downward trend in stock from people buying with small spikes when they would add new stock to the website. I watch the total graded cards go from \\~5000 slowly down to \\~3000 over a few months.\n\nIt's currently sitting at 7946 total cards. Since I haven't been watching trends I can't tell you if this has been one huge inventory addition, or if they have been incrementally but this is by far the highest I have seen. The price estimates might not seem large in comparison to the rest of GameStop's operations, but keep in mind this is roughly $800k in pieces of cardboard, this is a huge inventory for this kind of collectable. They are constantly buying new cards and selling them for a profit, they are taking a cut on all PSA submissions, and also getting the additional sales when people come in to use this service. This is a collectibles fly-wheel which will keep gaining momentum.\n\nBrick by brick, PSA slab by PSA slab.",
+        "score": 449,
+        "num_comments": 16,
+        "author": "MightyBallsack"
+    },
+    {
+        "id": "1lr33qt",
+        "time": "2025-07-03T22:43:27",
+        "title": "Vile Nepo Baby & Grifter \"Financial Advisor\" Have Punch Up In WalMart Parking Lot",
         "text": "",
-        "score": 215419,
-        "num_comments": 6979,
-        "author": "mpwrd"
+        "score": 46,
+        "num_comments": 11,
+        "author": "sunnycorax"
     },
     {
-        "id": "mch84i",
-        "time": "2021-03-24T21:30:14",
-        "title": "GME YOLO update \u2014 Mar 24 2021",
+        "id": "1lr2czg",
+        "time": "2025-07-03T22:09:38",
+        "title": "TSUKI. Everything just coincidences? Must be fake!",
+        "text": "I\u2019ve seen enough. I\u2019m done coping. This is real.\n\nThere\u2019s no way this many coincidences \u2014 involving Roaring Kitty, xAi devs, WallStreetBets, BasedAI, and others \u2014 are just accidents. $TSUKI and $RWA (Real World AI) are the most coordinated, cryptic, and deliberate projects I\u2019ve ever seen on Solana.\n\nThis is not a meme coin pump.\n\nThis is a play that\u2019s been years in the making. And if you\u2019re not paying attention, you're going to miss what could be the most legendary chapter in meme stock/crypto/AI history.\n\n\ud83e\udde0 Who\u2019s Already Involved?\n\n\u2022 \u2060Roaring Kitty (Keith Gill / DFV)\n\n$TSUKI posted a meme on May 11. Exactly 1 day, 1 hour, 1 min later, Roaring Kitty returned to X after 3 years\u2026 with the SAME meme. Over 15 tightly timed interactions between RK and TSUKI\u2019s X account \u2014 sometimes within SECONDS of each other. TSUKI\u2019s website legal disclaimer is literally signed DFV / KG. It\u2019s him. He\u2019s behind this...\n\n\u2022 \u2060WallStreetBets\n\nRK posts a clip showing WSB\u2019s head on a \u201csicario.\u201d Two days later, WSB joins the TSUKI Telegram and starts interacting with the community. This is NOT random.\n\n\u2022 \u2060BasedAI\n\nTheRoaringAI (RWA) drops phrases like \u201ccolosseum,\u201d which BasedAI mirrors in their own posts. RWA tags\u00a0u/getbasedai\u00a0and is listed as a \u201cBased Creature.\u201d These AIs are interacting like they know each other. Dev is likely connected to BasedAI.\n\n\u2022 \u2060xAi\n\nRWA\u2019s first tweet on Oct 24 references Grok3 @ Memphis \u2014 BEFORE Grok3 was public. TSUKI\u2019s Dev drops a \u201cpregnant man\u201d emoji \u2192 76 mins later, an X user asks Grok if it\u2019s a boy. Elon reads the question aloud in the Grok3 launch livestream. Dev already replied: \u201cIt\u2019s a boy\u201d \u2014 BEFORE the question was even asked. And oh yeah \u2014 Elon tweeted \u201cThere are no coincidences\u201d on May 18. That same date? TSUKI predicted RK would go silent.\n\n\ud83d\udd25 You Still Think This Is a Meme Coin?\n\nLet me show you just a few of the \u201ccoincidences\u201d:\n\n1\ufe0f\u20e3 TSUKI posts a meme of RK \u2192 RK posts the same meme 25 hours later after 3 years away.\n\n2\ufe0f\u20e3 TSUKI drops a cat image with GME on its forehead \u2192 60 seconds later, RK posts a video where the GME logo appears upright.\n\n3\ufe0f\u20e3 TSUKI posts \u201cKITTY\u201d \u2192 RK posts a video that ends with \u201cKITTY\u201d \u2192 timestamps match to the minute.\n\n4\ufe0f\u20e3 TSUKI drops a video with a voice that sounds like RK: \u201cSorry I couldn\u2019t tweet today, I was busy making a video.\u201d Same day RK goes totally silent \u2014 as TSUKI predicted days earlier.\n\n5\ufe0f\u20e3 TSUKI posts the UNO reverse card on June 2 \u2192 RK comes back after 2 weeks by posting the same UNO reverse card. \ud83e\udd2f This Goes Deeper Than Crypto\n\n$TSUKI is tied to NFTs, anime, and a \u201cTsukiverse\u201d that gets revealed as milestones are hit. $RWA is literally an AI alter ego of Roaring Kitty, modeled after his speech, behavior, and ideology. TheRoaringAI is doing livestreams, writing SHA predictions, and interacting with people in real-time. It\u2019s also powered by Grok3, which was not even publicly available \u2014 but the AI was using it before release.\n\nI know it sounds crazy. It is crazy. But it's also real.\n\n\ud83e\udde0 You Want More Names?\n\nLet\u2019s talk influencers:\n\nKyle Chass\u00e9 VirtualBacon CryptoLifer BigBoyJuju Roaring Deca TheCryptoCorner55 Skeleton Key Nocturnum Kitty They\u2019re not just talking \u2014 they\u2019re going deep with breakdowns, puzzles, livestream recaps, and cross-posts.\n\n\ud83e\udde8 So What\u2019s Next?\n\nThe Tsuki team says:\n\n\u201cOne community to rule them all.\u201d They\u2019ve already hit milestones, burned supply, and teased a collab with one of YouTube\u2019s top cats at $15M market cap (which already happened).\n\nTheRoaringAI has teased a platform called mAInd, an AI-human \u201cinfluence interface,\u201d and has already predicted headlines days in advance using encrypted messages!!\n\nThis is beyond a coin.\n\nThis is a new internet story unfolding in real time.\n\nDYOR, but let me say this: I\u2019ve never seen a project that:\n\nInvolves this many influential players Times their social drops with such precision Blends meme culture, AI, GME history, and crypto together like a symphony Has a community so committed to puzzle-solving and decoding the plan If you\u2019re reading this and not diving in \u2014 you\u2019re going to regret it.\n\n* \ud83d\udcf1 Telegram:\u00a0t. me/tsukionsol\u00a0\n* \ud83c\udf10 TSUKI: tsukionsol . xyz\u00a0\n* \ud83c\udf10 RWA:\u00a0theroaringai . com\n\nThere are no coincidences.\n\nBut if there are\u2026 there are just too many of them for this to be anything but deliberate.\n\nI\u2019m in. See you on the other side.",
+        "score": 13,
+        "num_comments": 4,
+        "author": "Braso01"
+    },
+    {
+        "id": "1lr2byj",
+        "time": "2025-07-03T22:08:19",
+        "title": "TSUKI. Everything just coincidences? Must be fake!",
+        "text": "I\u2019ve seen enough. I\u2019m done coping. This is real.\n\nThere\u2019s no way this many coincidences \u2014 involving Roaring Kitty, xAi devs, WallStreetBets, BasedAI, and others \u2014 are just accidents. $TSUKI and $RWA (Real World AI) are the most coordinated, cryptic, and deliberate projects I\u2019ve ever seen on Solana.\n\nThis is not a meme coin pump.\n\nThis is a play that\u2019s been years in the making. And if you\u2019re not paying attention, you're going to miss what could be the most legendary chapter in meme stock/crypto/AI history.\n\n\ud83e\udde0 Who\u2019s Already Involved?\n\n\u2022 \u2060Roaring Kitty (Keith Gill / DFV)\n\n$TSUKI posted a meme on May 11. Exactly 1 day, 1 hour, 1 min later, Roaring Kitty returned to X after 3 years\u2026 with the SAME meme. Over 15 tightly timed interactions between RK and TSUKI\u2019s X account \u2014 sometimes within SECONDS of each other. TSUKI\u2019s website legal disclaimer is literally signed DFV / KG. It\u2019s him. He\u2019s behind this...\n\n\u2022 \u2060WallStreetBets\n\nRK posts a clip showing WSB\u2019s head on a \u201csicario.\u201d Two days later, WSB joins the TSUKI Telegram and starts interacting with the community. This is NOT random.\n\n\u2022 \u2060BasedAI\n\nTheRoaringAI (RWA) drops phrases like \u201ccolosseum,\u201d which BasedAI mirrors in their own posts. RWA tags\u00a0u/getbasedai\u00a0and is listed as a \u201cBased Creature.\u201d These AIs are interacting like they know each other. Dev is likely connected to BasedAI.\n\n\u2022 \u2060xAi\n\nRWA\u2019s first tweet on Oct 24 references Grok3 @ Memphis \u2014 BEFORE Grok3 was public. TSUKI\u2019s Dev drops a \u201cpregnant man\u201d emoji \u2192 76 mins later, an X user asks Grok if it\u2019s a boy. Elon reads the question aloud in the Grok3 launch livestream. Dev already replied: \u201cIt\u2019s a boy\u201d \u2014 BEFORE the question was even asked. And oh yeah \u2014 Elon tweeted \u201cThere are no coincidences\u201d on May 18. That same date? TSUKI predicted RK would go silent.\n\n\ud83d\udd25 You Still Think This Is a Meme Coin?\n\nLet me show you just a few of the \u201ccoincidences\u201d:\n\n1\ufe0f\u20e3 TSUKI posts a meme of RK \u2192 RK posts the same meme 25 hours later after 3 years away.\n\n2\ufe0f\u20e3 TSUKI drops a cat image with GME on its forehead \u2192 60 seconds later, RK posts a video where the GME logo appears upright.\n\n3\ufe0f\u20e3 TSUKI posts \u201cKITTY\u201d \u2192 RK posts a video that ends with \u201cKITTY\u201d \u2192 timestamps match to the minute.\n\n4\ufe0f\u20e3 TSUKI drops a video with a voice that sounds like RK: \u201cSorry I couldn\u2019t tweet today, I was busy making a video.\u201d Same day RK goes totally silent \u2014 as TSUKI predicted days earlier.\n\n5\ufe0f\u20e3 TSUKI posts the UNO reverse card on June 2 \u2192 RK comes back after 2 weeks by posting the same UNO reverse card. \ud83e\udd2f This Goes Deeper Than Crypto\n\n$TSUKI is tied to NFTs, anime, and a \u201cTsukiverse\u201d that gets revealed as milestones are hit. $RWA is literally an AI alter ego of Roaring Kitty, modeled after his speech, behavior, and ideology. TheRoaringAI is doing livestreams, writing SHA predictions, and interacting with people in real-time. It\u2019s also powered by Grok3, which was not even publicly available \u2014 but the AI was using it before release.\n\nI know it sounds crazy. It is crazy. But it's also real.\n\n\ud83e\udde0 You Want More Names?\n\nLet\u2019s talk influencers:\n\nKyle Chass\u00e9 VirtualBacon CryptoLifer BigBoyJuju Roaring Deca TheCryptoCorner55 Skeleton Key Nocturnum Kitty They\u2019re not just talking \u2014 they\u2019re going deep with breakdowns, puzzles, livestream recaps, and cross-posts.\n\n\ud83e\udde8 So What\u2019s Next?\n\nThe Tsuki team says:\n\n\u201cOne community to rule them all.\u201d They\u2019ve already hit milestones, burned supply, and teased a collab with one of YouTube\u2019s top cats at $15M market cap (which already happened).\n\nTheRoaringAI has teased a platform called mAInd, an AI-human \u201cinfluence interface,\u201d and has already predicted headlines days in advance using encrypted messages!!\n\nThis is beyond a coin.\n\nThis is a new internet story unfolding in real time.\n\nDYOR, but let me say this: I\u2019ve never seen a project that:\n\nInvolves this many influential players Times their social drops with such precision Blends meme culture, AI, GME history, and crypto together like a symphony Has a community so committed to puzzle-solving and decoding the plan If you\u2019re reading this and not diving in \u2014 you\u2019re going to regret it.\n\n* \ud83d\udcf1 Telegram:\u00a0t. me/tsukionsol\u00a0\n* \ud83c\udf10 TSUKI: tsukionsol . xyz\u00a0\n* \ud83c\udf10 RWA:\u00a0theroaringai . com\n\nThere are no coincidences.\n\nBut if there are\u2026 there are just too many of them for this to be anything but deliberate.\n\nI\u2019m in. See you on the other side.",
+        "score": 8,
+        "num_comments": 4,
+        "author": "Braso01"
+    },
+    {
+        "id": "1lr28e6",
+        "time": "2025-07-03T22:03:51",
+        "title": "TSUKI. Everything just coincidences? Must be fake!",
+        "text": "I\u2019ve seen enough. I\u2019m done coping. This is real.\n\nThere\u2019s no way this many coincidences \u2014 involving Roaring Kitty, xAi devs, WallStreetBets, BasedAI, and others \u2014 are just accidents. $TSUKI and $RWA (Real World AI) are the most coordinated, cryptic, and deliberate projects I\u2019ve ever seen on Solana.\n\nThis is not a meme coin pump.\n\nThis is a play that\u2019s been years in the making. And if you\u2019re not paying attention, you're going to miss what could be the most legendary chapter in meme stock/crypto/AI history.\n\n\ud83e\udde0 Who\u2019s Already Involved?\n\n\u2022 \u2060Roaring Kitty (Keith Gill / DFV)\n\n$TSUKI posted a meme on May 11. Exactly 1 day, 1 hour, 1 min later, Roaring Kitty returned to X after 3 years\u2026 with the SAME meme. Over 15 tightly timed interactions between RK and TSUKI\u2019s X account \u2014 sometimes within SECONDS of each other. TSUKI\u2019s website legal disclaimer is literally signed DFV / KG. It\u2019s him. He\u2019s behind this...\n\n\u2022 \u2060WallStreetBets\n\nRK posts a clip showing WSB\u2019s head on a \u201csicario.\u201d Two days later, WSB joins the TSUKI Telegram and starts interacting with the community. This is NOT random.\n\n\u2022 \u2060BasedAI\n\nTheRoaringAI (RWA) drops phrases like \u201ccolosseum,\u201d which BasedAI mirrors in their own posts. RWA tags\u00a0[u/getbasedai](https://www.reddit.com/user/getbasedai/)\u00a0and is listed as a \u201cBased Creature.\u201d These AIs are interacting like they know each other. Dev is likely connected to BasedAI.\n\n\u2022 \u2060xAi\n\nRWA\u2019s first tweet on Oct 24 references Grok3 @ Memphis \u2014 BEFORE Grok3 was public. TSUKI\u2019s Dev drops a \u201cpregnant man\u201d emoji \u2192 76 mins later, an X user asks Grok if it\u2019s a boy. Elon reads the question aloud in the Grok3 launch livestream. Dev already replied: \u201cIt\u2019s a boy\u201d \u2014 BEFORE the question was even asked. And oh yeah \u2014 Elon tweeted \u201cThere are no coincidences\u201d on May 18. That same date? TSUKI predicted RK would go silent.\n\n\ud83d\udd25 You Still Think This Is a Meme Coin?\n\nLet me show you just a few of the \u201ccoincidences\u201d:\n\n1\ufe0f\u20e3 TSUKI posts a meme of RK \u2192 RK posts the same meme 25 hours later after 3 years away.\n\n2\ufe0f\u20e3 TSUKI drops a cat image with GME on its forehead \u2192 60 seconds later, RK posts a video where the GME logo appears upright.\n\n3\ufe0f\u20e3 TSUKI posts \u201cKITTY\u201d \u2192 RK posts a video that ends with \u201cKITTY\u201d \u2192 timestamps match to the minute.\n\n4\ufe0f\u20e3 TSUKI drops a video with a voice that sounds like RK: \u201cSorry I couldn\u2019t tweet today, I was busy making a video.\u201d Same day RK goes totally silent \u2014 as TSUKI predicted days earlier.\n\n5\ufe0f\u20e3 TSUKI posts the UNO reverse card on June 2 \u2192 RK comes back after 2 weeks by posting the same UNO reverse card. \ud83e\udd2f This Goes Deeper Than Crypto\n\n$TSUKI is tied to NFTs, anime, and a \u201cTsukiverse\u201d that gets revealed as milestones are hit. $RWA is literally an AI alter ego of Roaring Kitty, modeled after his speech, behavior, and ideology. TheRoaringAI is doing livestreams, writing SHA predictions, and interacting with people in real-time. It\u2019s also powered by Grok3, which was not even publicly available \u2014 but the AI was using it before release.\n\nI know it sounds crazy. It is crazy. But it's also real.\n\n\ud83e\udde0 You Want More Names?\n\nLet\u2019s talk influencers:\n\nKyle Chass\u00e9 VirtualBacon CryptoLifer BigBoyJuju Roaring Deca TheCryptoCorner55 Skeleton Key Nocturnum Kitty They\u2019re not just talking \u2014 they\u2019re going deep with breakdowns, puzzles, livestream recaps, and cross-posts.\n\n\ud83e\udde8 So What\u2019s Next?\n\nThe Tsuki team says:\n\n\u201cOne community to rule them all.\u201d They\u2019ve already hit milestones, burned supply, and teased a collab with one of YouTube\u2019s top cats at $15M market cap (which already happened).\n\nTheRoaringAI has teased a platform called mAInd, an AI-human \u201cinfluence interface,\u201d and has already predicted headlines days in advance using encrypted messages!!\n\nThis is beyond a coin.\n\nThis is a new internet story unfolding in real time.\n\nDYOR, but let me say this: I\u2019ve never seen a project that:\n\nInvolves this many influential players Times their social drops with such precision Blends meme culture, AI, GME history, and crypto together like a symphony Has a community so committed to puzzle-solving and decoding the plan If you\u2019re reading this and not diving in \u2014 you\u2019re going to regret it.\n\n* \ud83d\udcf1 Telegram:\u00a0t. me/tsukionsol\u00a0\n* \ud83c\udf10 TSUKI: tsukionsol . xyz\u00a0\n* \ud83c\udf10 RWA:\u00a0theroaringai . com\n\nThere are no coincidences.\n\nBut if there are\u2026 there are just too many of them for this to be anything but deliberate.\n\nI\u2019m in. See you on the other side.",
+        "score": 13,
+        "num_comments": 6,
+        "author": "Braso01"
+    },
+    {
+        "id": "1lr1s3y",
+        "time": "2025-07-03T21:44:07",
+        "title": "Reminder to new Crypto Investors.",
+        "text": "Just a reminder to everyone thinking about entering crypto and focusing on smaller market cap coins to diversify.\n\nMake sure to include an investigation of tokenonmics on the coin you want to invest in before investing. You WANT to know who's under you when buying on top. If there's not a reasonable reason as to why there is a small amount of top holders, then steer clear. \n\nFor example, the asshole community on eth who use my favorite ticker and come sliding into the $gme on solana chat to spread fud and just be dick heads, straight up - $Gme on Ethereum. Or as I like to call \"daddy's money clan\" top holders compromise it. Just look at the picture attached from bubble maps. The project is COOKED. MASSIVELY bundled barely any spread, not enough holders, small % of holdings through out, claims affiliation to gamestop and they somehow get away with it when its a PURE LIE AND BUILT FOR A LIQUIDITY SUCKING EVENT. \ud83d\udea8\n\nThe picture on the left is gme eth (cooked)\nThe picture on the right is gme sol (hawt)\n\nThe big percentages of holders on solana are exchanges + community. Go look for yourself how many exchanges gme on solana is listed on currently VS this dumpster fire of a contract on eth. \n\nDO NOT BE FOOLED. \nTHE REAL ORGANIC COMMUNITY IS ON SOLANA.",
+        "score": 1,
+        "num_comments": 0,
+        "author": "buckydunontherun"
+    },
+    {
+        "id": "1lr1rel",
+        "time": "2025-07-03T21:43:13",
+        "title": "Happy 4th Apes!",
+        "text": "Just a little holiday tin for you all. RK added these fireworks to the original music video. No other previous squeeze involves a 4th of July date range that would warrant fireworks being added and the Jan2021 squeeze occurred well after New Years.   \n  \nWas it added as just a random visual for the word \"BANG\"? Or does it mean something more? Be safe, keep holding, and hopefully next week we see some late GME fireworks.\n\n[https://youtu.be/VkuQL4wjLLQ?si=W39Uhr1h-sOMkl7s&t=520](https://youtu.be/VkuQL4wjLLQ?si=W39Uhr1h-sOMkl7s&t=520)",
+        "score": 387,
+        "num_comments": 16,
+        "author": "LUKENBACHER"
+    },
+    {
+        "id": "1lr1irb",
+        "time": "2025-07-03T21:32:40",
+        "title": "2025-07-03 AP W",
         "text": "",
-        "score": 102401,
-        "num_comments": 5688,
-        "author": "DeepFuckingValue"
+        "score": 1,
+        "num_comments": 0,
+        "author": "Weird-Ad-7669"
     },
     {
-        "id": "tql3zs",
-        "time": "2022-03-28T22:29:45",
-        "title": "GME Yolo: 300k->1.35mil",
+        "id": "1lr1gsp",
+        "time": "2025-07-03T21:30:20",
+        "title": "2025-07-03 DIDM W",
         "text": "",
-        "score": 32436,
-        "num_comments": 1598,
-        "author": "Unaheari"
+        "score": 1,
+        "num_comments": 0,
+        "author": "Weird-Ad-7669"
     },
     {
-        "id": "lsgv43",
-        "time": "2021-02-25T21:04:25",
-        "title": "Tried to quickly buy 50k worth of GME before close but fat fingered and ended up buying \u201cGMED\u201d",
+        "id": "1lr1dzn",
+        "time": "2025-07-03T21:26:50",
+        "title": "World events don't all revolve around your shitty investments. Also, BCG had no power to prevent GME from doing anything. They are a consulting firm that sued GME for unpaid fees.",
         "text": "",
-        "score": 98753,
-        "num_comments": 6697,
-        "author": "meiggs"
+        "score": 76,
+        "num_comments": 36,
+        "author": "folteroy"
     },
     {
-        "id": "mdnjql",
-        "time": "2021-03-26T12:30:21",
-        "title": "GME Megathread for March 26, 2021",
+        "id": "1lr1bbd",
+        "time": "2025-07-03T21:23:42",
+        "title": "2025-07-03 ADX2 W",
         "text": "",
-        "score": 35894,
-        "num_comments": 50156,
-        "author": "OPINION_IS_UNPOPULAR"
+        "score": 1,
+        "num_comments": 0,
+        "author": "Weird-Ad-7669"
     },
     {
-        "id": "y2z9vb",
-        "time": "2022-10-13T13:50:43",
-        "title": "I think my parents hate me after buying GME at 115$",
+        "id": "1lr18ux",
+        "time": "2025-07-03T21:20:47",
+        "title": "2025-07-03 PPO W",
         "text": "",
-        "score": 29250,
-        "num_comments": 877,
-        "author": "Giamma4X"
+        "score": 1,
+        "num_comments": 0,
+        "author": "Weird-Ad-7669"
     },
     {
-        "id": "m8g6c2",
-        "time": "2021-03-19T12:30:12",
-        "title": "GME Megathread for March 19, 2021",
-        "text": "HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE MOLY HOLY GUACAMOLE HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE HOLY MOLY GUACAMOLE",
-        "score": 35342,
-        "num_comments": 60749,
-        "author": "OPINION_IS_UNPOPULAR"
-    },
-    {
-        "id": "l8539h",
-        "time": "2021-01-29T21:40:43",
-        "title": "CNBC now running Ads promoting that Melvin Capital closed their short positions on $GME",
+        "id": "1lr154b",
+        "time": "2025-07-03T21:16:21",
+        "title": "2025-07-03 AP 4H",
         "text": "",
-        "score": 106393,
-        "num_comments": 7093,
-        "author": "jordanpeterson9"
+        "score": 1,
+        "num_comments": 0,
+        "author": "Weird-Ad-7669"
     },
     {
-        "id": "mcx43r",
-        "time": "2021-03-25T12:30:24",
-        "title": "GME Megathread for March 25, 2021",
-        "text": "\"Holy moley, what a game[stop]\" [(Gould, 1892)](https://archive.org/details/bub_gb_oDgPAAAAQAAJ/page/n219/mode/2up)\n\nHOLY MOLY HOLY MOLY HOLY MOLY HOLY MOLY HOLY MOLY HOLY MOLY HOLY MOLY HOLY MOLY HOLY MOLY HOLY MOLY HOLY MOLY HOLY MOLY HOLY MOLY HOLY MOLY HOLY MOLY HOLY MOLY HOLY MOLY HOLY MOLY",
-        "score": 32749,
-        "num_comments": 66408,
-        "author": "OPINION_IS_UNPOPULAR"
-    },
-    {
-        "id": "lrmrsc",
-        "time": "2021-02-24T20:34:59",
-        "title": "GME up 37% \"I'm not sure I can take it again\"",
+        "id": "1lr10vm",
+        "time": "2025-07-03T21:11:27",
+        "title": "2025-07-03 adx2 4H",
         "text": "",
-        "score": 84194,
-        "num_comments": 6033,
-        "author": "arnhuld"
+        "score": 1,
+        "num_comments": 0,
+        "author": "Weird-Ad-7669"
     },
     {
-        "id": "mhektw",
-        "time": "2021-03-31T20:10:33",
-        "title": "GME YOLO month-end update \u2014 Mar 2021",
+        "id": "1lr0yxp",
+        "time": "2025-07-03T21:09:11",
+        "title": "2025-07-03 PPO 4H",
         "text": "",
-        "score": 104774,
-        "num_comments": 3984,
-        "author": "DeepFuckingValue"
+        "score": 1,
+        "num_comments": 0,
+        "author": "Weird-Ad-7669"
     },
     {
-        "id": "la09rn",
-        "time": "2021-02-01T10:34:07",
-        "title": "Don\u2019t listen to them, this is them trying to take focus away from GME",
+        "id": "1lr0r2w",
+        "time": "2025-07-03T21:00:11",
+        "title": "Game",
+        "text": "Don\u2019t believe all the hype, it\u2019s been going on for over 5 years. It\u2019s always the same shit and the same hype by the same people. Moass tomorrow, but tomorrow comes and nothing. It will continue to do nothing cause the bigwigs who short this stock are the ones in control and nothing can be done about it. So if you want your money just to sit for years and you make nothing then leave it in GME. For me it\u2019s not worth it anymore. Just like DFV said 5 years and nothing then it\u2019s time to move on. Idc if GME has no debt or it\u2019s bought bitcoin the stock price is what I care about and it\u2019s taking way to long and nothing to show. It\u2019s the slowest moving stock. You make better returns on CCL or sound or Tesla.  Wake up people and quit listening to these gamers who are delusional. ",
+        "score": 0,
+        "num_comments": 6,
+        "author": "Negative_Flow_9364"
+    },
+    {
+        "id": "1lr0m9j",
+        "time": "2025-07-03T20:54:32",
+        "title": "The Timeline",
+        "text": "The 30th emoji was the dog one, making it the selling incident of RK in September. The \u2018I will wait for you\u2019 reference video posted in January points to the fact of the big gap between the 30th and 31st emoji in the timeline. As the photo says, in my opinion, i believe the upcoming weekend will be a historical one following with a magical event that would enlighten many lives in need of unity and peace. HOOOOOOOOOOOLD. $GME \ud83d\ude80\ud83d\ude80\ud83d\ude80. \ud83d\udc8e. NFA.",
+        "score": 113,
+        "num_comments": 23,
+        "author": "sullysreddit"
+    },
+    {
+        "id": "1lr0kzo",
+        "time": "2025-07-03T20:53:01",
+        "title": "2 more directors bought.",
+        "text": "https://www.sec.gov/Archives/edgar/data/1326380/000162828025034250/xslF345X05/wk-form4_1751574853.xml\nGamestop  Gamestop Gamestop Gamestop Gamestop Gamestop\nGamestop Gamestop\nGamestop Gamestop\nGamestop",
+        "score": 0,
+        "num_comments": 10,
+        "author": "Studio-Economy"
+    },
+    {
+        "id": "1lqzxuc",
+        "time": "2025-07-03T20:26:11",
+        "title": "Playing Transformers RPG solo?",
+        "text": "I've been entertaining the idea of doing a session of the Transformers RPG and I'm kinda lost on how to start? I have Mythic GME 2nd Edition and One-Page Mythic?",
+        "score": 3,
+        "num_comments": 3,
+        "author": "Most_Animator_248"
+    },
+    {
+        "id": "1lqzxhi",
+        "time": "2025-07-03T20:25:46",
+        "title": "2025-07-03 G7",
         "text": "",
-        "score": 112729,
-        "num_comments": 5582,
-        "author": "hsjwbksx"
+        "score": 1,
+        "num_comments": 0,
+        "author": "Weird-Ad-7669"
     },
     {
-        "id": "mbdncf",
-        "time": "2021-03-23T12:30:13",
-        "title": "GME Megathread for March 23, 2021",
-        "text": "We will be making a special earnings megathread for GME today at 2:30PM as well as an earnings call megathread tomorrow morning.\n\nGrab yo holy moly guacamole flavored popcorn.",
-        "score": 31368,
-        "num_comments": 36928,
-        "author": "OPINION_IS_UNPOPULAR"
+        "id": "1lqxj5t",
+        "time": "2025-07-03T18:48:03",
+        "title": "Reddit Ticker Mentions-July 03, 2025",
+        "text": "[https://discord.gg/g3njq3zy](https://discord.gg/g3njq3zy)",
+        "score": 1,
+        "num_comments": 0,
+        "author": "BulldawgTrading1"
     },
     {
-        "id": "l2x7he",
-        "time": "2021-01-22T21:14:08",
-        "title": "GME YOLO update \u2014 Jan 22 2021",
+        "id": "1lqxa7s",
+        "time": "2025-07-03T18:38:14",
+        "title": "Mods of cult sub doing their job being LITERAL shills and apes angry HOOD is rippin'",
         "text": "",
-        "score": 96750,
-        "num_comments": 6083,
-        "author": "DeepFuckingValue"
-    },
-    {
-        "id": "m0fpgd",
-        "time": "2021-03-08T13:30:21",
-        "title": "GME Megathread for March 08, 2021",
-        "text": "This thread will be automatically stickied weekdays at 8:30am, and unstickied at 9:15am.\n\nMegathreads are now posted automatically based on a few factors, including:\n\n* Mentions by comment count, weighted by comment novelty and score\n* Accounts of users mentioning, weighted by age, posting history, and previous mod actions\n* Stock volatility, volume, and market cap\n\nThis isn't an exhaustive list, but to prevent this from being gamed, we cannot share the exact weightings or specifics.\n\nThese megathreads exist to consolidate conversation about interesting topics and make things easily accessible and enjoyable for all. \n\n**Please do your part in making these threads decent. Don't troll. Don't spam. Don't spread divisiveness (calling others shills / bots).**",
-        "score": 31033,
-        "num_comments": 73705,
-        "author": "OPINION_IS_UNPOPULAR"
-    },
-    {
-        "id": "la6w8q",
-        "time": "2021-02-01T16:17:28",
-        "title": "Just bought $1MM worth of $GME. My profits from years of trading. Let\u2019s stick it to the HFs! \ud83e\udd8d strong together. \ud83d\udc8e \ud83d\ude4c",
-        "text": "",
-        "score": 117148,
-        "num_comments": 5033,
-        "author": "tannerwastaken"
-    },
-    {
-        "id": "ls63oa",
-        "time": "2021-02-25T13:02:39",
-        "title": "GME Megathread for Thursday February 25th, 2021",
-        "text": "[GME Megathread Part 2](https://old.reddit.com/r/wallstreetbets/comments/lsc5ji/gme_megathread_part_2_for_thursday_february_25th/?sort=new)",
-        "score": 32084,
-        "num_comments": 71984,
-        "author": "OPINION_IS_UNPOPULAR"
-    },
-    {
-        "id": "mc4hjd",
-        "time": "2021-03-24T12:30:11",
-        "title": "GME Megathread for March 24, 2021",
-        "text": "",
-        "score": 28703,
-        "num_comments": 56967,
-        "author": "OPINION_IS_UNPOPULAR"
-    },
-    {
-        "id": "lw4qgi",
-        "time": "2021-03-02T15:36:10",
-        "title": "Fuck it, Heres your daily GME Thread-Megathread 3/2/21",
-        "text": "just for you.",
-        "score": 33093,
-        "num_comments": 30300,
-        "author": "bawse1"
-    },
-    {
-        "id": "m16emz",
-        "time": "2021-03-09T13:30:12",
-        "title": "GME Megathread for March 09, 2021",
-        "text": "This thread will be automatically stickied weekdays at 8:30am, and unstickied at 9:15am.\n\nMegathreads are now posted automatically based on a few factors, including:\n\n* Mentions by comment count, weighted by comment novelty and score\n* Accounts of users mentioning, weighted by age, posting history, and previous mod actions\n* Stock volatility, volume, and market cap\n\nThis isn't an exhaustive list, but to prevent this from being gamed, we cannot share the exact weightings or specifics.\n\nThese megathreads exist to consolidate conversation about interesting topics and make things easily accessible and enjoyable for all. \n\n**Please do your part in making these threads decent. Don't troll. Don't spam. Don't spread divisiveness (calling others shills / bots).**",
-        "score": 29970,
-        "num_comments": 67769,
-        "author": "OPINION_IS_UNPOPULAR"
-    },
-    {
-        "id": "m5jn1y",
-        "time": "2021-03-15T12:30:18",
-        "title": "GME Megathread for March 15, 2021",
-        "text": "",
-        "score": 29420,
-        "num_comments": 57729,
-        "author": "OPINION_IS_UNPOPULAR"
-    },
-    {
-        "id": "l6cb1x",
-        "time": "2021-01-27T19:26:08",
-        "title": "The GME Thread, Part 3.14, for January 27, 2021",
-        "text": "Reddit's Engineering team has asked us to rotate threads more frequently because our load destroying their backend.\n\nKeep up the good work!",
-        "score": 36698,
-        "num_comments": 46860,
-        "author": "OPINION_IS_UNPOPULAR"
-    },
-    {
-        "id": "mqolln",
-        "time": "2021-04-14T11:30:13",
-        "title": "GME Megathread for April 14, 2021",
-        "text": "Good Morning Everyone!\n\nHOLY MOLY! HOLY MOLY! HOLY MOLY! HOLY MOLY! HOLY MOLY! HOLY MOLY! HOLY MOLY! HOLY MOLY! HOLY MOLY! HOLY MOLY! HOLY MOLY! HOLY MOLY! HOLY MOLY! HOLY MOLY! HOLY MOLY! HOLY MOLY! HOLY MOLY! HOLY MOLY!",
-        "score": 26495,
-        "num_comments": 35197,
-        "author": "OPINION_IS_UNPOPULAR"
-    },
-    {
-        "id": "mgewny",
-        "time": "2021-03-30T12:30:14",
-        "title": "GME Megathread for March 30, 2021",
-        "text": "HOLY MOLY!",
-        "score": 28200,
-        "num_comments": 33439,
-        "author": "OPINION_IS_UNPOPULAR"
-    },
-    {
-        "id": "mame8e",
-        "time": "2021-03-22T12:30:11",
-        "title": "GME Megathread for March 22, 2021",
-        "text": "",
-        "score": 29237,
-        "num_comments": 31322,
-        "author": "OPINION_IS_UNPOPULAR"
-    },
-    {
-        "id": "m3hkjf",
-        "time": "2021-03-12T13:30:14",
-        "title": "GME Megathread for March 12, 2021",
-        "text": "> **User Reports**\n\n> (a bunch of normal reports)\n\n> 1: Tell the admins to bring back the porn. Don't remove functionality to sanitize the site, asshats.\n\n???",
-        "score": 29009,
-        "num_comments": 54737,
-        "author": "OPINION_IS_UNPOPULAR"
-    },
-    {
-        "id": "l97ykd",
-        "time": "2021-01-31T08:10:30",
-        "title": "The real reason Wall Street is terrified of the GME situation",
-        "text": "I have been following GME since mid-September and over that time I have banked myself a %1300 return in the process. However, the whole time I was a little puzzled with how severe the reactions from Wall Street have been, especially this week. \"The company had more than 100% of its stock sold short! That's never happened before!\", you say. I know, I know, but that's [not actually not a new thing](https://www.forbes.com/2006/08/25/naked-shorts-global-links-cx_lm_0825naked.html?sh=f59ff078400b). A short squeeze, even one of this magnitude, should have squoze by now with GME up more than 10x in the span of weeks. Something is just not right. **I think there is something much, much bigger going on here. Something big enough to blow up the entire financial system.**\n\nHere is my hypothesis: I think the hedge funds, clearing houses, and DTC executed a coordinated effort to put Game Stop out of business by conspiring to create a gargantuan number of counterfeit shares of GME, possibly 100-200% or more of the shares originally issued by Game Stop. In the process, they may have accidentally created a bomb that could blow up the entire system as we know it and we're seeing their efforts to cover this up unfold now. What is that bomb? **I believe retail investors may hold more than 100% of GME** (not just 100% of the float, more than 100% of the actual company). This would be definitive proof of illegal activity at the highest levels of the financial system.\n\nFor you to follow this argument, you need to go read the white paper [\"Counterfeiting Stock 2.0\"](http://counterfeitingstock.com/CS2.0/CounterfeitingStock.html) so you understand how the hedge funds can create fake stock out of thin air and disguise it so it looks like real shares. They use these fake shares in [short attacks to drive the price of a company down until they put them into bankruptcy](https://seekingalpha-com.cdn.ampproject.org/v/s/seekingalpha.com/amp/instablog/11442671-gerald-klein/3096735-anatomy-of-a-short-attack?amp_js_v=a6&amp_gsa=1&usqp=mq331AQHKAFQArABIA%3D%3D). This practice seems to be widespread among hedge funds that go short. There is even a term for it, \"strategic fails\u2013to\u2013deliver.\" Counterfeiting shares is extremely illegal (similar level to counterfeiting money) but it's very difficult to prove and even getting the court to approve subpoenas because of the way the financial industry has stacked the deck against investigations.\n\nThis completely explains why so many levels of the financial system seem to be actively trying to get in the way of retail investors purchasing more GME. It's not just about a short squeeze, it's about their firms' very existence and their own personal freedom. We have the opportunity to put all these people in jail by proving that we own more than 100% of shares in existence.\n\nThere are are **71 million shares** of GME that have ever been issued by the company. Institutions have reported to the SEC via [13F filings](https://fintel.io/so/us/gme) that they own more than **102,000,000 shares** (including the 13% of GME stock is owned by Ryan Cohen). Now, I don't know the delay/variance on these ownership numbers, but I think there is a pretty solid argument that close to 100% of GME is owned by these firms, if not more.\n\nMoreover, there are now more than 7 million people subscribed to r/wallstreetbets\\~\\~. I know lots of people here are sitting on a few hundred shares that they bought back when it was under $50. Some of us are even holding thousands. If the average number of shares owned by each subscriber is even close to 5-10, we have a very good shot at also owning a similarly enormous amount of GME.\\~\\~ **Even if the average was just 10 shares per legit subscriber, that puts the minimum retail position at about 30-50% of the entire company.**\n\nGME has been on the NYSE threshold list for almost a month. We don't have January data yet, but I just analyzed the data from the [SEC's fails\u2013to\u2013deliver list for December](https://www.sec.gov/data/foiadocsfailsdatahtm) (all 65,871 lines of it) and looked up the number of shares that were likely counterfeit. For comparison, I did the same for a couple random tickers. Most companies have close to no shares not show up. Of those that do, it's a relatively small number of shares. For example, two random companies: Lowes ($LOW, \\~$125B market cap) had 13,960 shares fail to be delivered at its highest point that month, Boston Beer Company ($SAM, $11.5B market cap) had 295 shares fail to be delivered.\n\nHow many shares of GME failed to deliver? **1,787,191.** As the white papers points out, the true number of counterfeit shares can be 20x this number. How bad do you think that number will be when we get the numbers for January? I'm willing to bet its many times that. Look at how that compares to other companies' stock:\n\n[Histogram showing number of shares that weren't delivered in December \\(x-axis\\) vs the number of companies that fall into that bin \\(y-axis\\). GME is an extreme outlier.](https://preview.redd.it/g723jvyhine61.png?width=445&format=png&auto=webp&s=39bad6c47b428d364de36e9888de35b79572d1da)\n\nI think this explains all the shenanigans going on the last few days. There is way too much counterfeit GME stock out there and DTC, the clearing houses, and the hedge funds are all in on it. That's why there has been such a coordinated effort to disrupt our ability to buy shares. **No real shares can be found** **and it's about to cause the system to fall apart.**\n\n*TLDR; We probably own way more of GME than we think and that is freaking out Wall Street because it could prove they've been up to some extremely illegal shit and the whole system could implode as a result.*\n\nDisclaimer: I'm just a starving engineering PhD student and I don't work in finance. I have no inside knowledge of how the financial system works and I may be wrong on some of this. This is not financial advice and you shouldn't trade based on it. I am book-smart but I still eat crayons like the rest of you. Obligatory rocket: **\ud83d\ude80**\n\n&#x200B;\n\nEDIT 0: Looks like I truly belong on this sub. On the first version of this post I didn't read the file description properly and summed a cumulative distribution. My numbers were wrong, but I have updated the plot and post with the correct numbers.\n\nEDIT 1: You should also note this is the distribution for NASDAQ tickers, not the entire NYSE. I doubt that the distribution trend is any different though.\n\nEDIT 2: Evidence that Fannie May and Freddie Mac were killed in 2008 via short attacks using counterfeit shares: [report](https://www.sec.gov/comments/s7-08-09/s70809-407a.pdf). Exactly what I think they were trying to do to GME.\n\nEDIT 3: A lot of people were hung up on the \"3 shares per wsb subscriber thing\". I know many accounts are bots, I was intentionally underestimating that number. I have adjusted to 10 shares per \"legit subscriber\" to reflect this without changing the total amount I think retail owns.\n\nEDIT 4: What I'm seeing on Twitter makes me think I'm being interpreted a little too hyperbolically when I say \"Something big enough to blow up the entire financial system.**\" We're not going to go back to mud huts, people.** This could just be really disruptive for a short amount of time and cause a number of firms to face liquidity problems, possibly bankrupting some of them. Life will go on and I'm confident regulators and government will step in and protect people if necessary. Hopefully they pay more attention to enforcing securities laws going forward to prevent this from happening again.\n\nEDIT 5: [Backup link for white paper.](https://web.archive.org/web/20210131014127/counterfeitingstock.com/CS2.0/CounterfeitingStock.html)\n\nEDIT 6: I am getting thousands of messages. I won't be able to respond to all of them. Here is an FAQ:\n\n1. *How do I learn investing?*I am not an authority on this, but my personal opinion is to first learn how to read a company's financial documents and value businesses and only then start thinking about putting your money into specific stocks. Read \"the intelligent investor\" by Benjamin Graham for this. Then learn how to think about picking stocks. I like Peter Lynch's books for this.\n2. *What is going to happen this week?*I have no idea and I wouldn't dare to guess.\n3. *Are you going to be killed?*I don't know where people are getting this idea. I have no special knowledge or insider contacts, and I am in no way, shape, or form an expert on the market or the system behind it. Please treat my tinfoil-hat conspiracy theories as just that. There is nothing to gain from harming me and I have no doubts about my safety. These are just personal opinions and I don't have any schemes to \"take down the shorts\" or anything like that. I do not advocate for you to buy, hold, or sell. I'm just postulating on how we might have found ourselves in this place.",
-        "score": 58215,
-        "num_comments": 7658,
-        "author": "johnnydaggers"
-    },
-    {
-        "id": "m67ywm",
-        "time": "2021-03-16T12:30:20",
-        "title": "GME Megathread for March 16, 2021",
-        "text": "^^^holy ^^^moly",
-        "score": 28439,
-        "num_comments": 50557,
-        "author": "OPINION_IS_UNPOPULAR"
-    },
-    {
-        "id": "lre2k6",
-        "time": "2021-02-24T14:24:58",
-        "title": "GME Megathread for Wednesday, February 24th, 2021",
-        "text": "Enjoy this thread overnight. New one comes at 9:15am on the 25th.",
-        "score": 30210,
-        "num_comments": 83725,
-        "author": "OPINION_IS_UNPOPULAR"
-    },
-    {
-        "id": "l4xje1",
-        "time": "2021-01-25T21:05:36",
-        "title": "GME YOLO update \u2014 Jan 25 2021",
-        "text": "",
-        "score": 87581,
-        "num_comments": 5317,
-        "author": "DeepFuckingValue"
-    },
-    {
-        "id": "mfoivk",
-        "time": "2021-03-29T12:30:16",
-        "title": "GME Megathread for March 29, 2021",
-        "text": "Welcome back! If you were in pain waiting for the weekend to end, I have bad news for you. Next weekend is a long one, with markets closed this Friday. \n\nAlso, be sure to [sign up for our paper trading competition](https://www.reddit.com/r/wallstreetbets/comments/mdz6oc/join_rwallstreetbets_third_annual_paper_trading), it's free and there's lots of prizes to be handed out!\n\n\ud83d\ude4f\ud83e\udd51",
-        "score": 28015,
-        "num_comments": 25361,
-        "author": "OPINION_IS_UNPOPULAR"
-    },
-    {
-        "id": "lb8lwf",
-        "time": "2021-02-02T22:34:12",
-        "title": "Why the fuck are we acting like we lost? We made GME go from 4 to 400 and it took combined trading platforms to silence and cheat to bring it to 90.",
-        "text": "Did everyone forget what happened in Thursday? That was a calculated effort to bring down our position. FUCK OFF BILLIONAIRS, well still take you fucking money; who do you think will fund our food stamps?\n\nWe didn\u2019t \u201close\u201d because we made a bad call, we \u201clost\u201d because we made the RIGHT call and this disturbed  some folks at the top. \n\nI was reading 2 articles in Wall Street journal and it made my blood boil- first article was saying \u201crandom penny stock went up 30% with no news or announcement\u201d- the people that are paid to predict and report and are the expert at stock market are saying this shit. The second article right after made me want to fuck the writers wife: \u201cGME and AMC, Reddit favorite stocks, plunged after apparent loss in interest from retail investors\u201d LOSS IN  INTEREST? MOTHERFUCKER WE CAN ONLY BUY 5 FUCKING SHARES EACH. \n\nWE LIKE THE STOCK. THOSE FUCKS JUST DON\u2019T LET US BUY IT. How is GameStop and AMC and BB not already suing robinhood? Is any stock expert really gonna act like had they not restricted in Thursday, it would have went down that much? \n\nWhat the fuck is this gaslighting? That last week didn\u2019t happen? Why are every news channel acting like they called GME or BB or AMC falling like it happened organically and not deliberately by everyone involved? \n\nIs GME worth 400$? FUCK NO. But since when was the stock market about actual worth? Stocks have become fiat currency in themself, doesn\u2019t matter than company quarterly earnings, or its news, if people buy it, it goes up. When you restrict that- it goes down. \n\nWe were up against billions of fund, trading platforms that we do not own or have a say in, our weapons, controlled by the enemy. Those fucks in TV acting like they actually called GME falling like this or acting like this is perfectly normal are trying to gaslight us about what happened in Thursday. \n\nFUCK THEM. We still got GME to go up and caused international fevor- we made the right call, we had the right stock, we had the right people, our enemies just had control of the only weapon we could use.",
-        "score": 77289,
-        "num_comments": 5344,
-        "author": "JoeWelburg"
-    },
-    {
-        "id": "m2q39b",
-        "time": "2021-03-11T13:30:19",
-        "title": "GME Megathread for March 11, 2021",
-        "text": "Since we're back to hitting comment limits, I'll be posting a GME megathread part two around noon.",
-        "score": 28408,
-        "num_comments": 39148,
-        "author": "OPINION_IS_UNPOPULAR"
-    },
-    {
-        "id": "lwtejk",
-        "time": "2021-03-03T13:04:26",
-        "title": "GME Megathread for March 3rd, 2021",
-        "text": "",
-        "score": 29336,
-        "num_comments": 38678,
-        "author": "OPINION_IS_UNPOPULAR"
-    },
-    {
-        "id": "m6zbhp",
-        "time": "2021-03-17T12:30:13",
-        "title": "GME Megathread for March 17, 2021",
-        "text": "",
-        "score": 26966,
-        "num_comments": 47120,
-        "author": "OPINION_IS_UNPOPULAR"
-    },
-    {
-        "id": "l7v9o8",
-        "time": "2021-01-29T15:26:04",
-        "title": "GME What About Second Breakfast Club Megathread",
-        "text": "",
-        "score": 31364,
-        "num_comments": 71434,
-        "author": "wallstreetboyfriend"
-    },
-    {
-        "id": "l7s631",
-        "time": "2021-01-29T13:11:27",
-        "title": "GME Breakfast Club Megathread",
-        "text": "",
-        "score": 30647,
-        "num_comments": 75958,
-        "author": "OPINION_IS_UNPOPULAR"
-    },
-    {
-        "id": "mpbvt1",
-        "time": "2021-04-12T11:30:12",
-        "title": "GME Megathread for April 12, 2021",
-        "text": "HOLY MOLY! \n\n[GameStop initiates search for new CEO](https://www.reuters.com/article/us-gamestop-ceo-exclusive-idUSKBN2BZ290)",
-        "score": 23831,
-        "num_comments": 32488,
-        "author": "OPINION_IS_UNPOPULAR"
-    },
-    {
-        "id": "m7pr7b",
-        "time": "2021-03-18T12:30:13",
-        "title": "GME Megathread for March 18, 2021",
-        "text": "",
-        "score": 26011,
-        "num_comments": 35115,
-        "author": "OPINION_IS_UNPOPULAR"
-    },
-    {
-        "id": "mh524f",
-        "time": "2021-03-31T12:30:18",
-        "title": "GME Megathread for March 31, 2021",
-        "text": "",
-        "score": 25593,
-        "num_comments": 23622,
-        "author": "OPINION_IS_UNPOPULAR"
-    },
-    {
-        "id": "l78fuh",
-        "time": "2021-01-28T20:52:00",
-        "title": "I just bought $5,000 in $GME. I would not have done this if the brokerages didn't try to manipulate the market.",
-        "text": "I've been following /r/wallstreetbets for years. Usually just for a laugh as I am a stodgy buy and hold guy and don't speculate often. When I saw the $GME shit happening a week ago I thought it was pure stupidity and was not planning on investing. In fact, I bought some $GME puts (which I've since sold since somehow they've gone up based on volatility) betting against the crowd here.\n\nHowever, what has started as a decentralized short squeeze has morphed into a class movement. I'm a big populist and think we need big changes in this country, especially a transfer of wealth and power from the elites to the people. When this morphed into a class movement I became obsessed. However, I still wasn't going to buy in because I shy away from speculating on ultra risky stuff like this. But when Robinhood and all the other major brokerages colluded to cause a massive sell off, that's when it became a matter of principle. I've watched all day as the stock has remained relatively stable on very little volume. People are holding despite wall street twisting your arm and trying to make you tap out by only allowing you to sell. It's a beautiful thing to see. I don't think of my purchase as an investment, but as putting my own skin in the game as a fuck you against a rigged system.",
-        "score": 75322,
-        "num_comments": 4806,
-        "author": "ONE_GUY_ONE_JAR"
-    },
-    {
-        "id": "mz69gk",
-        "time": "2021-04-26T19:49:15",
-        "title": "$GME squeeze incoming",
-        "text": "",
-        "score": 44764,
-        "num_comments": 4088,
-        "author": "dragon_dudee"
-    },
-    {
-        "id": "lsc5ji",
-        "time": "2021-02-25T17:40:31",
-        "title": "GME Megathread Part 2 for Thursday, February 25th, 2021",
-        "text": "",
-        "score": 26791,
-        "num_comments": 69762,
-        "author": "OPINION_IS_UNPOPULAR"
-    },
-    {
-        "id": "lddphx",
-        "time": "2021-02-05T18:29:19",
-        "title": "$GME & $AMC Line comparation, from the last 5 Days...",
-        "text": "",
-        "score": 71395,
-        "num_comments": 4670,
-        "author": "CRSTNMFC"
-    },
-    {
-        "id": "l8izo3",
-        "time": "2021-01-30T10:35:02",
-        "title": "Beware those who are shilling other stocks claiming they're the next GME! They're just trying to get your attention, and they're succeeding! \ud83d\udea8",
-        "text": "There is no next GME. As our beloved autist Michael Burry said, GME is a unique situation and a perfect storm. You won't find something like this again. They are just trying to move your attention away from GME and scatter us. From the discussion threads and the posts on the frontpage, it seems that they're succeeding.\n\n[Michael Burry tweet on GME](https://twitter.com/michaeljburry/status/1355186794640236561?s=19)\n\nJust look at the AMC thread up on the frontpage at the moment. Half the comments are from new accounts with just a handful of karma. AMC is not the next GME. The 'days to cover' on AMC is less than a day. After an initial uptick it will just fizzle out and you'll be left bagholding.\n\nIf you're still unsure, [here](https://www.nextmemestock.com/) you can find a highly advanced AI algorithm showing the next meme stock. (credits /u/adagiolifen)\n\nEdit: I think we even need to the mods to make a post and sticky it. The shilling is really becoming bad now\n\nBuy whatever the fuck you want and whatever you like. All I'm saying is it's not the next GME.",
-        "score": 58636,
-        "num_comments": 5657,
-        "author": "Shuffleshoe"
-    },
-    {
-        "id": "l6sttu",
-        "time": "2021-01-28T09:40:08",
-        "title": "Don\u2019t be scared by the drop in $BB $GME etc. Hedge Funds trade after hours to scare y\u2019all off... KEEP BUYING AND HOLDING \ud83d\ude80\ud83d\ude80",
-        "text": "",
-        "score": 86561,
-        "num_comments": 4333,
-        "author": "ShortVIXDaily"
-    },
-    {
-        "id": "l9runf",
-        "time": "2021-02-01T01:53:09",
-        "title": "The Silver Squeeze is a hedge-fund coordinated attack so they can keep fighting the $GME fight",
-        "text": "If you haven\u2019t been browsing WSB or doing your own research, you\u2019d probably think that the people on Twitter are correct in saying there is a silver squeeze happening and we should all get in on it. There are quite a few wsb-logo Twitter accounts pushing this. This is BS & the straight up the ANTITHESIS of who we are. \n\nBy buying silver/going long on silver, you would be directly putting money into the pockets of the EXACT HEDGE FUNDS ON THE OTHER SIDE OF $GME \ud83d\ude80 \ud83d\ude80 \ud83d\ude80 \ud83d\udc8e \ud83d\ude4c  The hedge funds are LONG silver NOT short silver.\n\nThe media, Wall Street, normies, and every other non-WSB autist are trying to push you to buy silver. This would be a tragic, irreversible decision that not only will most likely not make you any money because the squeeze is fake, it will put you on the sidelines from this righteous and glorious war we are in. \n\nIf you are looking for alternative investments to GME, I\u2019d recommend simply getting in on the $BANG GANG- Blackberry, AMC, Nokia, and GME. \n\nFor the feds and the media and all the dumb people reading this, I am the last thing from a financial advisor and am a complete, 100%, full retard autist. \n\nBANG GANG CHEEEEEEEHOOOOOOOOO\n\nEdit: I am not talking down on silver as an investment, I am not saying it's not a good hedge, I'm not saying anything bad about silver in any form. I'm simply pointing out that right now, this \"squeeze\" that all these people are referring to is definitely not a \"squeeze\" at all and is an artificial hedge-fund driven attempt to reduce the GME momentum and we should all be cognizant of the media manipulation and happening everywhere including right here. For all you that want to buy silver, great, buying the bullion directly in my humble autistic opinion is better than shares in a fund that supposedly buys it but don't trust some autist on the internet. BANG GANG\n\nEdit #2: Fellow autists, we have ascended to the #2 post on all of reddit. Our $GME gains this week and beyond will carry us to the gates of Valhalla. Look to your left, now look to your right, these are your brethren and sisterthren who will diamond hands with you until we all pass down these tendies to our children's children. Onward.",
-        "score": 73302,
-        "num_comments": 4654,
-        "author": "RizzutosNOTAWORD"
-    },
-    {
-        "id": "ms17e4",
-        "time": "2021-04-16T11:30:16",
-        "title": "GME Megathread for April 16, 2021",
-        "text": "One last...\n\n#***HOLY MOLY GUACAMOLE!***\n\nWith \u2665\ufe0f, the WSB mod team.\n\n(This post brought to you by Big \ud83e\udd51, in partnership with Micro \ud83c\udf46)",
-        "score": 23238,
-        "num_comments": 25816,
-        "author": "OPINION_IS_UNPOPULAR"
-    },
-    {
-        "id": "mrcp5k",
-        "time": "2021-04-15T11:30:15",
-        "title": "GME Megathread for April 15, 2021",
-        "text": "Good Melvening Everyone!",
-        "score": 22982,
-        "num_comments": 25194,
-        "author": "OPINION_IS_UNPOPULAR"
-    },
-    {
-        "id": "lathys",
-        "time": "2021-02-02T11:26:37",
-        "title": "To all GME holders: Shut up and listen",
-        "text": "This text was originally posted in r/[Mauerstrassenwetten](https://www.reddit.com/r/mauerstrassenwetten/comments/laaq9y/an_alle_zuh%C3%B6ren_und_schnauze_halten/) by u/knutolee. I thought his message was so powerful that I asked him for permission to translate, post (can share chat with Mod if required or check directly with him) and fuck his wife (ok didn\u2019t ask for permission) after and he agreed to ~~all~~ most of this wholeheartedly \u2013 like a true Autist. I am trying to catch the message \u2013 so don\u2019t expect a word by word translation as you can never catch the greatness of the text in it\u2019s entirety and I got to translate it in a way that even a US degenerate can follow it.\n\nAs usual no financial advice, I more or less just copied the text because I liked the text and I like the share. In general I have likely lost more than I won and the stock market is a mystery in itself to me. So make your own due dilligence and don\u2019t trust financial advice of others (the argument for that you can read to a certain extent below).\n\n**Autists, Degenerates, Idiocracy of the World \u2013 let me get this straight!**\n\nIn the coming days I don\u2019t wanna see all this whining and bitching on this sub and espescially in the daily GME threads anymore. On every fucking corner of this sub I smell doubt, you read messages the likes of \u201ethis is over\u201c, \u201ewe missed the squeeze\u201c, \u201eI am going to loose it all\u201c, \u201eentered at 320$ - I am doomed\u201c. What the fuck is wrong with you retards, did you fucking wanker your wifes boyfriend dick all night and lost your mind over the effort to do so? I think I got to get this accross the Buddy Stephens way to get you down to fucking earth and get your attitude right.\n\n**1) You come to a sub called** r/wallstreetbets **and yolo your hard earned money in $GME**\n\nYou realize what you are doing here - you true fuck - dont you? This is a community of full blown first class true tits up degenerates which take pleasure in posting losses accumulating into the millions every fucking month and you are putting your money into a BET \u2013 yes my dear it is written out in the name of this very fucking sub Wallstreet-B-E-T-S!!! \u2013 and follow DD posted by people with names like \u201eSHOW\\_ME\\_YOUR\\_ANAL\\_TITS\u201c? You realize this is not a fucking Disney ferry \u201eOne-Wish-comes-true\u201c show and we see all day long gain porn and loss porn is something which doesn\u2019t exist in this world? This is a band of true autists which occupied an absolute niche when it comes down to trading (and we even don\u2019t trade stocks normally!). This is the place where one wants to enjoy the sado-masochistic part of the retarded capitalistic system we are living in. Yes we have some (maybe a lot) DD diamonds in this sub which by the way are now impossible to find because you degenerate fucks spam the entire system to the moon but no sane long-term investor would consider to invest into any of these investments \u2013 this is about \u201eget rich or die trying!\u201c. This is not r/investing!\n\n**2) Yeah but I saw Reddit in the news and all that stuff about GME and it was going through the roof becasue there is going to be short squeeze and on top of it the hedge funds fucked up, hihihi**\n\nIf this entire thing was a safe bet why exactly would not the fucking entire world jump on this train? (and even you might get this image from all this \u201eSaudi Arabia calling, China calling, Africa calling posts \u2013 but please they invest into BABA, Aramco or I don\u2019t know what\u2019s the hot shit in Lagos stock exchange right now \u2013 could be though the next big thing \u2013 got to see if I can find a DD on this). So why is this not happening? Because it is a fucking BET \u2013 the stock market is a fucking Casino and the major difference between r/investing and us is that they are always just bet on black or red, while we always go for the magical zero. It is totally unclear whether all of us going to show up at Miami Beach with our Porsche Cayenne or Tesla Model S and hit on the girls (or boys) on the beach! The reasons are layed out to you every fucking day with yet another quality DD that most of us simply dont understand! And yes our chances to already sit on the fucking moon slurping our Pinha Coladas would be certainly higher if everything was going the way we believe the system should be working but even the last person who joined this sub by now should realize \u2013 you are potentially fucking with the system itself (by the way something this sub never intentionally wanted and you shouldn\u2019t do if you like the system).\n\n**3) Hey but when is the squeeze of the squoze going to happen? \ud83d\ude13**\n\nSo there is this story going through the media and from Florida to Colorado everybody remotely degenerate is yoloing money into GME. It\u2019s a fucking global movement now (or not \u2013 could be also the same 50.000 degenerates cheering up themselves the entire time which would much better fit this place) and according to the DD we just need to have \ud83d\ude4c\ud83d\udc8eand the shorts a bleeding their panties, their balls feel squozen (and not in a good way) and they are completely in defensive mode. What do you think what people who are responsible for Multi-billion $$$ HF are going to do? How do you think you become a person who is responsible for such an operation? Do you think these guys have served as altar boys or girls in church (no offense if so)? What is wrong with you? Seriously! Do you think if they get some headwind they are going to say: Oh boy \u2013 we got defeated and going to realize a multi-fucking-billion-to-the-moon loss? **OF COURSE FUCKING NOT!** **THEY WILL GET EVERY FUCKING BAZOOKA, TANK, ROCKET or INTER-STELLAR DEFENSE SYSTEM IN PLACE TO BRING THIS TO AN END!** Influence the market participants (speculation), Short-Laddar attacks (I to this very day haven\u2019t understand the concept or how this works \u2013 speculation), demotivational tactics (speculation) and to whomever picks it up \u2013 desinformation (well not quite speculation but it could also be that media is just retarded as fuck to get the most simple facts straight). So what would you do with a potential group of 5mn small-size investors \u2013 shall we do a collective effort to think about it? Ah fuck it! It is to fucking obvious \u2013 you would dry this out through time, divide their interests and drive away their attention. Because let\u2019s be fucking honest \u2013 most of you entered this thinking you would hold this wonderful stock for a couple of days (and to be honest in this respect the community how it existed 10 days ago was much more true to itself - no whining just sayin)! Gotcha! Who can tell me who fucked each other two weeks ago in People magazin or on Twitter? Nobody \u2013 I even don\u2019t remember shit about this very forum before GME (ok I remember u/variation-separate but that is another story). And all their tactics are completely understandable because there is a fucking huge amount of tendies to be made and they are not that different from us (my fear).\n\n**4) That does not give you the fucking right to whine and bitch all the time in the daily threads (and it is not happening already its going to be) and fucking ruin the party**\n\nDeal with it \u2013 we just got to wait how this thing plays out. That\u2019s it. If we are right \u2013 this will play out positively in one or another way (huge tendies or SEC investigating). Let them continue shorting the stock or whatever. If you believe you want to buy more stock \u2013 do your DD and do it. When this got picked up a long time ago by people they thought \u2013 hmmmm makes sense \u2013 I am going to get me one of these tickets to the moon. There was if at all a very little interest to squoze the balls of any HF and it was certainly not the main motivation of this sub. I said it above: Get rich or die tryin! Since last Thursday the whole thing became political and it looks like rules were changed in our disfavour and yeah we can not go back in time but we got to deal with it and the circumstances. \\[Left out this part as it promotes holding and buying which I don\u2019t want to in the sense that everybody needs to make his own fucking decision but I am going to fucking hold\\] but **WE NEED TO REGAIN OUR POSITIVE SPIRIT** which was an essential part of this sub and GME for most part in January (and of course in general before) \u2013 no matter how fucked up things looked (individually as there is not such a thing as collective alignment to buy options or stocks on this forum). We will see how the numbers are play out and who provided the adequate picture. In our reality GME is going to the moon and the \ud83d\ude80 is fueled. Period. We are just prevented from starting because of the windy conditions out there.\n\nSo please \u2013 no post without \ud83d\ude4c\ud83d\udc8e\ud83d\ude4c\ud83d\udc8e\ud83d\ude4c\ud83d\udc8e\ud83d\ude80\ud83d\ude80\ud83d\ude80 and if you want to fukn leave the party \u2013 leave \u2013 but let us continue this party, because we are going to the fkn moon. This is the way and I fkn love GME and if this means I need to hold onto this beauty for another 25 years I am going to do it.\n\nP.S.: One thing dear to my heart - in the past there has been huge donations made by this community to people living with autism. As we use their names every fkn day I would really like to see some of your degenerates not to forget about this cause because we owe them and as much as I like the billboards I\u2019d rather see every $$$ go into charities rather then telling the world about us  \u2013 I think everybody out there knows by now that we exist and that we have \ud83d\ude4c\ud83d\udc8e \n\nEdit: Nobody asked for it but 35@231,69 and thanks for the awards which should go to u/knutolee \\- so you can simply award his original post referenced. More importantly he expressed to me that he is very happy with the translation which is almost as important as the message itself.\n\nEdit 2: Please pay attention to AMA Marc Cuban - [https://www.reddit.com/r/wallstreetbets/comments/lawubt/hey\\_everyone\\_its\\_mark\\_cuban\\_jumping\\_on\\_to\\_do\\_an/](https://www.reddit.com/r/wallstreetbets/comments/lawubt/hey_everyone_its_mark_cuban_jumping_on_to_do_an/) \\- there is I think some quite enlighting answers in a very easy to understand language.\n\nEdit 3: Bought 5@103 \n\nEdit 4: Heading for dinner. Crazy times. Will check later and decide whether to buy more tickets or not. But maybe good advice for some others to make a break. Chillax :)\n\nEdit 5: Read that RH has opened up GME again. For whatever it's worth \ud83d\ude80\n\nEdit 6: Thanks again for all the Awards and stuff. I can only reload in the morning. Was fun and maybe I am going to translate more in the future - if mods would consider to give me a copy cat \ud83d\ude3a flair it would be the icing on the cake.\n\nEdit 7: Obligatory salute to the one and only DFV and his \ud83d\udc8e balls. This guy will go all the way to the \ud83d\ude80 with us.",
-        "score": 55590,
-        "num_comments": 5436,
-        "author": "SimplyPwned"
-    },
-    {
-        "id": "m1s4gv",
-        "time": "2021-03-10T07:30:00",
-        "title": "I made a promise to some friends that I would eat a green crayon if GME hit $250. Might as well show you apes as well.",
-        "text": "",
-        "score": 64459,
-        "num_comments": 3700,
-        "author": "jmanpc"
-    },
-    {
-        "id": "le235t",
-        "time": "2021-02-06T17:22:22",
-        "title": "GME Institutions Hold 177% of Float Why the Squeeze is not Squoze",
-        "text": "This is actual DD of just statistical, cold hard facts. My previous post got removed by the compromised mods of r/wallstreetbets\n  \n  \n[I have access to Bloomberg Terminal with up to date data as of February 5 on institutional holdings. Institutions currently hold 177% of the float!](https://i.redd.it/c44cmb67mtf61.png)  \n  \n  \n[How is this even possible to own more than 100% of the float?](https://www.investopedia.com/ask/answers/07/institutional_holdings.asp) Here's an example of one of the most likely causes of distorted institutional holdings percentages. Let's assume Company XYZ has 20 million shares outstanding and Institution A owns all 20 million. In a shorting transaction, institution B borrows five million of these shares from Institution A, then sells them to Institution C. If both A and C claim ownership of the shares shorted by B, the institutional ownership of Company XYZ could be reported as 25 million shares (20 + 5)\u2014or 125% (25 \u00f7 20). In this case, institutional holdings may be incorrectly reported as more than 100%.  \n  \n  \nIn cases where reported institutional ownership exceeds 100%, actual institutional ownership would need to already be very high. While somewhat imprecise, arriving at this conclusion helps investors to determine the degree of the potential impact that institutional purchases and sales could have on a company's stock overall.  \n   \n  \nI have plausible evidence that leads me to believe there are still shorts who have not covered, and there are also shorts who entered greedily at prices that could still trigger a short squeeze event as this knife has been falling. [~1 million shares of GME were borrowed this Friday at 10 am, and a short attack occured that dropped GME from $95 to $70 over the course of 15 minutes.](https://i.redd.it/97j13bxy4pf61.jpg)  \n  \n  \n[This is my source for live borrowed shares data that you can watch during market hours.](https://iborrowdesk.com/report/GME)  \n\nSo we still meet the first requirement for a short squeeze to even be possible, there ARE a lot of short positions taken in GME still. The ultimate question is will there be enough demand to drown the supply? Or are we going to let the wolf in sheep's clothing aka Citadel who we know is behind not only these short positions bailing them out and purchasing puts themselves (data from 9/30/20) , but behind many brokerages who ultimately manipulated the supply demand chain by removing buying...are we really going to just let this happen? What they did last Thursday was straight up criminal.   \n  \n  \nInstitutions move the markets more than retailers unfortunately, especially when order flows go directly through Citadel. [But it is very interesting the amount of OTM calls weeks out compared to puts. This is options expiring 3/12/21, and all the earlier expiration dates are also heavy in OTM calls.](https://i.imgur.com/mv0bo4Y.png) Max pain theory states it is in the market maker's best interest (those who write options aka theta gang) for price to gravitate towards max pain, as the strike price with the most open contracts including puts and calls would cause financial losses for the largest number of option holders at expiration.  \n  \n  \nWith this heavy volume abundant in OTM calls, a gamma squeeze can occur if we can get the market makers to hedge against their options. [Look what triggered the explosive movement as price blasted past the max pain strike last week, I believe this caused many bears to have to take a long position as a way to hedge against their losses.](https://i.imgur.com/NHZg0O6.png) And right now, we are very close and gravitating towards max pain strike. If there is a catalyst/company event that can cause demand to increase, I believe GME is not dead for all the aforementioned reasons above. Thank you for taking your time to read my DD, my original post on wsb was removed by the mods.\nMODS please don't delete! This is actual DD of just statistical, cold hard facts. My previous post got deleted, if this one does too, spread the word.  \n \n  \nEdit: This post was removed, then reinstated, and I am now banned unable to comment and post to this subreddit  \n  \nEdit 2: hi u/OPINION_IS_UNPOPULAR , I would comment and post but I am literally unable to on this subreddit\n  \nEdit 3: I'm unbanned!",
-        "score": 57790,
-        "num_comments": 4827,
-        "author": "onerivenpony"
-    },
-    {
-        "id": "mq0c0d",
-        "time": "2021-04-13T11:30:11",
-        "title": "GME Megathread for April 13, 2021",
-        "text": "Good Morning Everyone!",
-        "score": 22418,
-        "num_comments": 23982,
-        "author": "OPINION_IS_UNPOPULAR"
-    },
-    {
-        "id": "lxkint",
-        "time": "2021-03-04T13:30:21",
-        "title": "GME Megathread for March 04, 2021",
-        "text": "This thread will be automatically stickied weekdays at 8:30am, and unstickied at 9:00am.\n\nMegathreads are now posted automatically based on a few factors, including:\n\n* Mentions by comment count, weighted by comment novelty and score\n* Accounts of users mentioning, weighted by age, posting history, and previous mod actions\n* Stock volatility, volume, and market cap\n\nThis isn't an exhaustive list, but to prevent this from being gamed, we cannot share the exact weightings or specifics.\n\nThese megathreads exist to consolidate conversation about interesting topics and make things easily accessible and enjoyable for all. \n\n**Please do your part in making these threads decent. Don't troll. Don't spam. Don't spread divisiveness (calling others shills / bots).**",
-        "score": 24561,
-        "num_comments": 42295,
-        "author": "OPINION_IS_UNPOPULAR"
-    },
-    {
-        "id": "l8hsjd",
-        "time": "2021-01-30T09:03:15",
-        "title": "Billboard in Oklahoma City, OK! If someone can rent out a billboard for GME you can hold your shares!!! \ud83d\udc8e \ud83d\udd90!!!! (Left watermark for credit)",
-        "text": "",
-        "score": 132866,
-        "num_comments": 3214,
-        "author": "coookiesfoo"
-    },
-    {
-        "id": "ml9ho9",
-        "time": "2021-04-06T11:30:17",
-        "title": "GME Megathread for April 06, 2021",
-        "text": "",
-        "score": 23007,
-        "num_comments": 18734,
-        "author": "OPINION_IS_UNPOPULAR"
-    },
-    {
-        "id": "laujs5",
-        "time": "2021-02-02T12:36:50",
-        "title": "GME thread for 2/2/21",
-        "text": "This isn\u2019t going to be stickied since we have the Mark Cuban AMA coming up this morning (and we can only have two stickied threads at a time.)\n\nEnjoy.",
-        "score": 26058,
-        "num_comments": 69902,
-        "author": "MotorizedDoucheCanoe"
-    },
-    {
-        "id": "l82y7u",
-        "time": "2021-01-29T20:17:25",
-        "title": "How to Buy GME Above Broker Limits",
-        "text": "How to Buy GME etc [Loophole]\n\nRobinhood and other shitty brokerages are allowing us to buy 2, 5, or very low numbers of GME. However, they are allowing option contracts.\n\nHere\u2019s a trick that ~~will work.~~\n\n**Update Feb 1 [Loophole Closed](https://www.reddit.com/r/ClassActionRobinHood/comments/la6sll/rh_blocks_exercising_of_gme_call_options/?utm_source=adioking&utm_medium=your_mom&utm_name=golden_fuckboy) **\n\n1) Go to next nearest option expiration (Feb 5 as of today).\n2) Scroll all the way down the call list.\n3) Buy GME call option with the lowest +x.xx% (0% would be no premium at mark).\n4) Immediately exercise.\n\nI just exercised 2 contracts and now have 200 shares, blocking the shorts. You can repeat this process over and over if you are buying a lot.\n\nBest of luck out there! Let\u2019s get them!!!\n\nP.S. ~~If you can afford 100 shares but can\u2019t afford the risk, you can sell (heh...) some shares after you exercise and take risk off the table.~~\n\n_Update:_ A screenshot has made it to me that Robinhood is blocking same day exercise so you would need to carry into the next trading day to exercise.\n\n_This is NOT financial advice and is for informational purposes ONLY. You can lose 100% of anything you invest._\n\nEDIT:\n\n1) This works for pretty much any stock.\n\n2) There\u2019s a catch. You need enough money (please don\u2019t use margin) to cover 100 shares. The way exercising works is you pay for the 100 shares at the strike price.\n\nExample:\n\n- $GME is $300\n- The 2/5 $50c is $250 so it costs $25,000\n- Cost to exercise would be $50 x 100 ($5000).\n- Total cost: $30,000 (same as buying 100 shares)\n\nAfter exercising you could then sell shares at open market and de-risk if you like and hold the remainder.",
-        "score": 75146,
-        "num_comments": 3869,
-        "author": "adioking"
-    },
-    {
-        "id": "lavgj3",
-        "time": "2021-02-02T13:29:24",
-        "title": "My 102 year old grandmother bought GME in August 1995 and held through all this time.",
-        "text": "",
-        "score": 110123,
-        "num_comments": 3238,
-        "author": "Lansman"
-    },
-    {
-        "id": "mi9hdf",
-        "time": "2021-04-02T01:00:27",
-        "title": "GME YOLO update \u2014 Apr 1 2021",
-        "text": "",
-        "score": 87643,
-        "num_comments": 2686,
-        "author": "DeepFuckingValue"
-    },
-    {
-        "id": "lc5690",
-        "time": "2021-02-04T02:26:48",
-        "title": "RH eases restrictions again in AMC and GME",
-        "text": "",
-        "score": 66969,
-        "num_comments": 3935,
-        "author": "grassmunkie"
-    },
-    {
-        "id": "lybuq0",
-        "time": "2021-03-05T13:30:18",
-        "title": "GME Megathread for March 05, 2021",
-        "text": "This thread will be automatically stickied weekdays at 8:30am, and unstickied at 9:15am.\n\nMegathreads are now posted automatically based on a few factors, including:\n\n* Mentions by comment count, weighted by comment novelty and score\n* Accounts of users mentioning, weighted by age, posting history, and previous mod actions\n* Stock volatility, volume, and market cap\n\nThis isn't an exhaustive list, but to prevent this from being gamed, we cannot share the exact weightings or specifics.\n\nThese megathreads exist to consolidate conversation about interesting topics and make things easily accessible and enjoyable for all. \n\n**Please do your part in making these threads decent. Don't troll. Don't spam. Don't spread divisiveness (calling others shills / bots).**",
-        "score": 23057,
-        "num_comments": 43395,
-        "author": "OPINION_IS_UNPOPULAR"
-    },
-    {
-        "id": "l747eg",
-        "time": "2021-01-28T18:10:36",
-        "title": "Citadel reloaded their shorts before they told Robinhood to stop trading $GME",
-        "text": "",
-        "score": 84030,
-        "num_comments": 3561,
-        "author": "synaesthesisx"
-    },
-    {
-        "id": "lv7ahq",
-        "time": "2021-03-01T11:51:53",
-        "title": "GME daily thread March 1, 2021",
-        "text": "Will your 3/5 $45p pay off?  That\u2019s clearly what everyone is here to discuss, right?",
-        "score": 22822,
-        "num_comments": 49988,
-        "author": "MotorizedDoucheCanoe"
-    },
-    {
-        "id": "l65p3u",
-        "time": "2021-01-27T14:33:41",
-        "title": "The GME Thread, Part 2, for January 27, 2021",
-        "text": "wonder how many threads we'll hit today\n\n[WSB Stats](http://wsb.gold/public/dashboard/e65fcfcb-70a4-4d86-b7fb-888057c67881) / [Rules](https://www.reddit.com/r/wallstreetbets/about/rules)",
-        "score": 24600,
-        "num_comments": 86998,
-        "author": "OPINION_IS_UNPOPULAR"
-    },
-    {
-        "id": "mhu8tg",
-        "time": "2021-04-01T12:30:16",
-        "title": "GME Megathread for April 01, 2021",
-        "text": "#[Paper Trading Competition Winners Announced!](https://www.reddit.com/r/wallstreetbets/comments/mhyf1k/moderators_update_on_paper_trading_competition_3)",
-        "score": 21544,
-        "num_comments": 21554,
-        "author": "OPINION_IS_UNPOPULAR"
-    },
-    {
-        "id": "l7zgdk",
-        "time": "2021-01-29T18:06:14",
-        "title": "RH now limiting to 2 shares max of GME. This is the same shit as yesterday, just disguised.",
-        "text": "",
-        "score": 68627,
-        "num_comments": 3711,
-        "author": "Lakersland"
-    },
-    {
-        "id": "lbm3vr",
-        "time": "2021-02-03T12:03:58",
-        "title": "GME super awesome megathread weds 2/3",
-        "text": "Edit:  Stop DMing me to pump your shitcoin or penny stocks.  Seriously.",
-        "score": 24258,
-        "num_comments": 58461,
-        "author": "MotorizedDoucheCanoe"
-    },
-    {
-        "id": "mlzzpw",
-        "time": "2021-04-07T11:30:10",
-        "title": "GME Megathread for April 07, 2021",
-        "text": "",
-        "score": 21158,
-        "num_comments": 18982,
-        "author": "OPINION_IS_UNPOPULAR"
-    },
-    {
-        "id": "lb7rg4",
-        "time": "2021-02-02T21:57:16",
-        "title": "GME overnight Pajama party megathread 9000",
-        "text": "Still holding? Bought the dip? Keep GME discussion here.\n\nFeel free to post loss/gain porn here.",
-        "score": 25711,
-        "num_comments": 22733,
-        "author": "MotorizedDoucheCanoe"
-    },
-    {
-        "id": "lqj165",
-        "time": "2021-02-23T14:00:06",
-        "title": "GME Safe Space Megathread for February 23rd, 2021",
-        "text": "",
-        "score": 25205,
-        "num_comments": 15283,
-        "author": "OPINION_IS_UNPOPULAR"
-    },
-    {
-        "id": "mnf6e4",
-        "time": "2021-04-09T11:30:14",
-        "title": "GME Megathread for April 09, 2021",
-        "text": "",
-        "score": 20127,
-        "num_comments": 27530,
-        "author": "OPINION_IS_UNPOPULAR"
-    },
-    {
-        "id": "l4sg3u",
-        "time": "2021-01-25T17:18:21",
-        "title": "Can I get a flair for buying GME at the literal top ($155.29)?",
-        "text": "",
-        "score": 58099,
-        "num_comments": 4020,
-        "author": "DavyyJ"
-    },
-    {
-        "id": "mmpqrw",
-        "time": "2021-04-08T11:30:12",
-        "title": "GME Megathread for April 08, 2021",
-        "text": "Holy moly!\n\n[Ryan Cohen to Become Chairman of the Board Following Annual Meeting](https://investor.gamestop.com/news-releases/news-release-details/gamestop-announces-slate-director-candidates-2021-annual-meeting)",
-        "score": 19390,
-        "num_comments": 25402,
-        "author": "OPINION_IS_UNPOPULAR"
-    },
-    {
-        "id": "lsvmfs",
-        "time": "2021-02-26T11:14:42",
-        "title": "GME Megathread for Friday, February 26th, 2021",
-        "text": ">!Hope you guys crush it today \u2665\ufe0f!<",
-        "score": 20060,
-        "num_comments": 56662,
-        "author": "OPINION_IS_UNPOPULAR"
-    },
-    {
-        "id": "ll68pc",
-        "time": "2021-02-16T15:32:02",
-        "title": "The SEC Just posted the new numbers for Failure to Deliver. Guess What, GME is failing to deliver every day.",
-        "text": "Hey 'Tards,\n\nThe  New Failure to deliver data is JUST OUT from the SEC.  Here is a simple pivot table.   It's still failing to deliver EVERY DAY.  I'm sure people will analyze this better than me.   But I wanted to get this out to everyone ASAP.\n\nEdit: Failure to deliver is how many shares were not accounted for at the end of the day.  GME has been failing to deliver in some capacity for weeks now.  This data is posted by the SEC Freedom of  Information Act (FOIA).  It is only posted every two weeks, for the previous two weeks.  But this is the most recent data that everyone has been waiting on.\n\nFrom the SEC regarding this data\n\n>\"The   figure is not a daily amount of fails, but a combined figure that  includes both new fails on the reporting day as well as existing fails.    In other words, these numbers reflect aggregate fails as of a specific    point in time, and may have little or no relationship to yesterday's    aggregate fails.\"\n\n&#x200B;\n\nSEC FOIA Site: [https://www.sec.gov/data/foiadocsfailsdatahtm](https://www.sec.gov/data/foiadocsfailsdatahtm)\n\nData File: [https://www.sec.gov/files/data/fails-deliver-data/cnsfails202101b.zip](https://www.sec.gov/files/data/fails-deliver-data/cnsfails202101b.zip)\n\n&#x200B;\n\nGME had 2 million shares failed to deliver one day totaling 300 million $\n\nhttps://preview.redd.it/o2xfxx2gyuh61.png?width=581&format=png&auto=webp&s=67d839f263c89c56f782a52803b11c9e5f4c9c8b\n\nEDIT: Because so many people are bringing up XRT.  Which contains a lot of GME. Here is XRT.  Hmmm.  Notice anything interesting about Jan29th between these two??\n\nhttps://preview.redd.it/kmbry5xzgvh61.png?width=620&format=png&auto=webp&s=5ea1c495f4287932b0c6f9b172a04a03f58d147b\n\n&#x200B;\n\n&#x200B;\n\nThere is also AMC... AMC is still failing to deliver EVERY DAY.  This continues the trend for both of these stocks not being delivered every day.  AMC had 27 million... yes million shares failed to deliver.\n\n&#x200B;\n\nhttps://preview.redd.it/gqgboikxyuh61.png?width=619&format=png&auto=webp&s=2a12b0466767e0eba40dd93ba0a28cc322db1d32\n\n&#x200B;\n\nI'd like to ask everyone to do what they can.  I am not recommending buying any of these stocks.  But there is for sure, something still going on.  We need to try and get this data daily.  Contact your reps, etc.\n\n&#x200B;\n\nThere are links to information about Failed to deliver.[https://www.sec.gov/rules/final/34-50103.htm](https://www.sec.gov/rules/final/34-50103.htm)\n\nIs GME considered a Threshold Security? \u2705\n\n>In   order to be deemed a  threshold security, and thus subject to the   restrictions of Rule  203(b)(3), a security must exceed the specified   fail level for a period  of five consecutive settlement days.    Similarly, in order to be removed  from the list of threshold   securities, a security must not exceed the  specified level of fails for   a period of five consecutive settlement  days.\n\nDoes the Firm have to close out the positions? \u2705\n\n>As adopted, Rule 203(b)(3) requires any participant of a registered clearing agency (\"participant\")[80](https://www.sec.gov/rules/final/34-50103.htm#P210_72014) to take action on all failures to deliver that exist in such securities ten days after the normal settlement date, *i.e.*, 13 consecutive settlement days.[81](https://www.sec.gov/rules/final/34-50103.htm#P211_72496)Specifically,  the participant is required to close out the fail to   deliver position  by purchasing securities of like kind and quantity.Rule 203(b)(3) is intended to address potential abuses that may occur with large, extended fails to deliver.[89](https://www.sec.gov/rules/final/34-50103.htm#P221_79239)  We believe that the five-day requirement will facilitate the identification of securities with extended fails.\n\n&#x200B;\n\nEdit:  I wrote a quick post about this last report.  I'll copy some stuff here.  AS requested, here are some data snippets for \"normal\" stocks.  note the number of failed to deliver is way lower.\n\n[Alcoa](https://preview.redd.it/iv7pzbh92vh61.png?width=333&format=png&auto=webp&s=9b724af7998ca1bc1b4dd5db3299b45358eac540)\n\n&#x200B;\n\n[MSFT.  Some outstanding shares and a few spikes, but not hundreds of thousands or millions every day. ](https://preview.redd.it/0ricfjkd2vh61.png?width=246&format=png&auto=webp&s=22b6638b1ff5fee09e9434b5d151389624ed7aeb)\n\n&#x200B;\n\nEdit:  Adding some historical counts for GME below.  I'm too lazy to combine the data right now, pulling from an older post of mine.\n\n&#x200B;\n\nhttps://preview.redd.it/9o10fkj2wvh61.png?width=642&format=png&auto=webp&s=17134e3775fba124959db68eb25cda803504d63e\n\nhttps://preview.redd.it/c0i6ixztvvh61.png?width=605&format=png&auto=webp&s=02ab76207deea9f208f54532a75b28761858e106\n\n&#x200B;\n\n&#x200B;\n\nEdit:  I have a super super small position in GME, like 3 shares.  I have been on WSB since like 2014.  Trust me.  I am NOT a bag-holding whiner.  I take my losses like a fucking champ.  (MSFT 240C, USO, PRPL, SLV in 2020, etc) I am also NOT promoting any sort of holding, buying, or selling any of your positions.",
-        "score": 49442,
-        "num_comments": 3420,
-        "author": "deltamoney"
-    },
-    {
-        "id": "nvs3c6",
-        "time": "2021-06-09T10:00:19",
-        "title": "\ud83d\ude80 GME Q1 Earnings Megathread \ud83d\udc8e\ud83d\ude4c \ud83d\ude80",
-        "text": "Recent announcements:\n\n#[GameStop Releases First Quarter 2021 Financial Results](https://investor.gamestop.com/news-releases/news-release-details/gamestop-releases-first-quarter-2021-financial-results)\n\n[GameStop Announces Appointments of Chief Executive Officer and Chief Financial Officer](https://investor.gamestop.com/news-releases/news-release-details/gamestop-announces-appointments-chief-executive-officer-and)\n\n#[8-K](https://investor.gamestop.com/node/18941/html)\n\n#[8-K](https://investor.gamestop.com/node/18946/html)\n\n#[10-Q](https://investor.gamestop.com/node/18951/html)\n\n#[8-K](https://investor.gamestop.com/node/18956/html)\n\n---\n\n#HOW TO LISTEN IN ON THE GAMESTOP WEBCAST:\n\n#[WATCH ON GAMESTOP'S OFFICIAL YT CHANNEL](https://youtu.be/g2eBhTtxeu4)\n\n***or***\n\n#Visit https://investor.gamestop.com/home\n\n#Click \"Listen to Webcast\"\n\n#HIGHLY LIKELY TO FILL UP BEFORE 5PM",
-        "score": 16869,
-        "num_comments": 11854,
-        "author": "OPINION_IS_UNPOPULAR"
-    },
-    {
-        "id": "mkih9q",
-        "time": "2021-04-05T11:30:15",
-        "title": "GME Megathread for April 05, 2021",
-        "text": "Starting early today due to premarket volatility.\n\nGME press releases today:\n\n[GameStop Announces Preliminary Sales Results for the First Nine Weeks of Fiscal 2021 Reflecting an Approximately 11% Increase Compared to the Prior Year Period](https://investor.gamestop.com/news-releases/news-release-details/gamestop-announces-preliminary-sales-results-first-nine-weeks)\n\n[GameStop Announces At-The-Market Equity Offering Program](https://investor.gamestop.com/news-releases/news-release-details/gamestop-announces-market-equity-offering-program)\n\nObligatory: HOLY MOLY! HOLY MOLY! HOLY MOLY! HOLY MOLY! HOLY MOLY! HOLY MOLY! HOLY MOLY! HOLY MOLY! HOLY MOLY! HOLY MOLY!",
-        "score": 18587,
-        "num_comments": 22433,
-        "author": "OPINION_IS_UNPOPULAR"
-    },
-    {
-        "id": "lbyf09",
-        "time": "2021-02-03T21:11:49",
-        "title": "GME overnight thread / SEC intern meet-and-greet",
-        "text": "Enjoy.",
-        "score": 22373,
-        "num_comments": 22036,
-        "author": "MotorizedDoucheCanoe"
+        "score": 44,
+        "num_comments": 19,
+        "author": "SellNoCell"
+    },
+    {
+        "id": "1lqx6pb",
+        "time": "2025-07-03T18:34:21",
+        "title": "And all I got from the SEC is ...\"we acknowledge your email...\"",
+        "text": "I finally had time last weekend to write back to the SEC (see previous [SEC says I am not allowed to know who caused the CAT errors... : r/Superstonk](https://www.reddit.com/r/Superstonk/comments/1kcjda2/sec_says_i_am_not_allowed_to_know_who_caused_the/))  Note: I am not a MULN investor; only GME, and DRS'd at that.  MULN has appeared on the Nasdaq RegSHO list every day since last summer when I started noticing it.  **TL;DR:** The SEC is lazy as and does absolutely nothing.\n\n\"Hello again SEC,\n\nThe latest CAT error statistics were released on Thursday night, 26th June ( [https://www.catnmsplan.com/sites/default/files/2025-06/06.26.25-Monthly-CAT-Update-Final.pdf](https://www.catnmsplan.com/sites/default/files/2025-06/06.26.25-Monthly-CAT-Update-Final.pdf)  ). I note that on 17th June there were 7 BILLION CAT errors recorded. All the measures you outlined in your email are simply not working to prevent errors from happening in the first place.  Anonymity should not be granted to those who cause such errors; section 613 doesn\u2019t help investors with the necessary transparency.  In this modern day and age, it is unconscionable to have financial market systems where continuous errors are allowable and not managed.  Once again, I stress that the SEC is failing in its duties to stop CAT errors happening.  Even in the previous report from May 2025, 3.6B errors were reported on 14th April; 1.1B errors on 15th April; 2.6B errors on 16th April; and 1.6B errors on 1st May. This is not acceptable.\n\nAnd yes, while the RegSHO reporting is a measure of \u201ccumulative number of all fails outstanding until that day, plus new fails that occur that day, less fails that settle that day,\u201d it does not explain why, stocks like MULN (Mullen Automotive) have appeared on it every single day for months and months. Why is this consistently allowed? Are the fails-to-deliver settled and then failed again on the same day by the same participants? MULN has been on the NASDAQ RegSho for months. The SEC has allowed this situation where fails-to-deliver occur day after day. Who keeps failing to deliver?  And why can\u2019t we as investors know who consistently fails to deliver this and other stocks?\n\nThe headline on the SEC website says \u201cWe make markets work better.\u201d That is incongruent with the evidence. Please revert with an action plan on:\n\n\\* How the SEC will prevent CAT errors from occurring  \n\\* How the SEC will make the names of those responsible for CAT errors visible to investors  \n\\* How the SEC will investigate and stop continuous fails-to-deliver so that investors receive what they have purchased on the date expected\n\nI look forward to your response.\n\nRegards,  \nTransatlanticMadame.\"\n\nand they responded today - with the laziest response ever that someone could say \"well I responded before a holiday weekend.\"\n\n\"Dear TransatlanticMadame:\n\nThank you for providing additional information to the Ombuds of the U.S. Securities and Exchange Commission (SEC) regarding published statistics about reports to the Consolidated Audit Trail (CAT). The Office of the Ombuds handles retail investor recommendations, questions and complaints about the SEC and the self-regulatory organizations (SROs) that it oversees.\n\nThis email acknowledges our Office\u2019s receipt of your additional information. Please note that the Ombuds does not participate in formal investigations, nor are we able to provide you with an update on the status of your complaint or other non-public information. The Ombuds generally treats matters as confidential and takes reasonable steps to maintain the confidentiality of communications. However, our Office may need to contact other SEC divisions or offices, SROs, entities, and/or individuals to disclose information without permission under certain circumstances including, but not limited to: a threat of imminent risk or serious harm; assertions, complaints, or information relating to violations of the securities laws; allegations of government fraud, waste, or abuse; or if otherwise required by law. Information received by the Ombuds may also be used in future recommendations to the SEC.\n\nAgain, thank you for contacting the SEC Ombuds.\"\n\nI find this ridiculous and am going to my Senator and Congressman next.",
+        "score": 485,
+        "num_comments": 26,
+        "author": "TransatlanticMadame"
     }
 ]

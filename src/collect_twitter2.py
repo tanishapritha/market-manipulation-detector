@@ -3,14 +3,14 @@ import json
 import os
 import re
 
-# 🔐 Bearer Token (keep it secret)
+# 🔐 Bearer Token
 BEARER_TOKEN = "AAAAAAAAAAAAAAAAAAAAAHSj2wEAAAAAN1c1ptkPDxifGyrn4JH1MtJGVOs%3Do07hqlwAEPFYPUKy366CBvFGpheQUGMuIB1aNFdBfbroo89uRV"
 
-# 📌 Create headers for Twitter API auth
+# 📌 Headers for Twitter API
 def create_headers():
     return {"Authorization": f"Bearer {BEARER_TOKEN}"}
 
-# 🔍 Search recent tweets
+# 🔍 Twitter API search
 def search_tweets(query, max_results=100):
     url = "https://api.twitter.com/2/tweets/search/recent"
     params = {
@@ -26,27 +26,28 @@ def search_tweets(query, max_results=100):
 
     return response.json().get("data", [])
 
-# 🔎 Filter out irrelevant/spammy tweets
-def is_relevant_gme_tweet(text):
+# 🧠 Smart filter for relevance
+def is_relevant_tweet(text, ticker):
     text_lower = text.lower()
+    ticker_lower = ticker.lower()
 
-    if 'gme' not in text_lower and '$gme' not in text_lower:
+    if ticker_lower not in text_lower and f"${ticker_lower}" not in text_lower:
         return False
 
     tickers = re.findall(r'\$\w+', text)
 
-    # Too many tickers = likely spam unless context matches GME
+    # If too many tickers, keep only if keyword is contextually relevant
     if len(tickers) > 3:
-        keywords = ['gamestop', 'short squeeze', 'r/gme', 'volatility', 'earnings', 'split', 'stock']
-        if not any(kw in text_lower for kw in keywords):
+        keywords = [ticker_lower, 'gamestop', 'short squeeze', 'r/gme', 'stock', 'volatility', 'earnings']
+        if not any(keyword in text_lower for keyword in keywords):
             return False
 
     return True
 
-# 💾 Save to JSON
+# 💾 Save to social folder
 def save_to_json(tweets, ticker):
-    os.makedirs("../data/social2", exist_ok=True)
-    filepath = f"../data/social2/twitter_{ticker}.json"
+    os.makedirs("../data/social", exist_ok=True)
+    filepath = f"../data/social/twitter_{ticker}.json"
     with open(filepath, "w", encoding="utf-8") as f:
         json.dump(tweets, f, indent=4, ensure_ascii=False)
     print(f"[+] Saved {len(tweets)} relevant tweets to {filepath}")
@@ -55,9 +56,9 @@ def save_to_json(tweets, ticker):
 if __name__ == "__main__":
     ticker = "GME"
     query = f"{ticker} lang:en -is:retweet"
-    tweets = search_tweets(query, max_results=100)
+    raw_tweets = search_tweets(query, max_results=100)
 
-    # Filter tweets for relevance
-    filtered = [tweet for tweet in tweets if is_relevant_gme_tweet(tweet["text"])]
+    # Apply relevance filter
+    filtered_tweets = [tweet for tweet in raw_tweets if is_relevant_tweet(tweet["text"], ticker)]
 
-    save_to_json(filtered, ticker)
+    save_to_json(filtered_tweets, ticker)
