@@ -3,6 +3,7 @@ import datetime
 import json
 import os
 from dotenv import load_dotenv
+import time
 
 load_dotenv()
 
@@ -21,17 +22,39 @@ reddit = praw.Reddit(
 
 # Parameters
 ticker = "GME"
-target_date = datetime.date(2025, 7, 4)
+start_date = datetime.date(2025, 6, 30)
+end_date = datetime.date(2025, 7, 11)
 
-start_ts = int(datetime.datetime(target_date.year, target_date.month, target_date.day).timestamp())
-end_ts = int(datetime.datetime(target_date.year, target_date.month, target_date.day + 1).timestamp())
+start_ts = int(datetime.datetime.combine(start_date, datetime.time.min).timestamp())
+end_ts = int(datetime.datetime.combine(end_date, datetime.time.min).timestamp())
 
 results = []
+seen_ids = set()
 
-# Fetch posts
-for submission in reddit.subreddit("all").search(ticker, sort="new", limit=200):
-    created_ts = int(submission.created_utc)
-    if start_ts <= created_ts < end_ts:
+# Paginate through results using 'before' timestamps
+search_window_ts = end_ts
+print(f"🔍 Searching backwards from {datetime.datetime.utcfromtimestamp(search_window_ts)}")
+
+while True:
+    count_before = len(results)
+    for submission in reddit.subreddit("all").search(
+        query=ticker,
+        sort="new",
+        syntax="lucene",
+        params={"before": search_window_ts},
+        time_filter="all"
+    ):
+        created_ts = int(submission.created_utc)
+        if created_ts < start_ts:
+            break  # Done
+
+        if created_ts < search_window_ts:
+            search_window_ts = created_ts  # Move window back
+
+        if submission.id in seen_ids:
+            continue
+        seen_ids.add(submission.id)
+
         results.append({
             "id": submission.id,
             "time": datetime.datetime.utcfromtimestamp(created_ts).isoformat(),
@@ -42,7 +65,12 @@ for submission in reddit.subreddit("all").search(ticker, sort="new", limit=200):
             "author": str(submission.author)
         })
 
-print(f"✅ Fetched {len(results)} posts for {ticker} on {target_date}")
+    if len(results) == count_before:
+        break  # No new results, stop
+
+    time.sleep(2)  # Be polite to Reddit
+
+print(f"✅ Fetched {len(results)} posts for {ticker} between {start_date} and {end_date}")
 
 # Save to file
 output_dir = "../data/social"
@@ -52,4 +80,4 @@ file_path = os.path.join(output_dir, f"reddit_{ticker}.json")
 with open(file_path, "w", encoding="utf-8") as f:
     json.dump(results, f, indent=4, ensure_ascii=False)
 
-print(f"Saved to {file_path}")
+print(f"📁 Saved to {file_path}")

@@ -4,7 +4,7 @@ import yfinance as yf
 import os
 import pandas as pd
 
-def collect_market_data(ticker="GME", start="2025-06-01", end="2025-07-01", interval="1h"):
+def collect_market_data(ticker="GME", start="2025-06-30", end="2025-07-11", interval="1h"):
     # Fetch hourly data
     data = yf.download(ticker, start=start, end=end, interval=interval)
 
@@ -21,4 +21,4 @@ def collect_market_data(ticker="GME", start="2025-06-01", end="2025-07-01", inte
     return data
 
 if __name__ == "__main__":
-    collect_market_data(ticker="GME", start="2025-06-01", end="2025-07-01", interval="1h")
+    collect_market_data(ticker="GME", start="2025-06-30", end="2025-07-11", interval="1h")

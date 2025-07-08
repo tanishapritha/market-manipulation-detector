@@ -2,6 +2,7 @@ import json
 import pandas as pd
 from datetime import datetime
 import os
+from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 
 def preprocess_twitter(ticker="GME"):
     input_path = f"../data/social/twitter_{ticker}.json"
@@ -13,28 +14,31 @@ def preprocess_twitter(ticker="GME"):
 
     rows = []
     for tweet in data:
-        # Parse timestamp
         time_str = tweet.get("created_at")
         try:
-            time = datetime.fromisoformat(time_str.replace("Z", "+00:00"))
-        except:
+            # Parse with UTC awareness, then convert to naive + floor to hour
+            time = pd.to_datetime(time_str, utc=True).tz_localize(None).floor("h")
+        except Exception as e:
+            print(f"[!] Skipped tweet due to time parse error: {e}")
             continue
 
-        # Get content
         content = tweet.get("text", "")
 
-        # Append only if content and time are valid
-        if content and time:
+        if content:
             rows.append({"time": time, "content": content})
 
     df = pd.DataFrame(rows)
 
-    # Save processed CSV
+    # Add sentiment
+    analyzer = SentimentIntensityAnalyzer()
+    df["sentiment_compound"] = df["content"].astype(str).apply(
+        lambda x: analyzer.polarity_scores(x)["compound"]
+    )
+
+    # Save CSV
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
     df.to_csv(output_path, index=False)
     print(f"[+] Preprocessed {len(df)} Twitter posts → {output_path}")
-
-    # Optional preview
     print(df.head())
 
 if __name__ == "__main__":
